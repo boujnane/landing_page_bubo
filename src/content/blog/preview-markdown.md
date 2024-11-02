@@ -1,9 +1,10 @@
 ---
-title: "Preview Markdown"
+title: "AI - LLM: Legal usecase"
+slug: "AI3"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 11 2022"
-cover: "/images/blog/placeholder-about.jpg"
-category: "markdown"
+cover: "/images/blog/bubo_law.png"
+category: "Software development"
 ---
 
 Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.

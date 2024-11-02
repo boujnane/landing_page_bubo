@@ -1,0 +1,26 @@
+---
+import MainLayout from "@/layouts/main-layout.astro";
+import { Image } from "astro:assets";
+import { partners } from "@/config/partners.ts"; // Ensure you have a partners.ts file with an array of partner objects
+---
+
+<MainLayout title="Our Partners" description="Meet our esteemed partners who help us achieve our goals.">
+  <section class="space-y-10">
+    <h1 class="text-4xl font-heading text-foreground text-center mt-16">Our Partners</h1>
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto max-w-screen-lg">
+      {partners.map(partner => (
+        <div class="flex flex-col items-center text-center p-4 border rounded-lg shadow-lg">
+          <Image
+            class="mb-4 h-24 w-auto object-contain"
+            src={partner.logo}
+            alt={partner.name}
+            width={200}
+            height={100}
+          />
+          <h2 class="text-xl font-semibold text-foreground">{partner.name}</h2>
+          <p class="text-base text-muted-foreground">{partner.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</MainLayout>

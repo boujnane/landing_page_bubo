@@ -1,0 +1,100 @@
+---
+// components/Timeline.astro
+const { events } = Astro.props;
+---
+
+<div class="timeline">
+  <div class="timeline-line"></div> <!-- Central connecting line -->
+  {events.map((event: { date: string; title: string; description: string; }, index: number) => (
+    <div class={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+      <div class="timeline-date-wrapper">
+        <div class="timeline-date">{event.date}</div>
+        <div class="timeline-dot"></div> <!-- Small orange dot -->
+      </div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">{event.title}</h3>
+        <p class="timeline-description">{event.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  max-width: 1200px; /* Adjust the max-width to suit your layout */
+  margin: 0 auto; /* Center the timeline */
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%; /* Center the line */
+  top: 0; /* Start from the top */
+  bottom: 0; /* Extend to the bottom */
+  width: 4px; /* Thickness of the line */
+  background-color: orange; /* Color of the line */
+  transform: translateX(-50%); /* Center the line */
+}
+
+.timeline-item {
+  margin: 60px 0; /* Increased margin for better spacing */
+  position: relative;
+  display: flex; /* Use flexbox for alignment */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.timeline-item.left {
+  flex-direction: row; /* Items on the left side */
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse; /* Items on the right side */
+}
+
+.timeline-date-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack date and dot */
+  align-items: center; /* Center items */
+  position: relative;
+  margin: 0 20px; /* Adjusted margin for better spacing */
+}
+
+.timeline-date {
+  font-weight: bold;
+  font-size: 1.2rem; /* Increased font size */
+  color: #4a4a4a; /* Darker color for better readability */
+  padding: 5px 0; /* Added padding for better spacing */
+}
+
+.timeline-dot {
+  width: 12px; /* Increased size of the dot */
+  height: 12px; /* Increased size of the dot */
+  background-color: orange; /* Dot color */
+  border-radius: 50%; /* Make it circular */
+  position: absolute;
+  top: 80%; /* Adjusted position for better alignment */
+  left: calc(50% - 6px); /* Center the dot */
+  transform: translateX(-50%); /* Center the dot */
+}
+
+.timeline-content {
+  padding-left: 50px; /* Increased padding for left-side items */
+  padding-right: 50px; /* Increased padding for right-side items */
+  transition: transform 0.2s ease; /* Added transition for hover effect */
+}
+
+.timeline-title {
+  font-size: 1.5rem; /* Increased title font size */
+  color: #ffffff; /* Color for the title */
+}
+
+.timeline-description {
+  font-size: 1rem; /* Standard description font size */
+  color: #6b7280; /* Lighter color for description */
+}
+
+.timeline-item:hover .timeline-content {
+  transform: scale(1.02); /* Scale effect on hover for better interactivity */
+}
+</style>

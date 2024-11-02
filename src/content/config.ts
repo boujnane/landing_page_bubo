@@ -17,6 +17,12 @@ const blog = defineCollection({
         .string()
         .optional()
         .transform((str) => (str ? new Date(str) : undefined)),
+      sidebarInfo: z.object({
+        industry: z.string(),
+        headquarters: z.string(),
+        founded: z.string(),
+        employees: z.string(),
+      }).optional(), // Make it optional if not every post will have this info
     }),
 });
 

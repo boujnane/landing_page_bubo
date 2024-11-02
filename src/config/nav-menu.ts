@@ -3,22 +3,29 @@ import type { NavMenuConfig } from "@/types";
 export const navMenuConfig: NavMenuConfig = {
   pagesNav: [
     {
-      title: "Pages",
+      title: "Menu",
       items: [
         {
-          title: "Landing",
-          href: "/landing",
-          description: "A landing page template with differents sections.",
-          image: "/images/examples/landing.jpg",
+          title: "Accelerate",
+          href: "/blog",
+          description: "Our vision for a sustainable and innovative future",
+          image: "/images/examples/static-blog.jpg",
+          launched: true,
         },
+        // {
+        //   title: "Landing",
+        //   href: "/landing",
+        //   description: "A landing page template with differents sections.",
+        //   image: "/images/examples/landing.jpg",
+        // },
         {
-          title: "Changelog",
+          title: "Research",
           href: "/releases",
           description: "A reproduction of Starlog template with Tailwind CSS.",
           image: "/images/examples/changelog.jpg",
         },
         {
-          title: "Waitlist",
+          title: "Product",
           href: "/waitlist",
           description:
             "A waitlist form using Astro DB, React Hook Form & Sonner. Static page.",
@@ -32,13 +39,13 @@ export const navMenuConfig: NavMenuConfig = {
           image: "/images/examples/pricing.jpg",
         },
         {
-          title: "About",
-          href: "/about",
+          title: "Advice",
+          href: "/advice",
           description: "A simple page with a masonry gallery and little text.",
           image: "/images/examples/about.jpg",
         },
         {
-          title: "Newsletter",
+          title: "Tailormade",
           href: "/newsletter",
           description:
             "A newsletter form using Astro DB & Simple Stack Form. Counter display!",
@@ -49,51 +56,35 @@ export const navMenuConfig: NavMenuConfig = {
   ],
   examplesNav: [
     {
-      title: "Examples",
+      title: "About us",
       items: [
         {
-          title: "Static Blog",
-          href: "/blog",
-          description: "A Markdown/MDX blog built using Content Collections.",
+          title: "People",
+          href: "/about",
+          description: "Our vision for a sustainable and innovative future",
           image: "/images/examples/static-blog.jpg",
         },
+        // {
+        //   title: "Docs",
+        //   href: "/docs/getting-started",
+        //   description:
+        //     "A Markdown/MDX docs site built using Content Collections.",
+        //   image: "/images/examples/documentation.jpg",
+        // },
         {
-          title: "Docs",
-          href: "/docs/getting-started",
-          description:
-            "A Markdown/MDX docs site built using Content Collections.",
-          image: "/images/examples/documentation.jpg",
-        },
-        {
-          title: "Anime List",
-          href: "/animes",
+          title: "Values",
+          href: "/values",
           description:
             "Fetch anime content from an graphql endpoint. Tabs component.",
           image: "/images/examples/animes.jpg",
-          launched: true,
         },
         {
-          title: "Blog DB",
-          href: "/blog-db",
+          title: "Partner",
+          href: "/partner",
           description:
-            "Blog built using Astro DB. With categories, views & likes.",
-          // image: "/images/examples/blog-db.jpg",
-          disabled: true,
-        },
-        {
-          title: "Ecommerce",
-          href: "/products",
-          disabled: true,
-          description: "Ecommerce pages fetching data from an API.",
-          // image: "/images/examples/ecommerce.jpg",
-        },
-        {
-          title: "Authentification",
-          href: "/auth",
-          description: "Implement an authentification using Astro DB & Lucia",
-          // image: "/images/examples/auth.jpg",
-          disabled: true,
-        },
+            "Fetch anime content from an graphql endpoint. Tabs component.",
+          image: "/images/examples/animes.jpg",
+        }
       ],
     },
   ],

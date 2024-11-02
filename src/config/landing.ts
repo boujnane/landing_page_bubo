@@ -2,10 +2,10 @@ import type { InfoLdg } from "@/types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
+    title: "Kumbu GED",
     description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
-    image: "/images/blog/placeholder-about.jpg",
+      "Discover our revolutionary archiving and document management solution. With advanced AI-based search and instant chat like GPT, find your information in an instant.",
+    image: "/images/blog/Logo_Kumbu_with_name.svg",
     list: [
       {
         title: "Collaborative",
@@ -26,9 +26,9 @@ export const infos: InfoLdg[] = [
     ],
   },
   {
-    title: "Seamless Integration",
+    title: "Bubo Analytics",
     description:
-      "Integrate our open-source SaaS seamlessly into your existing workflows. Effortlessly connect with your favorite tools and services for a streamlined experience.",
+      "Explore the Internet in depth and transform your research into informed strategies to guide your decision-making",
     image: "/images/blog/placeholder-about.jpg",
     list: [
       {
@@ -50,43 +50,74 @@ export const infos: InfoLdg[] = [
       },
     ],
   },
+  {
+    title: "Bubo Sports",
+    description:
+      "Discover our web application that predicts sports results more accurately than any bookmaker's algorithm.",
+    image: "/images/blog/bubocycling.png",
+    list: [
+      {
+        title: "Collaborative",
+        description: "Work together with your team members in real-time.",
+        icon: "lucide:laptop",
+      },
+      {
+        title: "Innovative",
+        description: "Stay ahead of the curve with access constant updates.",
+        icon: "lucide:settings",
+      },
+      {
+        title: "Scalable",
+        description:
+          "Our platform offers the scalability needed to adapt to your needs.",
+        icon: "lucide:search",
+      },
+    ],
+  },
 ];
 
 export const features = [
   {
-    title: "Feature 1",
+    title: "Atradius",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-    link: "/",
+      "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
+    link: "/blog/first-post/",
+    icon: "atradius",
   },
   {
-    title: "Feature 2",
+    title: "Recital",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-    link: "/",
+      "Exploring key value pairs (KVP) to enhance language model performance and contextual understanding.",
+    link: "/blog/pale-blue-dot/",
+    icon: "recital",
   },
   {
-    title: "Feature 3",
+    title: "Legal",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-    link: "/",
+      "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
+    link: "/blog/preview-markdown/",
+    icon: "law",
   },
   {
-    title: "Feature 4",
+    title: "Sweez",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-    link: "/",
+      "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
+    link: "/blog/markdown-style-guide/",
+    icon: "watermelon",
   },
   {
-    title: "Feature 5",
+    title: "Tvrad",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "Leveraging computer vision to accurately identify and classify radiological incidences for improved diagnostics.",
+    link: "/blog/using-mdx/",
+    icon: "bubo_xray",
   },
   {
-    title: "Feature 6",
+    title: "Gioza",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-    link: "/",
+      "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances.",
+    link: "/blog/third-post/",
+    icon: "gioza_logo",
   },
 ];
 

@@ -1,9 +1,15 @@
 ---
-title: "First Post"
+title: "AI - LLM: Data models reconciliation"
 description: "Embark on a web development adventure with our inaugural post, diving deep into industry insights and emerging trends."
+slug: "AI"
 pubDate: "Jul 08 2022"
-cover: "/images/blog/placeholder-3.jpg"
-category: "design"
+cover: "/images/blog/bubo_atradius.png"
+category: "Missions: Data & AI"
+sidebarInfo:
+  industry: "Data & AI"
+  headquarters: "San Jose, California"
+  founded: "2022"
+  employees: "500+"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
