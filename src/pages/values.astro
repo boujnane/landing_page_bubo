@@ -1,0 +1,143 @@
+---
+import MainLayout from "@/layouts/main-layout.astro";
+import { Image } from "astro:assets";
+import { hobbies } from "@/config/about.ts";
+import { Button } from "@/components/ui/button";
+import { Star, Heart, Bolt } from "lucide-react"; // Importation des icônes de lucide-react
+import { values } from "@/config/values.ts"; // Importation des valeurs depuis votre fichier values.ts
+import { people } from "@/config/people.ts";
+---
+
+<MainLayout title="values" description="Lorem ipsum dolor sit amet">
+  <section class="space-y-5">
+
+     <section class="py-16">
+        <div class="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Nos Valeurs</h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {values.map((value, index) => (
+                <div
+                  class="flex flex-col items-center p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                >
+                  {/* Affichage dynamique des icônes en fonction de la valeur */}
+                  {value.icon === "Star" && <Star className="w-12 h-12 text-primary mb-4" />}
+                  {value.icon === "Heart" && <Heart className="w-12 h-12 text-primary mb-4" />}
+                  {value.icon === "Bolt" && <Bolt className="w-12 h-12 text-primary mb-4" />}
+                  
+                  <h3 class="text-xl font-semibold mb-2">{value.title}</h3>
+                  <p class=" text-center">{value.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+    <div
+      class="relative z-10 flex flex-col justify-center overflow-hidden lg:overflow-visible pb-16"
+    >
+      <div
+        class="mx-auto flex w-max -translate-x-[15%] justify-center lg:w-full lg:translate-x-0"
+      >
+        <div
+          class="relative z-10 mx-auto max-w-4xl px-4 md:max-w-6xl md:px-12 lg:max-w-5xl lg:px-6 xl:max-w-[80rem] xl:px-6 2xl:px-0"
+        >
+          <div class="grid grid-cols-4 items-center gap-4 md:gap-6">
+            {/* First Column */}
+            <div class="space-y-4 md:space-y-6">
+              <Image
+                class="h-full w-auto object-cover overflow-hidden rounded-xl"
+                src={hobbies[0].image}
+                alt={hobbies[0].alt}
+                width={800}
+                height={1226}
+                loading="eager"
+              />
+              <div class="h-52 overflow-hidden rounded-xl">
+                <Image
+                  class="w-full h-full object-cover"
+                  src={hobbies[1].image}
+                  alt={hobbies[1].alt}
+                  width={800}
+                  height={1334}
+                />
+              </div>
+            </div>
+
+            {/* Second Column */}
+            <div class="space-y-4 md:space-y-6">
+              <div class="h-48 overflow-hidden rounded-xl">
+                <Image
+                  class="w-full h-full object-cover"
+                  src={hobbies[2].image}
+                  alt={hobbies[2].alt}
+                  width={800}
+                  height={983}
+                  loading="eager"
+                />
+              </div>
+              <Image
+                class="rounded-xl"
+                src={hobbies[3].image}
+                alt={hobbies[3].alt}
+                width={800}
+                height={1108}
+                loading="eager"
+              />
+              <div class="relative h-48 overflow-hidden rounded-xl">
+                <Image
+                  class="w-full h-full object-cover"
+                  src={hobbies[4].image}
+                  alt={hobbies[4].alt}
+                  width={1260}
+                  height={750}
+                />
+              </div>
+            </div>
+
+            {/* Third Column */}
+            <div class="space-y-4 md:space-y-6">
+              <div class="h-56 overflow-hidden rounded-xl">
+                <Image
+                  class="w-full h-full object-cover"
+                  src={hobbies[5].image}
+                  alt={hobbies[5].alt}
+                  width={800}
+                  height={1334}
+                  loading="eager"
+                />
+              </div>
+              <div class="h-80 w-full overflow-hidden rounded-xl xl:h-[28rem]">
+                <Image
+                  class="w-full h-full object-cover"
+                  src={hobbies[6].image}
+                  alt={hobbies[6].alt}
+                  width={801}
+                  height={2477}
+                />
+              </div>
+            </div>
+
+            {/* Fourth Column */}
+            <div class="space-y-4 md:space-y-6">
+              <div class="overflow-hidden rounded-xl bg-white">
+                <Image
+                  src={hobbies[7].image}
+                  alt={hobbies[7].alt}
+                  width={800}
+                  height={900}
+                  loading="eager"
+                />
+              </div>
+              <div class="overflow-hidden rounded-xl bg-white">
+                <Image
+                  src={hobbies[8].image}
+                  alt={hobbies[8].alt}
+                  width={800}
+                  height={900}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

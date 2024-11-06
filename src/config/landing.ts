@@ -123,45 +123,46 @@ export const features = [
 
 export const testimonials = [
   {
-    name: "John Doe",
-    job: "Full Stack Developer",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Karim Diop",
+    job: "Développeur Full Stack",
+    image: "https://randomuser.me/api/portraits/men/31.jpg",
     review:
-      "The next-saas-stripe-starter repo has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend next-saas-stripe-starter to any developer.",
+    "Travailler avec Bubo a été une expérience incroyable ! L'équipe est tellement supportive et toujours prête à aider. Grâce à leur expertise, j'ai pu développer des solutions personnalisées rapidement, sans me soucier des détails techniques. Leur attention aux besoins de mes clients a transformé ma pratique. Je me sens plus confiant dans mes capacités, et les résultats parlent d'eux-mêmes !",
   },
   {
-    name: "Alice Smith",
-    job: "UI/UX Designer",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    name: "Moussa Traoré",
+    job: "Directeur Technique",
+    image: "https://randomuser.me/api/portraits/men/59.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "Bubo m'a permis de mener à bien ma roadmap ! Les déploiements sont par ailleurs devenus un jeu d'enfant.",
   },
   {
-    name: "David Johnson",
-    job: "DevOps Engineer",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    name: "Clémence Dubois",
+    job: "Responsable Produit",
+    image: "https://randomuser.me/api/portraits/women/34.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I was able to streamline the entire process and get payments up and running in no time.",
+      "Ce que j'apprécie vraiment chez BUBO, c'est l'accent sur la qualité et la collaboration. En tant que responsable produit, je peux compter sur une équipe qui partage ma vision. Ensemble, nous avons lancé des produits qui répondent vraiment aux besoins du marché.",
   },
   {
-    name: "Michael Wilson",
-    job: "Project Manager",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Aminata Koulibaly",
+    job: "Cheffe d'entreprise",
+    image: "https://randomuser.me/api/portraits/women/35.jpg",
     review:
-      "I'm impressed by the quality of code and clear documentation of next-saas-stripe-starter. Kudos to the team!",
+      "Bubo m'a donné les outils nécessaires pour explorer les données utilisateur. C'est génial de pouvoir optimiser nos analyses tout en garantissant la sécurité des données.",
   },
   {
-    name: "Sophia Garcia",
-    job: "Data Analyst",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Olivier Koffi",
+    job: "Avocat pénaliste",
+    image: "https://randomuser.me/api/portraits/men/49.jpg",
     review:
-      "next-saas-stripe-starter provided me with the tools I needed to efficiently manage user data. Thank you so much!",
-  },
+      "Travailler sur Kumbu l'un des produits Bubo a transformé ma manière de gérer mes affaires. Leur outil a simplifié mon organisation, et me faisant gagner un temps fou dans mes recherches. Les résultats parlent d'eux-mêmes !",
+  },  
   {
-    name: "Emily Brown",
-    job: "Marketing Manager",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Julie Martin",
+    job: "Designer UI/UX",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
     review:
-      "next-saas-stripe-starter has been an invaluable asset in my role as a marketing manager. With its seamless integration with Stripe, I've been able to launch targeted marketing campaigns with built-in payment functionality, allowing us to monetize our products and services more effectively.",
+      "Avec Bubo, je peux enfin exprimer ma créativité ! L'équipe comprend l'importance de l'esthétique et de la fonctionnalité. Les retours constructifs rendent mon travail tellement gratifiant.",
   },
 ];
+

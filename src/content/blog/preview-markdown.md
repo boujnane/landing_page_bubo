@@ -1,6 +1,5 @@
 ---
 title: "AI - LLM: Legal usecase"
-slug: "AI3"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 11 2022"
 cover: "/images/blog/bubo_law.png"

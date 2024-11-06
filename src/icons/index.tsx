@@ -2,6 +2,9 @@ import {
   Calendar,
   Clock,
   Flame,
+  Star,
+  Heart,
+  Bolt,
   Tv2,
   type LucideIcon,
   type LucideProps,
@@ -13,6 +16,9 @@ export const Icons = {
   flame: Flame,
   calendar: Calendar,
   tv: Tv2,
+  star: Star,
+  heart: Heart,
+  bolt: Bolt,
   clock: Clock,
   logo: ({ ...props }: LucideProps) => (
     <svg

@@ -1,6 +1,5 @@
 ---
 title: "AI - NILM: disaggregation of appliance energy consumption"
-slug: "AI4"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 15 2022"
 cover: "/images/blog/usecase_gioa.jpg"

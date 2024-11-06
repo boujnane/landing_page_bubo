@@ -1,6 +1,5 @@
 ---
 title: "AI - LLM: KVP task"
-slug: "AI2"
 description: "Carl Sagan's reflection on our planet Earth"
 pubDate: "Sep 10 2023"
 cover: "/images/blog/bubo_recital.jpg"

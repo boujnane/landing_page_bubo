@@ -7,12 +7,12 @@ export const hobbies: HobbiesProps[] = [
   // first column
   {
     image:
-      "/public/images/team/jf.png",
+      "/images/team/jf.png",
     alt: "setup desktop",
   },
   {
     image:
-      "/public/images/team/phot_mariage.jpeg",
+      "/images/team/phot_mariage.jpeg",
     alt: "friends smiles",
   },
   // second column
@@ -23,23 +23,23 @@ export const hobbies: HobbiesProps[] = [
   },
   {
     image:
-      "/public/images/team/cameroun_team.jpeg",
+      "/images/team/marc_cameroun.jpeg",
     alt: "home building",
   },
   {
     image:
-      "https://images.pexels.com/photos/375467/pexels-photo-375467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3712095/pexels-photo-3712095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=",
     alt: "pizza laptop",
   },
   // third column
   {
     image:
-      "/public/images/team/phot_mariage.jpeg",
+      "/images/team/phot_mariage.jpeg",
     alt: "hike and sunset",
   },
   {
     image:
-      "https://images.pexels.com/photos/5500779/pexels-photo-5500779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "/images/team/cameroun_team.jpeg",
     alt: "chinese lantern",
   },
   // fourth column

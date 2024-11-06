@@ -1,6 +1,5 @@
 ---
 title: "AI - Computer vision: recognition of radiological incidence"
-slug: "AI5"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 02 2022"
 cover: "/images/blog/bubo_tvrad.png"
