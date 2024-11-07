@@ -4,7 +4,7 @@ export const navMenuConfig: NavMenuConfig = {
   links: [
     {
       title: "Accelerate",
-      href: "/blog",
+      href: "/",
       description: "Example description",
       image: "/images/examples/image.jpg",
     },
@@ -21,7 +21,7 @@ export const navMenuConfig: NavMenuConfig = {
         // },
         {
           title: "Research",
-          href: "/releases",
+          href: "/research",
           description: "A reproduction of Starlog template with Tailwind CSS.",
           image: "/images/examples/changelog.jpg",
         },

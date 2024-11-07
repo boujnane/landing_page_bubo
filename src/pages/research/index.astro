@@ -5,43 +5,47 @@ import MainLayout from "@/layouts/main-layout.astro";
 import { formatDate } from "@/lib/utils";
 import { getCollection } from "astro:content";
 
-const posts = await getCollection("releases");
-posts.sort((a, b) => +b.data.date - +a.data.date);
+const projects = await getCollection("research");
+projects.sort((a, b) => +b.data.date - +a.data.date);
 ---
 
-<MainLayout title="Changelog">
+<MainLayout title="Recherche et Développement">
   <section class="container max-w-screen-lg space-y-6 pt-12">
     <PageHeader
-      heading="Research"
-      text="Reproduce Astro Starlog template with Tailwind CSS & shadcn/ui."
+      heading="Nos Projets R&D"
+      text="Découvrez nos initiatives en matière de recherche et développement, visant à innover et améliorer les solutions d’IA de Bubo."
     />
 
     <ul class="pt-6">
       {
-        posts.map((post) => (
+        projects.map((project) => (
           <li class="flex flex-col max-md:gap-y-4 md:flex-row w-full">
             <div class="md:basis-32 lg:basis-56 shrink-0 grow-0">
               <div class="md:sticky md:top-24 w-auto mr-6">
                 <a
-                  href={`/releases/${post.slug}`}
+                  href={`/research/${project.slug}`}
                   class="flex flex-col gap-y-2 pb-4"
                 >
                   <Badge
                     variant="default"
                     radius="lg"
-                    className="w-14 h-7 justify-center text-md bg_release_version text-white"
+                    className="w-14 h-7 justify-center text-md bg-bubo-primary text-white"
                   >
-                    {post.data.versionNumber}
+                    {project.data.projectCode}
                   </Badge>
                   <span class="text-sm text-muted-foreground">
-                    {formatDate(post.data.date)}
+                    {formatDate(project.data.date)}
                   </span>
                 </a>
               </div>
             </div>
 
             <div class="prose dark:prose-invert prose-img:rounded-3xl max-w-none w-full pb-24">
-              {post.render().then(({ Content }) => (
+              <h3 class="text-xl font-semibold">{project.data.title}</h3>
+              <p class="text-muted-foreground text-base">
+                {project.data.description}
+              </p>
+              {project.render().then(({ Content }) => (
                 <Content />
               ))}
             </div>

@@ -7,22 +7,21 @@ import { buttonVariants } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
-  const releases = await getCollection("releases");
+  const research = await getCollection("research");
 
-  return releases.map((release) => ({
-    params: { slug: release.slug },
-    props: { release },
+  return research.map((item) => ({
+    params: { slug: item.slug },
+    props: { research: item },
   }));
 }
 
-const { release } = Astro.props;
-const { Content } = await release.render();
+const { research } = Astro.props;
+const { Content } = await research.render();
 ---
 
-<MainLayout title={release.data.title}>
+<MainLayout title={research.data.title}>
   <section class="container max-w-screen-lg pt-12">
-    <div
-      class="flex flex-col max-md:gap-y-4 md:flex-row w-full">
+    <div class="flex flex-col max-md:gap-y-4 md:flex-row w-full">
       <div class="md:basis-32 lg:basis-56 shrink-0 grow-0">
         <div class="flex md:sticky md:top-24 w-auto mr-6">
           <div class="flex flex-col gap-y-2 pb-4">
@@ -42,18 +41,16 @@ const { Content } = await release.render();
               radius="lg"
               className="w-14 h-7 justify-center text-md bg_release_version text-white"
             >
-              {release.data.versionNumber}
+              {research.data.projectCode}
             </Badge>
             <span class="text-sm text-muted-foreground">
-              {formatDate(release.data.date)}
+              {formatDate(research.data.date)}
             </span>
           </div>
         </div>
       </div>
 
-      <div
-        class="prose dark:prose-invert prose-img:rounded-3xl max-w-none w-full pb-24"
-      >
+      <div class="prose dark:prose-invert prose-img:rounded-3xl max-w-none w-full pb-24">
         <Content />
       </div>
     </div>

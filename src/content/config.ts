@@ -62,4 +62,19 @@ const releases = defineCollection({
     }),
 });
 
-export const collections = { blog, docs, guides, releases };
+const research = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      projectCode: z.string(),
+      image: z.object({
+        src: image(),
+        alt: z.string(),
+      }),
+      date: z.date({ coerce: true }),
+      versionNumber: z.string(),  // Added versionNumber
+    }),
+});
+
+export const collections = { blog, docs, guides, releases, research };

@@ -1,21 +1,29 @@
 ---
-import ExampleGrid from "@/components/example-grid.astro";
-import PageHeader from "@/components/page-header.astro";
-import BentoGrid from "@/components/sections/bentogrid.astro";
 import Features from "@/components/sections/features.astro";
-import HeaderSection from "@/components/sections/header-section.astro";
 import HeroLanding from "@/components/sections/hero-landing.astro";
 import InfoLanding from "@/components/sections/info-landing.astro";
 import Testimonials from "@/components/sections/testimonials.astro";
 import { infos } from "@/config/landing";
-import { navMenuConfig } from "@/config/nav-menu";
+import BlogHeader from "@/components/blog-header.astro";
+import BlogCard from "@/components/cards/blog-card.astro";
 import MainLayout from "@/layouts/main-layout.astro";
+import { getPosts } from "@/lib/fetchers";
+import Timeline from "@/components/Timeline.astro";
+import HeaderSection from "@/components/sections/header-section.astro";
 
-// const examples = navMenuConfig.examplesNav[0].items;
-// const pages = navMenuConfig.pagesNav[0].items;
+const posts = await getPosts();
+
+const events = [
+  { date: "2017-01-01", title: "Creation of the company", description: "Celebrating the start of the adventure." },
+  { date: "2020-02-14", title: "First Huge Contract", description: "A day to celebrate love and affection." },
+  { date: "2021-03-17", title: "CIR/CII approval", description: "Celebrating Irish culture and heritage." },
+  { date: "2022-10-31", title: "Extend to Cameroon", description: "A day for costumes and treats." },
+  { date: "2023-12-25", title: "First prize - Bâtisseurs Africains", description: "Celebrating the birth of Jesus Christ." },
+  // Add more events as needed
+];
 ---
 
-<MainLayout title="">
+<MainLayout title="Static Blog">
   <HeroLanding />
   <HeaderSection
   label="Products"
@@ -26,9 +34,20 @@ import MainLayout from "@/layouts/main-layout.astro";
   <InfoLanding data={infos[1]} />
   <InfoLanding data={infos[2]} reverse={true} />
   <Features />
+  <section class="container py-10">
+      <HeaderSection
+        label="Timeline"
+        title="Discover our history."
+        subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur."
+      />
+    <Timeline events={events} />
+    
+    <BlogHeader title="Accelerate" />
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8">
+      {posts.map((post) => <BlogCard {...post} />)}
+    </div>
+
+  </section>
   <Testimonials />
-  <!-- <BentoGrid /> -->
-  <!-- <ExampleGrid title="Pages" items={pages} />
-  <ExampleGrid title="Examples Apps" items={examples} />
-     -->
 </MainLayout>
