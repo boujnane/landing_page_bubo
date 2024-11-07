@@ -14,7 +14,7 @@ export const people = [
     {
       name: "Ady BOUJNANE",
       title: "COO",
-      image: "/images/team/ady.jpeg",
+      image: "/images/team/ady_boujnane.png",
       description: "Software development engineer. He oversees day-to-day operations and implements strategy to keep the company running smoothly."
     },
     {
@@ -24,27 +24,27 @@ export const people = [
       description: "PhD is an expert in software architecture and design, specializing in platforms integrating artificial intelligence."
     },
     {
+      name: "Marc SITZE",
+      title: "Frontend Developer",
+      image: "/images/team/Marc_sitze.png",
+      description: "Marc is responsible for building interactive user interfaces and ensuring a seamless experience on the web."
+    },
+    {
       name: "Dan Ngimdock ZEMFACK",
-      title: "Frontend Developper",
+      title: "Frontend Developer",
       image: "/images/team/profile-dan.png",
-      description: "Charlie ensures smooth deployment processes and system reliability."
+      description: "Dan works on front-end development, focusing on building user-centric designs and improving web performance."
     },
     {
-      name: "Daisy Green",
-      title: "Content Strategist",
-      image: "/images/team/jf.png",
-      description: "Daisy creates engaging content strategies to connect with our audience."
+      name: "Edmond MAKOLLE",
+      title: "Backend Developer",
+      image: "/images/team/edmond_makolle.jpeg",
+      description: "Edmond specializes in backend development, handling the server-side logic and database management to ensure smooth system functionality."
     },
     {
-      name: "Eve Blue",
-      title: "Marketing Specialist",
-      image: "/images/team/jf.png",
-      description: "Eve develops marketing campaigns to promote our products."
-    },
-    {
-      name: "Frank Black",
+      name: "Frank BLACK",
       title: "Customer Support",
-      image: "/images/team/jf.png",
-      description: "Frank is dedicated to providing excellent customer service."
+      image: "/images/team/jf_lunettes.png",
+      description: "Frank is dedicated to providing excellent customer service, helping users resolve issues and ensuring customer satisfaction."
     },
   ];

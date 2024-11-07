@@ -1,32 +1,32 @@
 export const partners = [
     {
-      name: "Partner One",
-      logo: "/icons/atradius.svg",
+      name: "Atradius",
+      logo: "/images/partners/atradius.svg",
       description: "Partner One specializes in innovative solutions for businesses."
     },
     {
-      name: "Partner Two",
-      logo: "/path/to/partner_two_logo.png",
+      name: "Descartes & Mauss",
+      logo: "/images/partners/D_M.png",
       description: "Partner Two provides cutting-edge technology services."
     },
     {
-      name: "Partner Three",
-      logo: "/path/to/partner_three_logo.png",
+      name: "Ets IzySoft",
+      logo: "/images/partners/etsizysoft_logo_dark.png",
       description: "Partner Three is known for exceptional customer service."
     },
     {
-      name: "Partner Four",
-      logo: "/path/to/partner_four_logo.png",
+      name: "Gioa",
+      logo: "/images/partners/gioza_logo.png",
       description: "Partner Four focuses on sustainability and environmental solutions."
     },
     {
-      name: "Partner Five",
-      logo: "/path/to/partner_five_logo.png",
+      name: "Sweez",
+      logo: "/images/partners/sweez_logo.png",
       description: "Partner Five offers expertise in AI and data analytics."
     },
     {
-      name: "Partner Six",
-      logo: "/path/to/partner_six_logo.png",
+      name: "Yxir",
+      logo: "/images/partners/yxir.png",
       description: "Partner Six is a leader in digital marketing strategies."
     },
     {

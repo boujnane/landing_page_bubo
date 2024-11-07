@@ -1,6 +1,111 @@
 ---
 import MainLayout from "@/layouts/main-layout.astro";
-import Features from "@/components/sections/features.astro";
+import InfoLanding from "@/components/sections/info-landing.astro";
+import { infos } from "@/config/landing";
+import { AnimesTabs } from "@/components/animes-tabs";
+
+const data = {
+  trending: [
+    {
+      id: 1,
+      title: { userPreferred: "Attack on Titan: Final Season" },
+      coverImage: {
+        extraLarge: "https://example.com/aot-cover.jpg",
+        large: "https://example.com/aot-cover-small.jpg"
+      },
+      isAdult: false,
+    },
+    {
+      id: 2,
+      title: { userPreferred: "Demon Slayer: Kimetsu no Yaiba" },
+      coverImage: {
+        extraLarge: "https://example.com/demon-slayer-cover.jpg",
+        large: "https://example.com/demon-slayer-cover-small.jpg"
+      },
+      isAdult: false,
+    }
+  ],
+  upcomingSeason: [
+    {
+      id: 3,
+      title: { userPreferred: "Jujutsu Kaisen 2nd Season" },
+      coverImage: {
+        extraLarge: "https://example.com/jujutsu-kaisen-cover.jpg",
+        large: "https://example.com/jujutsu-kaisen-cover-small.jpg"
+      },
+      isAdult: false,
+    },
+    {
+      id: 4,
+      title: { userPreferred: "Tokyo Revengers: Christmas Showdown" },
+      coverImage: {
+        extraLarge: "https://example.com/tokyo-revengers-cover.jpg",
+        large: "https://example.com/tokyo-revengers-cover-small.jpg"
+      },
+      isAdult: false,
+    }
+  ],
+  latestAiring: [
+    {
+      id: 5,
+      episode: 15,
+      airingAt: 1686307200,  // Unix timestamp for airing time
+      media: {
+        id: 5,
+        title: { userPreferred: "One Piece" },
+        coverImage: {
+          extraLarge: "https://example.com/one-piece-cover.jpg",
+          large: "https://example.com/one-piece-cover-small.jpg"
+        },
+        isAdult: false,
+      },
+    },
+    {
+      id: 6,
+      episode: 8,
+      airingAt: 1686393600,  // Unix timestamp for airing time
+      media: {
+        id: 6,
+        title: { userPreferred: "My Hero Academia" },
+        coverImage: {
+          extraLarge: "https://example.com/my-hero-academia-cover.jpg",
+          large: "https://example.com/my-hero-academia-cover-small.jpg"
+        },
+        isAdult: false,
+      },
+    }
+  ],
+  futureAiring: [
+    {
+      id: 7,
+      episode: 1,
+      airingAt: 1700000000,  // Unix timestamp for future airing
+      media: {
+        id: 7,
+        title: { userPreferred: "Chainsaw Man" },
+        coverImage: {
+          extraLarge: "https://example.com/chainsaw-man-cover.jpg",
+          large: "https://example.com/chainsaw-man-cover-small.jpg"
+        },
+        isAdult: false,
+      },
+    },
+    {
+      id: 8,
+      episode: 1,
+      airingAt: 1701000000,  // Unix timestamp for future airing
+      media: {
+        id: 8,
+        title: { userPreferred: "Spy x Family" },
+        coverImage: {
+          extraLarge: "https://example.com/spy-family-cover.jpg",
+          large: "https://example.com/spy-family-cover-small.jpg"
+        },
+        isAdult: false,
+      },
+    }
+  ]
+};
 
 ---
 
@@ -13,8 +118,11 @@ import Features from "@/components/sections/features.astro";
   <div
     class="px-4 py-5 sm:p-6 bg-background border rounded-xl overflow-hidden -mt-36"
   >
-            <section class="container py-10">
-                <Features />
+            <section class="container py-10 mt-20">
+              <AnimesTabs animes={data} client:load />
+              <InfoLanding data={infos[0]} reverse={true} />
+              <InfoLanding data={infos[1]} />
+              <InfoLanding data={infos[2]} reverse={true} />
             </section>
   </div>
 

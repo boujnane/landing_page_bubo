@@ -26,7 +26,7 @@ interface TabsTriggerProps {
 const tabTriggers: TabsTriggerProps[] = [
   {
     value: "latestAiring",
-    label: "In Last 24 Hours",
+    label: "Product IA",
     icon: "tv",
   },
   {
@@ -35,7 +35,7 @@ const tabTriggers: TabsTriggerProps[] = [
     icon: "clock",
   },
   { value: "trending", label: "Trending", icon: "flame" },
-  { value: "upcomingSeason", label: "Upcoming Season", icon: "calendar" },
+  { value: "upcomingSeason", label: "Research & Development", icon: "calendar" },
 ];
 
 export function AnimesTabs({ animes }: AnimesTabsProps) {

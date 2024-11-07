@@ -123,7 +123,7 @@ export const features = [
 
 export const testimonials = [
   {
-    name: "Karim Diop",
+    name: "Karim Bougherfa",
     job: "Développeur Full Stack",
     image: "https://randomuser.me/api/portraits/men/31.jpg",
     review:
