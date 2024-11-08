@@ -19,19 +19,49 @@ const events = [
 ---
 
 <MainLayout title="Static Blog">
-  <section class="container py-10">
-      <HeaderSection
-        label="Timeline"
-        title="Discover our history."
-        subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur."
-      />
-    <Timeline events={events} />
-    
-    <BlogHeader title="Accelerate" />
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8">
-      {posts.map((post) => <BlogCard {...post} />)}
+  <section class="container py-16">
+    <!-- Main Text Section -->
+    <div class="text-center mb-12 md:mb-20 px-4">
+      <h2 class="text-4xl font-semibold mb-6">
+        𝙱𝚞𝚋𝚘 𝚋𝚞𝚋𝚘 (owl)
+      </h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.
+      </p>
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        At Bubo, we believe in the power of software and the potential of digital to transform everyday life, 
+        not as a barrier, but as an ally. Our mission is to design digital solutions that simplify life and open up new perspectives. 
+        Useful, intuitive tools that facilitate access to information and empower those who use them.
+      </p>
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        Research and a rigorous scientific approach are the foundation of our project: we are convinced that well-directed 
+        artificial intelligence is a vector of acceleration and opportunity. We are working to ensure that everyone can make this 
+        technology their own, because its future must be deeply aligned with the real needs of the men and women who will drive it forward. 
+        We are proud of our CIR accreditation from Ministère de l'Enseignement Supérieur et de la Recherche, which strengthens our position in this crucial area.
+      </p>
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        Our project also carries with it a strong commitment to Africa. This continent, so close to our hearts, harbors immense potential 
+        that we want to help reveal. Cameroon, a land of growth and opportunity, is for us an anchor point, a place where we invest to build the future.
+      </p>
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        Bubo is much more than a company; it's a vision of a future where digital and human move forward hand in hand, 
+        where every innovation is rooted in the values of simplicity, progress and responsibility.
+      </p>
     </div>
 
+    <!-- Timeline Section -->
+    <HeaderSection
+      label="Timeline"
+      title="Discover our history."
+      subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur."
+    />
+    <Timeline events={events} />
+    
+    <!-- Blog Section -->
+    <BlogHeader title="Accelerate" />
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
+      {posts.map((post) => <BlogCard {...post} />)}
+    </div>
   </section>
 </MainLayout>

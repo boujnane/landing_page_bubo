@@ -2,22 +2,22 @@ export const partners = [
     {
       name: "Atradius",
       logo: "/images/partners/atradius.svg",
-      description: "Partner One specializes in innovative solutions for businesses."
+      description: "Atradius Group offers credit insurance, collection and bonding solutions worldwide, with a presence in over 50 countries. Its solutions protect companies against non-payment. Atradius is one of the world's leading credit insurers."
     },
     {
       name: "Descartes & Mauss",
       logo: "/images/partners/D_M.png",
-      description: "Partner Two provides cutting-edge technology services."
+      description: "Descartes & Mauss is deploying the first AI-powered SaaS Platform automating the Strategic Planning process."
     },
     {
       name: "Ets IzySoft",
       logo: "/images/partners/etsizysoft_logo_dark.png",
-      description: "Partner Three is known for exceptional customer service."
+      description: "Izytech Group est notre partenaire local de premier plan implanté en Afrique, au Cameroun. Nous travaillons en étroite collaboration sur divers projets autour du developement informatique."
     },
     {
-      name: "Gioa",
+      name: "Gioza",
       logo: "/images/partners/gioza_logo.png",
-      description: "Partner Four focuses on sustainability and environmental solutions."
+      description: "Gioza is building the first sensorless Energy Management System (EMS) to reduce industrial energy bills by up to 20%."
     },
     {
       name: "Sweez",
@@ -27,16 +27,16 @@ export const partners = [
     {
       name: "Yxir",
       logo: "/images/partners/yxir.png",
-      description: "Partner Six is a leader in digital marketing strategies."
+      description: "Yxir is a SaaS solution that helps manufacturers control quality costs (non-compliances records, complaints, corrective/curative actions, etc.). It helps identify weak signals, refine cause analyses and make faster decisions based on historical data. "
     },
     {
       name: "Partner Seven",
       logo: "/path/to/partner_seven_logo.png",
-      description: "Partner Seven provides comprehensive consulting services."
+      description: "The Ministry of Higher Education and Research prepares and implements the French government's policy on universal access to knowledge and the development of higher education and research."
     },
     {
       name: "Partner Eight",
       logo: "/path/to/partner_eight_logo.png",
-      description: "Partner Eight specializes in software development."
+      description: "Eneo Cameroon is the main electricity operator in Cameroon, in charge of production, distribution and sale of electrical energy in Cameroon."
     },
   ];

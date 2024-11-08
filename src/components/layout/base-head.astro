@@ -14,7 +14,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
   title,
   description = siteConfig.description,
-  image = "/og.jpg",
+  image = "/bubo_logo.png",
 } = Astro.props;
 ---
 
@@ -37,8 +37,8 @@ const {
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
-<title>{title ? `${title} | Astronomy` : "Astronomy"}</title>
-<meta name="title" content={title ? `${title} | Astronomy` : "Astronomy"} />
+<title>{title ? `${title} | Bubo` : "Bubo"}</title>
+<meta name="title" content={title ? `${title} | Bubo` : "Bubo"} />
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->

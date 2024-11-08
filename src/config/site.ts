@@ -3,41 +3,41 @@ import type { SidebarNavItem, SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "Bubo Company",
   description:
-    "An modern example app built using Astro v4 & shadcn/ui. Inspired by shadcn/taxonomy.",
+    "Bubo's Landing page",
   url: "https://astro-nomy.vercel.app",
-  ogImage: "https://astro-nomy.vercel.app/og.jpg",
+  ogImage: "",
   links: {
-    twitter: "https://twitter.com/miickasmt",
-    github: "https://github.com/boujnane/",
+    twitter: "https://twitter.com/",
+    github: "https://github.com/",
   },
 };
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Company",
+    title: "Explore",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Partners", href: "#" },
-      { title: "Jobs", href: "#" },
+      { title: "Accelerate", href: "/" },
+      { title: "Research", href: "/research" },
+      { title: "Product", href: "/waitlist" },
+      { title: "Advice", href: "/advice" },
+      { title: "Tailormade", href: "/newsletter" },
     ],
   },
   {
-    title: "Product",
+    title: "About Us",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "People", href: "/about" },
+      { title: "Values", href: "/values" },
+      { title: "Partner", href: "/partner" },
     ],
   },
   {
-    title: "Docs",
+    title: "Resources",
     items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
+      { title: "Documentation", href: "/docs" },
+      { title: "Changelog", href: "/changelog" },
+      { title: "Security", href: "/security" },
+      { title: "Customization", href: "/customization" },
     ],
   },
 ];

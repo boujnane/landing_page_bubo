@@ -4,7 +4,7 @@ export const navMenuConfig: NavMenuConfig = {
   links: [
     {
       title: "Accelerate",
-      href: "/",
+      href: "/blog",
       description: "Example description",
       image: "/images/examples/image.jpg",
     },

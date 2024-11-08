@@ -19,7 +19,7 @@ export const people = [
     },
     {
       name: "Armel FOTSOH",
-      title: "Lead Engineer",
+      title: "Head of Engineering",
       image: "/images/team/armel.jpeg",
       description: "PhD is an expert in software architecture and design, specializing in platforms integrating artificial intelligence."
     },
