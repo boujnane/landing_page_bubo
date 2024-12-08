@@ -23,77 +23,80 @@ const { events } = Astro.props;
 .timeline {
   position: relative;
   padding: 20px 0;
-  max-width: 1200px; /* Adjust the max-width to suit your layout */
-  margin: 0 auto; /* Center the timeline */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .timeline-line {
   position: absolute;
-  left: 50%; /* Center the line */
-  top: 0; /* Start from the top */
-  bottom: 0; /* Extend to the bottom */
-  width: 4px; /* Thickness of the line */
-  background-color: orange; /* Color of the line */
-  transform: translateX(-50%); /* Center the line */
+  left: 50%; 
+  top: 10%; 
+  bottom: 0; 
+  width: 4px; 
+  background-color: orange; 
+  transform: translateX(-50%); 
 }
 
 .timeline-item {
-  margin: 60px 0; /* Increased margin for better spacing */
+  margin: 60px 0; 
   position: relative;
-  display: flex; /* Use flexbox for alignment */
-  align-items: flex-start; /* Align items to the start */
+  display: flex; 
+  align-items: flex-start; 
 }
 
 .timeline-item.left {
-  flex-direction: row; /* Items on the left side */
+  flex-direction: row; 
 }
 
 .timeline-item.right {
-  flex-direction: row-reverse; /* Items on the right side */
+  flex-direction: row-reverse; 
 }
 
 .timeline-date-wrapper {
   display: flex;
-  flex-direction: column; /* Stack date and dot */
-  align-items: center; /* Center items */
+  flex-direction: column; 
+  align-items: center; 
   position: relative;
-  margin: 0 20px; /* Adjusted margin for better spacing */
+  margin: 0 20px; 
 }
 
 .timeline-date {
   font-weight: bold;
-  font-size: 1.2rem; /* Increased font size */
-  color: #4a4a4a; /* Darker color for better readability */
-  padding: 5px 0; /* Added padding for better spacing */
+  font-size: 1.2rem; 
+  color: #4a4a4a; 
+  padding: 5px 0; 
 }
 
 .timeline-dot {
-  width: 12px; /* Increased size of the dot */
-  height: 12px; /* Increased size of the dot */
-  background-color: orange; /* Dot color */
-  border-radius: 50%; /* Make it circular */
+  width: 12px; 
+  height: 12px; 
+  background-color: orange; 
+  border-radius: 50%; 
   position: absolute;
-  top: 80%; /* Adjusted position for better alignment */
-  left: calc(50% - 6px); /* Center the dot */
-  transform: translateX(-50%); /* Center the dot */
+  top: 80%; 
+  left: calc(50% - 6px); 
+  transform: translateX(-50%); 
 }
 
 .timeline-content {
-  padding-left: 50px; /* Increased padding for left-side items */
-  padding-right: 50px; /* Increased padding for right-side items */
-  transition: transform 0.2s ease; /* Added transition for hover effect */
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: transform 0.2s ease;
+  max-width: 35%;
 }
 
 .timeline-title {
-  font-size: 1.5rem; /* Increased title font size */
+  font-size: 1.5rem;
 }
 
 .timeline-description {
-  font-size: 1rem; /* Standard description font size */
-  color: #6b7280; /* Lighter color for description */
+  font-size: 1rem;
+  color: #6b7280;
+  word-wrap: break-word; /* Pour le wrap du texte */
+  overflow-wrap: break-word; /* Compatibilité avec les navigateurs modernes */
 }
 
 .timeline-item:hover .timeline-content {
-  transform: scale(1.02); /* Scale effect on hover for better interactivity */
+  transform: scale(1.02); 
 }
 </style>

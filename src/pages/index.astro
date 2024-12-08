@@ -11,29 +11,29 @@ import { getPosts } from "@/lib/fetchers";
 import Timeline from "@/components/Timeline.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
 
-const posts = await getPosts();
+// const posts = await getPosts();
 
-const events = [
-  { date: "2017-01-01", title: "Company Founded", description: "Marking the start of an exciting journey." },
-  { date: "2020-02-14", title: "First Major Contract", description: "A milestone achievement" },
-  { date: "2021-03-17", title: "CIR/CII Approval", description: "Recognition of our commitment to research." },
-  { date: "2022-10-31", title: "Expansion to Cameroon", description: "Celebrating the internationalization." },
-  { date: "2023-12-25", title: "Award - 'Bâtisseurs Africains'", description: "Honored as a leading innovator in Africa." },
-  // Add more events as needed
-];
+// const events = [
+//   { date: "2017-01-01", title: "Company Founded", description: "Marking the start of an exciting journey." },
+//   { date: "2020-02-14", title: "First Major Contract", description: "A milestone achievement" },
+//   { date: "2021-03-17", title: "CIR/CII Approval", description: "Recognition of our commitment to research." },
+//   { date: "2022-10-31", title: "Expansion to Cameroon", description: "Celebrating the internationalization." },
+//   { date: "2023-12-25", title: "Award - 'Bâtisseurs Africains'", description: "Honored as a leading innovator in Africa." },
+//   // Add more events as needed
+// ];
 ---
 
 <MainLayout title="Bubo">
   <HeroLanding />
+  <Features />
   <HeaderSection
   label="Products"
   title="Discover all products."
-  subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur."
+  subtitle="Products that will improve the way your employees work, day after day"
   />
   <InfoLanding data={infos[0]} reverse={true} />
   <InfoLanding data={infos[1]} />
   <InfoLanding data={infos[2]} reverse={true} />
-  <Features />
   <!-- <section class="container py-10">
       <HeaderSection
         label="Timeline"

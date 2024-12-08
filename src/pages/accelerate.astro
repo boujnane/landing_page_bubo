@@ -1,13 +1,62 @@
 ---
 // import BlogCard from "@/components/cards/blog-card.astro";
+import BlogHeader from "@/components/blog-header.astro";
+import BlogCard from "@/components/cards/blog-card.astro";
+import HeaderSection from "@/components/sections/header-section.astro";
+import Timeline from "@/components/Timeline.astro";
 import { navMenuConfig } from "@/config/nav-menu";
 import MainLayout from "@/layouts/main-layout.astro";
+import { getPosts } from "@/lib/fetchers";
 
 const examples = navMenuConfig.examplesNav[0].items;
+const posts = await getPosts();
 
+const events = [
+{ date: "2017-01-01", title: "Creation of the company", description: "The beginning of our journey." },
+{ date: "2020-02-14", title: "First Huge Contract", description: "Securing our first major partnership." },
+{ date: "2021-03-17", title: "CIR/CII approval", description: "Achieving CIR/CII accreditation for research and innovation." },
+{ date: "2022-10-31", title: "Expand to Cameroon", description: "Expanding operations to Cameroon, embracing new opportunities." },
+{ date: "2023-12-25", title: "First prize - Bâtisseurs Africains", description: "Winning the Bâtisseurs Africains award, a recognition of our impact." },
+{ date: "2024-11-09", title: "Participation in JNDA", description: "Participating in the Journée Nationale de la Diaspora Africaine as an exhibitor." }
+  // Add more events as needed
+];
 ---
 
 <MainLayout title="About" description="Lorem ipsum dolor sit amet">
+    <section class="container py-16">
+        <!-- Main Text Section -->
+        <div class="text-center mb-12 md:mb-20 px-4">
+            <h2 class="text-4xl font-semibold mb-6">
+              𝙱𝚞𝚋𝚘 𝚋𝚞𝚋𝚘 (owl)
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-justify">
+              <em>The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.</em>
+            </p>
+            
+            <ul class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed list-disc pl-8 text-justify">
+              <li><strong>At <span class="font-semibold">Bubo</span></strong>, we believe in the power of software and the potential of digital to transform everyday life, <strong>not as a barrier, but as an ally</strong>. Our mission is to design digital solutions that simplify life and open up new perspectives. Useful, intuitive tools that facilitate access to information and empower those who use them.</li>
+            </br>
+              <li><strong><span class="font-semibold">Research</span></strong> and a rigorous scientific approach are the foundation of our project: we are convinced that well-directed artificial intelligence is a vector of acceleration and opportunity. We are working to ensure that everyone can make this technology their own, because its future must be deeply aligned with the real needs of the men and women who will drive it forward. We are proud of our <strong>CIR accreditation from Ministère de l'Enseignement Supérieur et de la Recherche</strong>, which strengthens our position in this crucial area.</li>
+            </br>
+              <li><strong>Our project</strong> also carries with it a <strong>strong commitment to Africa</strong>. This continent, so close to our hearts, harbors immense potential that we want to help reveal. <strong>Cameroon</strong>, a land of growth and opportunity, is for us an anchor point, a place where we invest to build the future.</li>
+            </ul>
+          
+            <blockquote class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed italic border-l-4 pl-4 border-orange-500 text-justify">
+              Bubo is much more than a company; it's a vision of a future where digital and human move forward hand in hand, 
+              where <strong>every innovation is rooted in the values of simplicity, progress and responsibility</strong>.
+            </blockquote>
+          </div>
+          
+        
+    
+        <!-- Timeline Section -->
+        <HeaderSection
+          label="Timeline"
+          title="Discover our history."
+          subtitle="Some key milestones in the Bubo's history."
+        />
+        <Timeline events={events} />
+      </section>
 </MainLayout>
 
 

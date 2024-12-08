@@ -4,14 +4,20 @@ export const navMenuConfig: NavMenuConfig = {
   links: [
     {
       title: "Accelerate",
-      href: "/blog",
+      href: "/accelerate",
       description: "Example description",
       image: "/images/examples/image.jpg",
     },
+    {
+      title: "Research",
+      href: "/research",
+      description: "A reproduction of Starlog template with Tailwind CSS.",
+      image: "/images/examples/changelog.jpg",
+    }
   ],
   pagesNav: [
     {
-      title: "Menu",
+      title: "Explore",
       items: [
         // {
         //   title: "Landing",
@@ -20,16 +26,16 @@ export const navMenuConfig: NavMenuConfig = {
         //   image: "/images/examples/landing.jpg",
         // },
         {
-          title: "Research",
-          href: "/research",
-          description: "A reproduction of Starlog template with Tailwind CSS.",
-          image: "/images/examples/changelog.jpg",
+          title: "Data & AI consulting",
+          href: "/data&AIconsulting",
+          description: "We help you on your data & AI projects",
+          image: "/images/examples/about.jpg",
         },
         {
-          title: "Product",
-          href: "/waitlist",
+          title: "Products",
+          href: "/products",
           description:
-            "A waitlist form using Astro DB, React Hook Form & Sonner. Static page.",
+            "We build useful products",
           image: "/images/examples/waitlist.jpg",
           forceReload: true,
         },
@@ -40,16 +46,10 @@ export const navMenuConfig: NavMenuConfig = {
         //   image: "/images/examples/pricing.jpg",
         // },
         {
-          title: "Advice",
-          href: "/advice",
-          description: "A simple page with a masonry gallery and little text.",
-          image: "/images/examples/about.jpg",
-        },
-        {
-          title: "Tailormade",
-          href: "/newsletter",
+          title: "Tailor-made Software",
+          href: "/requestaquote",
           description:
-            "A newsletter form using Astro DB & Simple Stack Form. Counter display!",
+            "Your needs, our work",
           image: "/images/examples/newsletter.jpg",
         },
       ],
