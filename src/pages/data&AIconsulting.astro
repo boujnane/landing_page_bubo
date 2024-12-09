@@ -2,16 +2,92 @@
 // import BlogCard from "@/components/cards/blog-card.astro";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
-import { navMenuConfig } from "@/config/nav-menu";
+import HeaderSection from "@/components/sections/header-section.astro";
 import MainLayout from "@/layouts/main-layout.astro";
 import { getPosts } from "@/lib/fetchers";
+import { Icon } from "astro-icon/components";
 
 const posts = await getPosts();
+
 ---
 
-<MainLayout title="About" description="Lorem ipsum dolor sit amet">
+<MainLayout title="Data & AI consulting" description="Data & AI consulting section">
     <section class="container py-16">
         <!-- Blog Section -->
+        <HeaderSection
+        label="Data & AI consulting"
+        title="Our process"
+        subtitle="Bringing our customers' ideas & projects to life"
+        />
+        <section>
+            <div class="py-32">
+              <div class="container max-w-7xl">
+                <div class="relative">
+                  <div class="relative z-10 grid grid-cols-6 gap-6">
+                    {/* Étape 1 : Collecte des données */}
+                    <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
+                      <Icon name="lucide:database" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Collecte des données
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground">
+                        Rassembler les données provenant de différentes sources.
+                      </p>
+                    </div>
+          
+                    {/* Étape 2 : Nettoyage des données */}
+                    <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
+                      <Icon name="lucide:brush" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Nettoyage des données
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground">
+                        Préparer et structurer les données pour l'analyse.
+                      </p>
+                    </div>
+          
+                    {/* Étape 3 : Modélisation */}
+                    <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
+                      <Icon name="lucide:trending-up" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Modélisation
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground">
+                        Construire des modèles analytiques ou prédictifs.
+                      </p>
+                    </div>
+          
+                    {/* Étape 4 : Entraînement (avec grille interne) */}
+                    <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
+                        <Icon name="lucide:activity" class="size-10 text-[#fe8301]" />
+                        <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                            Entraînement
+                        </h2>
+                        <p class="mt-4 text-center text-muted-foreground max-w-md">
+                            Former les modèles sur les données pour maximiser la précision.
+                        </p>
+                    </div>
+        
+                    {/* Étape 5 : Déploiement (avec grille interne) */}
+                    <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
+                        <Icon name="lucide:rocket" class="size-10 text-[#fe8301]" />
+                        <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                            Déploiement
+                        </h2>
+                        <p class="mt-4 text-center text-muted-foreground max-w-md">
+                            Mettre le modèle en production pour générer des insights.
+                        </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          
+
         <BlogHeader title="Accelerate" />
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">

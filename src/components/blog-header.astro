@@ -29,7 +29,7 @@ const { category } = Astro.params;
       <ul class="flex snap-x snap-mandatory overflow-auto items-center space-x-2 lg:space-x-2.5 pb-2">
         <li class="flex-shrink-0 snap-start">
           <a
-            href={`/blog`}
+            href={`/data&AIconsulting`}
             class={cn(
               !category ? "select-none" : "",
               buttonVariants({
@@ -43,7 +43,7 @@ const { category } = Astro.params;
         {categories.map((item) => (
           <li class="flex-shrink-0 snap-start">
             <a
-              href={`/blog/category/${item}`}
+              href={`/data&AIconsulting/category/${item}`}
               class={cn(
                 "capitalize",
                 item === category ? "select-none" : "",

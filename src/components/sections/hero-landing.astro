@@ -4,7 +4,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
 import { siteConfig } from "@/config/site";
 ---
-
 <section class="space-y-6 py-12 sm:py-20 lg:py-20">
   <div class="container flex max-w-5xl flex-col items-center gap-5 text-center">
     <h1 class="text-balance font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[66px]">
@@ -18,37 +17,34 @@ import { siteConfig } from "@/config/site";
       We offer :
     </p>
 
-    <!-- Remplacement de la liste par des divs et p -->
     <div class="max-w-2xl space-y-3 text-muted-foreground sm:text-xl sm:leading-8">
-      <div class="bullet-item">
-        <p>
-          <div class="inline-flex items-center">
-            <div class="be_blur">State-of-the-art</div>
-            <strong class="zoom-effect">Data & AI consulting</strong>
-          </div>
-        </p>
-      </div>
-      <div class="bullet-item">
-        <p>
-          <div class="inline-flex items-center">
-            <strong class="zoom-effect">Tailor-made</strong>
-            <div class="be_blur">software development</div>
-          </div>
-        </p>
-      </div>
-      <div class="bullet-item">
-        <p>
-          <div class="inline-flex items-center">
-            <div class="be_blur">Innovative and useful</div>
-            <strong class="zoom-effect">products</strong>
-            <div class="be_blur">to help your project take flight.</div>
-          </div>
-        </p>
+      <div class="bullet-container">
+        <ul class="bullet-list">
+          <li class="bullet-item">
+            <p class="text-justify text-left">
+              <span class="be_blur first_word">State-of-the-art</span>
+              <span class="zoom-effect">Data & AI consulting</span>
+            </p>
+          </li>
+          <li class="bullet-item">
+            <p class="text-justify text-left">
+              <span class="zoom-effect">Tailor-made</span>
+              <span class="be_blur">software development</span>
+            </p>
+          </li>
+          <li class="bullet-item">
+            <p class="text-justify text-left">
+              <span class="be_blur">Innovative and useful</span>
+              <span class="zoom-effect">products</span>
+              <span class="be_blur">to help your project take flight.</span>
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="flex justify-center space-x-2 md:space-x-4">
-      <a href="/requestaquote" class={cn(buttonVariants({ size: "lg", rounded: "full" }), "gap-2")}>
+      <a href="https://calendly.com/contact-0wi6/30min?month=2024-12" class={cn(buttonVariants({ size: "lg", rounded: "full" }), "gap-2")}>
         <span>Request a Quote</span>
         <Icon name="lucide:rocket" class="size-5 text-orange-500" />
       </a>
@@ -57,79 +53,86 @@ import { siteConfig } from "@/config/site";
 </section>
 
 <style>
-.zoom-effect {
-  display: inline-block;
-  font-weight: bolder;
-  font-size: x-large;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  z-index: 1;
-}
+  .bullet-item {
+    position: relative;
+    margin-bottom: 1rem; 
+    transition: opacity 0.4s ease, filter 0.4s ease;
+  }
 
-.zoom-effect:hover {
-  transform: scale(1.3);
-  color: #ff6700;
-  filter: none; /* Retire le flou de l'élément zoomé */
-}
+  .bullet-item::before {
+    content: "•"; 
+    color: #ff6700; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+    position: absolute;
+    left: -1.5rem; 
+    top: 0.1rem; 
+  }
 
-.bullet-item:hover .be_blur {
-  filter: blur(4px);
-  opacity: 0.5;
-}
+  .bullet-item .be_blur {
+    filter: none;
+    transition: filter 0.4s ease, opacity 0.4s ease;
+  }
 
-.bullet-item:hover:not(:has(.zoom-effect:hover)) {
-  opacity: 0.5;
-  filter: blur(4px);
-}
+  .zoom-effect {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: x-large;
+    transition: transform 0.4s ease, color 0.4s ease;
+    cursor: pointer;
+    z-index: 1;
+  }
 
-.bullet-item p {
-  display: block;
-}
-
-.bullet-item .inline-flex {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
+  .zoom-effect:hover {
+    transform: scale(1.3);
+    color: #ff6700;
+    z-index: 10;
+  }
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const bulletItems = document.querySelectorAll(".bullet-item");
-    const zoomEffectItems = document.querySelectorAll(".zoom-effect");
+  // Sélectionne tous les éléments de la liste
+  const bulletItems = document.querySelectorAll('.bullet-item');
 
-    bulletItems.forEach(item => {
-      const bulletItem = item as HTMLElement;
+  bulletItems.forEach((item) => {
+    item.addEventListener('mouseenter', () => {
+      // Appliquer le flou aux éléments précédents et suivants
+      let index = Array.from(bulletItems).indexOf(item); // Obtenez l'indice de l'élément survolé
 
-      item.addEventListener("mouseover", function () {
-        bulletItems.forEach(bullet => {
-          const bulletElement = bullet as HTMLElement;
-          if (!bulletElement.contains(item)) {
-            bulletElement.style.opacity = "0.5";
-            bulletElement.style.filter = "blur(4px)";
-          }
+      // Appliquez un flou à tous les éléments avant
+      for (let i = 0; i < index; i++) {
+        bulletItems[i].querySelectorAll('.be_blur').forEach((el) => {
+          // Assertion du type HTMLElement
+          (el as HTMLElement).style.filter = 'blur(4px)';
+          (el as HTMLElement).style.opacity = '0.5';
         });
-      });
+      }
 
-      item.addEventListener("mouseleave", function () {
-        bulletItems.forEach(bullet => {
-          const bulletElement = bullet as HTMLElement;
-          bulletElement.style.opacity = "1";  // Réinitialise l'opacité
-          bulletElement.style.filter = "none";  // Supprime le flou
+      // Appliquez un flou à tous les éléments après
+      for (let i = index + 1; i < bulletItems.length; i++) {
+        bulletItems[i].querySelectorAll('.be_blur').forEach((el) => {
+          // Assertion du type HTMLElement
+          (el as HTMLElement).style.filter = 'blur(4px)';
+          (el as HTMLElement).style.opacity = '0.5';
         });
+      }
+
+      // Appliquez un flou à l'élément survolé lui-même
+      item.querySelectorAll('.be_blur').forEach((el) => {
+        // Assertion du type HTMLElement
+        (el as HTMLElement).style.filter = 'blur(4px)';
+        (el as HTMLElement).style.opacity = '0.5';
       });
     });
 
-    zoomEffectItems.forEach(item => {
-      const zoomItem = item as HTMLElement;
-
-      zoomItem.addEventListener("mouseenter", function () {
-        zoomItem.style.zIndex = "10";
-      });
-
-      zoomItem.addEventListener("mouseleave", function () {
-        zoomItem.style.zIndex = "1";
+    item.addEventListener('mouseleave', () => {
+      // Réinitialiser le flou quand la souris quitte l'élément
+      bulletItems.forEach((el) => {
+        el.querySelectorAll('.be_blur').forEach((subEl) => {
+          // Assertion du type HTMLElement
+          (subEl as HTMLElement).style.filter = 'none';
+          (subEl as HTMLElement).style.opacity = '1';
+        });
       });
     });
   });
