@@ -124,45 +124,44 @@ export const features = [
 export const testimonials = [
   {
     name: "Karim Bougherfa",
-    job: "Développeur Full Stack",
+    job: "Full Stack Developer",
     image: "https://randomuser.me/api/portraits/men/31.jpg",
     review:
-    "Travailler avec Bubo a été une expérience incroyable ! L'équipe est tellement supportive et toujours prête à aider. Grâce à leur expertise, j'ai pu développer des solutions personnalisées rapidement, sans me soucier des détails techniques. Leur attention aux besoins de mes clients a transformé ma pratique. Je me sens plus confiant dans mes capacités, et les résultats parlent d'eux-mêmes !",
+      "Working with Bubo has been an incredible experience! The team is so supportive and always ready to help. Thanks to their expertise, I was able to develop custom solutions quickly, without worrying about the technical details. Their attention to the needs of my clients has transformed my practice. I feel more confident in my abilities, and the results speak for themselves!",
   },
   {
     name: "Moussa Traoré",
-    job: "Directeur Technique",
+    job: "Technical Director",
     image: "https://randomuser.me/api/portraits/men/59.jpg",
     review:
-      "Bubo m'a permis de mener à bien ma roadmap ! Les déploiements sont par ailleurs devenus un jeu d'enfant.",
+      "Bubo has helped me successfully execute my roadmap! Deployments have also become a breeze, thanks to their tailored solutions.",
   },
   {
     name: "Clémence Dubois",
-    job: "Responsable Produit",
+    job: "Product Manager",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
     review:
-      "Ce que j'apprécie vraiment chez BUBO, c'est l'accent sur la qualité et la collaboration. En tant que responsable produit, je peux compter sur une équipe qui partage ma vision. Ensemble, nous avons lancé des produits qui répondent vraiment aux besoins du marché.",
+      "What I really appreciate about Bubo is the focus on quality and collaboration. As a Product Manager, I can count on a team that shares my vision. Together, we've launched products that truly meet market needs, like Kumbu for efficient document management.",
   },
   {
     name: "Aminata Koulibaly",
-    job: "Cheffe d'entreprise",
+    job: "Business Owner",
     image: "https://randomuser.me/api/portraits/women/35.jpg",
     review:
-      "Bubo m'a donné les outils nécessaires pour explorer les données utilisateur. C'est génial de pouvoir optimiser nos analyses tout en garantissant la sécurité des données.",
+      "Bubo provided me with the tools to explore user data. It's amazing to be able to optimize our analyses while ensuring data security, which is crucial for my business decisions.",
   },
   {
     name: "Olivier Koffi",
-    job: "Avocat pénaliste",
+    job: "Criminal Defense Lawyer",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
     review:
-      "Travailler sur Kumbu l'un des produits Bubo a transformé ma manière de gérer mes affaires. Leur outil a simplifié mon organisation, et me faisant gagner un temps fou dans mes recherches. Les résultats parlent d'eux-mêmes !",
+      "Working on Kumbu, one of Bubo's products, has transformed the way I manage my cases. Their tool streamlined my organization and saved me so much time in my research. The results speak for themselves!",
   },  
   {
-    name: "Julie Martin",
-    job: "Designer UI/UX",
+    name: "Julie Martinelli",
+    job: "Lead Data Scientist",
     image: "https://randomuser.me/api/portraits/women/32.jpg",
     review:
-      "Avec Bubo, je peux enfin exprimer ma créativité ! L'équipe comprend l'importance de l'esthétique et de la fonctionnalité. Les retours constructifs rendent mon travail tellement gratifiant.",
-  },
+      "As the Lead Data Scientist at my company, working with Bubo has been a game-changer. Their AI-powered tools have empowered us to build advanced models that predict trends and uncover hidden patterns in our data. The team at Bubo has a deep understanding of the technical complexities, and their expertise has allowed us to deliver actionable insights faster. The collaboration has significantly boosted our decision-making process, helping us shape more effective strategies based on data-driven predictions.",  },
 ];
 

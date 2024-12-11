@@ -1,19 +1,22 @@
 
 
 export const values = [
-    {
-      icon: "Star", // Icône pour représenter l'Excellence
-      title: "Excellence",
-      description:
-      "L'Excellence n'est pas simplement un objectif, c'est une quête constante. Chez Bubo, nous nous engageons à repousser les limites de la qualité et de la performance, à chaque étape de notre parcours. Nous ne nous contentons pas du moyen, nous visons le sommet. Chaque projet que nous entreprenons, chaque défi que nous relevons est une occasion de perfectionner notre travail et de fournir des résultats exceptionnels qui font une réelle différence pour nos clients et partenaires.",    },
-    {
-      icon: "Bolt", // Icône symbolisant l'Audace
-      title: "Audace",
-      description:
-      "L'Audace est le moteur de notre transformation. Nous croyons profondément qu'il est essentiel de prendre des risques, de penser différemment et d'oser innover. C'est grâce à cette audace que nous brisons les frontières de l'impossible et créons des solutions qui ont un impact réel et durable. Nous ne craignons pas les défis, car chaque défi est une opportunité d'explorer de nouvelles voies, de créer de nouvelles idées et de façonner un avenir audacieux, audacieusement.",    },
-    {
-      icon: "Heart", // Icône pour illustrer la Passion
-      title: "Passion",
-      description:
-      "Notre passion est ce qui nous propulse au-delà des attentes et des conventions. Chaque jour, nous travaillons avec une énergie inépuisable, animés par un amour profond pour ce que nous faisons et une conviction forte dans notre mission. Cette passion est le fil conducteur de nos actions, le cœur battant de notre engagement envers l'innovation et l'excellence. Nous vivons notre travail avec une intensité qui nous pousse à aller toujours plus loin, à créer, à inspirer et à laisser une empreinte durable dans tout ce que nous entreprenons.",    },
-  ];
+  {
+    icon: "Star", // Icon representing Excellence
+    title: "Excellence",
+    description:
+      "Excellence is not just a goal; it is a constant pursuit. At Bubo, we are committed to pushing the boundaries of quality and performance at every step of our journey. We don't settle for average; we aim for the summit. Every project we undertake, every challenge we face, is an opportunity to perfect our work and deliver exceptional results that make a real difference for our clients and partners.",
+  },
+  {
+    icon: "Bolt", // Icon symbolizing Boldness
+    title: "Boldness",
+    description:
+      "Boldness is the driving force behind our transformation. We firmly believe that taking risks, thinking differently, and daring to innovate are essential. It is through this boldness that we break the boundaries of the impossible and create solutions with real and lasting impact. We don't fear challenges, because every challenge is an opportunity to explore new paths, generate new ideas, and shape a bold future, fearlessly.",
+  },
+  {
+    icon: "Heart", // Icon to illustrate Passion
+    title: "Passion",
+    description:
+      "Our passion is what drives us beyond expectations and conventions. Every day, we work with boundless energy, fueled by a deep love for what we do and a strong belief in our mission. This passion is the guiding thread of our actions, the heartbeat of our commitment to innovation and excellence. We live our work with an intensity that pushes us to go further, create, inspire, and leave a lasting impact in everything we do.",
+  },
+];

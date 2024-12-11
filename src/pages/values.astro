@@ -6,36 +6,37 @@ import { Star, Heart, Bolt } from "lucide-react"; // Importation des icônes de 
 import { values } from "@/config/values.ts"; // Importation des valeurs depuis votre fichier values.ts
 ---
 
-<MainLayout title="Nos Valeurs" description="Découvrez les valeurs qui nous animent chez Bubo">
+<MainLayout title="Our Values" description="Découvrez les valeurs qui nous animent chez Bubo">
     <section class="space-y-12 py-16">
         <div class="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-8 text-primary">Nos Valeurs</h2>
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <h2 class="text-3xl font-bold text-center mb-8 text-primary">Our values</h2>
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
               {values.map((value, index) => (
                 <div
-                  class="flex flex-col items-center p-6 rounded-lg shadow-md transition-all duration-300 bg-gradient-to-b hover:scale-105 hover:opacity-90"
+                  class="flex flex-col items-center p-10 rounded-2xl shadow-xl transition-all duration-300 bg-gradient-to-b hover:scale-105 hover:opacity-95 transform"
                   style={{
-                    background: value.icon === "Star"
-                    ? "linear-gradient(135deg, #d4eac7, #92b490)" // vert nature doux
-                    : value.icon === "Heart"
-                    ? "linear-gradient(135deg, #e6f0de, #b8d6a4)" // vert clair et apaisant
-                    : "linear-gradient(135deg, #cce7e8, #8fb3b8)",
-                    boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+                    background:
+                      value.icon === "Star"
+                        ? "linear-gradient(135deg, #F5F7FA, #E1E8EE)"
+                        : value.icon === "Heart"
+                        ? "linear-gradient(135deg, #F5F7FA, #E1E8EE)"
+                        : "linear-gradient(135deg, #F5F7FA, #E1E8EE)",
+                    boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.12)",
                   }}
                 >
-                  {/* Icônes dynamiques avec styles améliorés */}
+                  {/* Dynamic Icons with Enhanced Styles */}
                   {value.icon === "Star" && (
-                    <Star className="w-10 h-10 text-gray-800 mb-4 opacity-80 hover:scale-110 hover:text-yellow-500 transition-transform" />
+                    <Star className="w-14 h-14 text-gray-600 mb-8 opacity-90 hover:scale-110 hover:text-gray-400 transition-all duration-200" />
                   )}
                   {value.icon === "Heart" && (
-                    <Heart className="w-10 h-10 text-gray-800 mb-4 opacity-80 hover:scale-110 hover:text-red-500 transition-transform" />
+                    <Heart className="w-14 h-14 text-gray-600 mb-8 opacity-90 hover:scale-110 hover:text-gray-400 transition-all duration-200" />
                   )}
                   {value.icon === "Bolt" && (
-                    <Bolt className="w-10 h-10 text-gray-800 mb-4 opacity-80 hover:scale-110 hover:text-blue-500 transition-transform" />
+                    <Bolt className="w-14 h-14 text-gray-600 mb-8 opacity-90 hover:scale-110 hover:text-gray-400 transition-all duration-200" />
                   )}
-                  
-                  <h3 class="text-xl font-medium text-gray-900 mb-2">{value.title}</h3>
-                  <p class="text-gray-700 text-center md:text-justify">{value.description}</p>
+            
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-6">{value.title}</h3>
+                  <p class="text-gray-600 text-center md:text-left">{value.description}</p>
                 </div>
               ))}
             </div>
@@ -44,7 +45,7 @@ import { values } from "@/config/values.ts"; // Importation des valeurs depuis v
         <div class="mx-auto flex w-max -translate-x-[15%] justify-center lg:w-full lg:translate-x-0">
             
           <div class="relative z-10 mx-auto max-w-4xl px-4 md:max-w-6xl md:px-12 lg:max-w-5xl lg:px-6 xl:max-w-[80rem] xl:px-6 2xl:px-0">
-            <h2 class="text-3xl font-bold text-center mb-8 text-primary">Nos Moments</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-primary">Our moments</h2>
             <div class="grid grid-cols-4 items-center gap-4 md:gap-6">
               {/* Première colonne */}
               <div class="space-y-4 md:space-y-6">

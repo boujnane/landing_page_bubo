@@ -24,7 +24,7 @@ export const footerLinks: SidebarNavItem[] = [
     title: "Explore",
     items: [
       { title: "Product", href: "/products" },
-      { title: "Tailor-made", href: "/requestaquote" },
+      { title: "Tailor-made", href: "/tailor-made" },
       { title: "Data & AI consulting", href: "/data&AIconsulting" },
     ],
   },
@@ -33,7 +33,7 @@ export const footerLinks: SidebarNavItem[] = [
     items: [
       { title: "People", href: "/about" },
       { title: "Values", href: "/values" },
-      { title: "Partner", href: "/partner" },
+      { title: "Partner", href: "/partners" },
     ],
   }
   // {

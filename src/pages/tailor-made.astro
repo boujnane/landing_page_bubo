@@ -1,4 +1,5 @@
 ---
+// import BlogCard from "@/components/cards/blog-card.astro";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
@@ -7,86 +8,83 @@ import { getPosts } from "@/lib/fetchers";
 import { Icon } from "astro-icon/components";
 
 const posts = await getPosts();
+
 ---
 
-<MainLayout title="Data & AI consulting" description="Data & AI consulting section">
+<MainLayout title="Data & AI Consulting" description="Data & AI consulting section">
     <section class="container py-16">
         <!-- Blog Section -->
         <HeaderSection
-        label="Data & AI consulting"
+        label="Tailor-made"
         title="Our Process"
-        subtitle="Transforming data into actionable insights with AI-driven solutions"
+        subtitle="Bringing our customers' ideas & projects to life"
         />
         <section>
             <div class="py-32">
               <div class="container max-w-7xl">
                 <div class="relative">
                   <div class="relative z-10 grid grid-cols-6 gap-6">
-                    {/* Étape 1 : Collecte des données */}
+                    {/* Step 1: Needs Analysis */}
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                      <Icon name="lucide:database" class="size-10 text-[#fe8301]" />
+                      <Icon name="lucide:file-text" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Data Collection
+                        Needs Analysis
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Gathering data from various sources to create a comprehensive foundation.
+                        Understand the client's requirements and objectives to create a tailored solution.
                       </p>
                     </div>
           
-                    {/* Étape 2 : Nettoyage des données */}
+                    {/* Step 2: Solution Design */}
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                      <Icon name="lucide:brush" class="size-10 text-[#fe8301]" />
+                      <Icon name="lucide:layers" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Data Cleaning
+                        Solution Design
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Preparing and structuring data for analysis to ensure accuracy.
+                        Develop detailed specifications and a prototype to validate the project's direction.
                       </p>
                     </div>
           
-                    {/* Étape 3 : Modélisation */}
+                    {/* Step 3: Development */}
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                      <Icon name="lucide:trending-up" class="size-10 text-[#fe8301]" />
+                      <Icon name="lucide:code" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Modeling
+                        Development
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Building analytical or predictive models using the cleaned data.
+                        Build the custom solution following the specifications and coding best practices.
                       </p>
                     </div>
           
-                    {/* Étape 4 : Entraînement (avec grille interne) */}
+                    {/* Step 4: Testing and Validation (with internal grid) */}
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
-                        <Icon name="lucide:activity" class="size-10 text-[#fe8301]" />
-                        <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                            Training
-                        </h2>
-                        <p class="mt-4 text-center text-muted-foreground max-w-md">
-                            Training models on data to maximize accuracy and performance.
-                        </p>
+                      <Icon name="lucide:check-circle" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Testing and Validation
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground max-w-md">
+                        Test the solution to ensure quality, stability, and compliance with the client's needs.
+                      </p>
                     </div>
-        
-                    {/* Étape 5 : Déploiement (avec grille interne) */}
+          
+                    {/* Step 5: Deployment and Support (with internal grid) */}
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
-                        <Icon name="lucide:rocket" class="size-10 text-[#fe8301]" />
-                        <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                            Deployment
-                        </h2>
-                        <p class="mt-4 text-center text-muted-foreground max-w-md">
-                            Deploying the model into production to generate real-time insights.
-                        </p>
+                      <Icon name="lucide:cloud" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Deployment and Support
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground max-w-md">
+                        Deploy the solution to production and provide ongoing support to ensure its proper operation.
+                      </p>
                     </div>
-
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
-        <BlogHeader title="Use Cases" />
+          
+          
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
-          {posts.map((post) => <BlogCard {...post} />)}
-        </div>
       </section>
 </MainLayout>

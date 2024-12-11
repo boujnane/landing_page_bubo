@@ -47,7 +47,7 @@ export const navMenuConfig: NavMenuConfig = {
         // },
         {
           title: "Tailor-made Software",
-          href: "/requestaquote",
+          href: "/tailor-made",
           description:
             "Your needs, our work",
           image: "/images/examples/newsletter.jpg",
@@ -62,7 +62,7 @@ export const navMenuConfig: NavMenuConfig = {
         {
           title: "People",
           href: "/about",
-          description: "Our vision for a sustainable and innovative future",
+          description: "People who work hard every day",
           image: "/images/examples/static-blog.jpg",
         },
         // {
@@ -76,14 +76,14 @@ export const navMenuConfig: NavMenuConfig = {
           title: "Values",
           href: "/values",
           description:
-            "Fetch anime content from an graphql endpoint. Tabs component.",
-          image: "/images/examples/animes.jpg",
+            "The values that drive us",
+          image: "",
         },
         {
-          title: "Partner",
-          href: "/partner",
+          title: "Partners",
+          href: "/partners",
           description:
-            "Fetch anime content from an graphql endpoint. Tabs component.",
+            "Companies and people who place their trust in us",
           image: "/images/examples/animes.jpg",
         }
       ],

@@ -1,6 +1,6 @@
 ---
 import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants, Button } from "@/components/ui/button";
 import { cn, formatDate } from "@/lib/utils";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
@@ -66,29 +66,37 @@ const { title, description, pubDate, updatedDate, cover, category, sidebarInfo }
       <hr class="my-6" />
       <slot />
     </div>
-
     <!-- Sidebar Section -->
-    <aside class="bg-gray-100 dark:bg-[#181c22] p-6 rounded-xl border border-gray-300 dark:border-gray-600 shadow-md">
-      <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Informations</h2>
-      <ul class="space-y-4">
-        <li class="flex justify-between items-center">
-          <strong class="text-gray-700 dark:text-gray-300">Industrie :</strong>
-          <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.industry}</span>
-        </li>
-        <li class="flex justify-between items-center">
-          <strong class="text-gray-700 dark:text-gray-300">Siège social :</strong>
-          <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.headquarters}</span>
-        </li>
-        <li class="flex justify-between items-center">
-          <strong class="text-gray-700 dark:text-gray-300">Fondée :</strong>
-          <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.founded}</span>
-        </li>
-        <li class="flex justify-between items-center">
-          <strong class="text-gray-700 dark:text-gray-300">Employés :</strong>
-          <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.employees}</span>
-        </li>
-      </ul>
-    </aside>
-    
+    <div>
+      <aside class="bg-gray-100 dark:bg-[#181c22] p-6 rounded-xl border border-gray-300 dark:border-gray-600 shadow-md">
+        <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Informations</h2>
+        <ul class="space-y-4">
+          <li class="flex justify-between items-center">
+            <strong class="text-gray-700 dark:text-gray-300">Industrie :</strong>
+            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.industry}</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <strong class="text-gray-700 dark:text-gray-300">Siège social :</strong>
+            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.headquarters}</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <strong class="text-gray-700 dark:text-gray-300">Fondée :</strong>
+            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.founded}</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <strong class="text-gray-700 dark:text-gray-300">Employés :</strong>
+            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.employees}</span>
+          </li>
+        </ul>
+      </aside>
+    </div>  
+
+    <div>
+      <Button>
+        <a href="https://calendly.com/bubobubo/intro?month=2024-12">
+          Do you have an AI & Data use case, you want to know more ? Get in touch with us !
+        </a>
+      </Button>
+    </div>
   </div>
 </MainLayout>s

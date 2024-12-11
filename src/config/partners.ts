@@ -20,23 +20,13 @@ export const partners = [
       description: "Gioza is building the first sensorless Energy Management System (EMS) to reduce industrial energy bills by up to 20%."
     },
     {
-      name: "Sweez",
-      logo: "/images/partners/sweez_logo.png",
-      description: "Partner Five offers expertise in AI and data analytics."
+      name: "Bâtisseurs Africains",
+      logo: "/images/partners/BÂTISSEURS_AFRICAINS_logo.png",
+      description: "The Bâtisseurs Africains network is a community of entrepreneurs who have been selected by international programs. Every day, the network's entrepreneurs contribute to the development of the African continent through their high-impact, commercial products and services. Their ambition is clear: to transform the face of the continent and bring it into line with global economic competition."
     },
     {
       name: "Yxir",
       logo: "/images/partners/yxir.png",
       description: "Yxir is a SaaS solution that helps manufacturers control quality costs (non-compliances records, complaints, corrective/curative actions, etc.). It helps identify weak signals, refine cause analyses and make faster decisions based on historical data. "
-    },
-    {
-      name: "Partner Seven",
-      logo: "/path/to/partner_seven_logo.png",
-      description: "The Ministry of Higher Education and Research prepares and implements the French government's policy on universal access to knowledge and the development of higher education and research."
-    },
-    {
-      name: "Partner Eight",
-      logo: "/path/to/partner_eight_logo.png",
-      description: "Eneo Cameroon is the main electricity operator in Cameroon, in charge of production, distribution and sale of electrical energy in Cameroon."
-    },
+    }
   ];
