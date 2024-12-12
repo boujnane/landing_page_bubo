@@ -2,18 +2,10 @@
 
 An open source application built using the latest features in Astro v4 with shadcn/ui.
 
-![blog](public/og.jpg)
-
-> **Warning**
-> This app is a work in progress. I'm building this in public. You can follow the progress on Twitter [@miickasmt](https://twitter.com/miickasmt).
-> See the roadmap below.
 
 ## About this project
 
-This project as an experiment to see how a modern app (with features like authentication, subscriptions, API routes, Markdown, Content Collections ...etc) would work in Astro v4 and shadcn/ui.
 
-> **Note**
-> I would like to inform you that for the time being, my example app built with Astro.js is still under development and **cannot yet be considered a starter template**.
 
 ## Project Structure
 
@@ -62,21 +54,6 @@ _Not implemented yet :_
 - Subscriptions using **Lemon Squeezy** ?
 
 ## Roadmap
-
-- [x] ~Dark mode~
-- [x] ~Add Markdown & MDX support~
-- [x] ~Sheet mobile nav~
-- [x] ~Build **changelog pages**~
-- [x] ~Build **waitlist with React Hook Form**~
-- [x] ~Build **newsletter with Simple Form**~
-- [x] ~Build **animes pages** (graphql)~
-- [ ] Build **blog with Astro DB** (work on it)
-- [ ] Build **ecommerce pages** (work on it)
-- [ ] Build **auth/dashboard pages**
-- [ ] Add search support for blog
-- [ ] Add OG image for blog and others
-- [ ] Add SEO component & metadata
-- [ ] Subscriptions using Stripe (or Lemon Squeezy?)
 
 ## Running Locally
 
