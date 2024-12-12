@@ -1,7 +1,7 @@
 ---
+import Analytics from '@vercel/analytics/astro';
 import BaseHead from "@/components/layout/base-head.astro";
 import TailwindIndicator from "@/components/tailwind-indicator.astro";
-// NOTE: work with { Toaster } from "@/components/ui/sonner" but need to update dark theme
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
 
@@ -18,6 +18,8 @@ const { title, description, bodyClass } = Astro.props;
 <html lang="en" class="scroll-smooth">
   <head>
     <BaseHead title={title} description={description} />
+    <!-- Add Analytics Component -->
+    <Analytics mode="production" />
   </head>
   <body class={cn("flex flex-col min-h-screen", bodyClass)}>
     <slot />

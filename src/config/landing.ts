@@ -81,42 +81,42 @@ export const features = [
     title: "Atradius",
     description:
       "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
-    link: "/data&AIconsulting/first-post/",
+    link: "/data&AIconsulting/atradius/",
     icon: "atradius",
   },
   {
     title: "Recital",
     description:
       "Exploring key value pairs (KVP) to enhance language model performance and contextual understanding.",
-    link: "/data&AIconsulting/pale-blue-dot/",
+    link: "/data&AIconsulting/recital/",
     icon: "recital",
   },
   {
     title: "Legal",
     description:
       "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
-    link: "/data&AIconsulting/preview-markdown/",
+    link: "/data&AIconsulting/legallaw/",
     icon: "law",
   },
   {
     title: "Sweez",
     description:
       "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
-    link: "/data&AIconsulting/markdown-style-guide/",
+    link: "/data&AIconsulting/sweez/",
     icon: "watermelon",
   },
   {
     title: "Tvrad",
     description:
       "Leveraging computer vision to accurately identify and classify radiological incidences for improved diagnostics.",
-    link: "/bldata&AIconsultingog/using-mdx/",
+    link: "/data&AIconsulting/tvrad/",
     icon: "bubo_xray",
   },
   {
     title: "Gioza",
     description:
       "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances.",
-    link: "/data&AIconsulting/third-post/",
+    link: "/data&AIconsulting/gioza/",
     icon: "gioza_logo",
   },
 ];
