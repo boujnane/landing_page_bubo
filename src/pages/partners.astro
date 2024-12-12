@@ -18,7 +18,7 @@ import { partners } from "@/config/partners.ts"; // Ensure you have a partners.t
             height={100}
           />
           <h2 class="text-xl font-semibold text-foreground mb-3">{partner.name}</h2>
-          <p class="text-sm text-justify text-muted-foreground">{partner.description}</p>
+          <p class="text-sm text-justify text-muted-foreground" set:html={partner.description}></p>
         </div>
       ))}
     </div>

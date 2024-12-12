@@ -28,8 +28,8 @@ export const infos: InfoLdg[] = [
   {
     title: "Bubo Analytics",
     description:
-      "Explore the Internet in depth and transform your research into informed strategies to guide your decision-making",
-    image: "/images/blog/placeholder-about.jpg",
+      "Explore the Internet in depth and transform your research into informed strategies to guide your decision-making, leveraging the best NLP methods to achieve this.",
+    image: "/images/blog/bubo_analytics.png",
     list: [
       {
         title: "Flexible",
@@ -81,42 +81,42 @@ export const features = [
     title: "Atradius",
     description:
       "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
-    link: "/blog/first-post/",
+    link: "/data&AIconsulting/first-post/",
     icon: "atradius",
   },
   {
     title: "Recital",
     description:
       "Exploring key value pairs (KVP) to enhance language model performance and contextual understanding.",
-    link: "/blog/pale-blue-dot/",
+    link: "/data&AIconsulting/pale-blue-dot/",
     icon: "recital",
   },
   {
     title: "Legal",
     description:
       "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
-    link: "/blog/preview-markdown/",
+    link: "/data&AIconsulting/preview-markdown/",
     icon: "law",
   },
   {
     title: "Sweez",
     description:
       "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
-    link: "/blog/markdown-style-guide/",
+    link: "/data&AIconsulting/markdown-style-guide/",
     icon: "watermelon",
   },
   {
     title: "Tvrad",
     description:
       "Leveraging computer vision to accurately identify and classify radiological incidences for improved diagnostics.",
-    link: "/blog/using-mdx/",
+    link: "/bldata&AIconsultingog/using-mdx/",
     icon: "bubo_xray",
   },
   {
     title: "Gioza",
     description:
       "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances.",
-    link: "/blog/third-post/",
+    link: "/data&AIconsulting/third-post/",
     icon: "gioza_logo",
   },
 ];

@@ -24,15 +24,6 @@ const { title, description, mainClass } = Astro.props;
 
 <BaseLayout title={title} description={description}>
   <Header className="border-b">
-    <!-- if using only normals links  -->
-    <!-- <MainNav items={marketingConfig.mainNav} slot="left-header" />
-    <SheetMobileNav
-      mainNavItems={marketingConfig.mainNav}
-      slot="mobile-nav-header"
-      client:load
-    /> -->
-
-    <!-- if use Navigation Menu on desktop -->
     <MainNavigationMenu slot="left-header" client:load />
     <SheetMobileNav
       mainNavItems={[...navMenuConfig.links]}
@@ -46,12 +37,18 @@ const { title, description, mainClass } = Astro.props;
 
     <div class="flex items-center gap-x-4" slot="right-header">
       <a
-      href="https://calendly.com/bubobubo/intro?month=2024-12"
-      class={cn(buttonVariants({ size: "sm", rounded: "full" }), "gap-1")}
-    >
-      <span>Request a Quote</span>
-      <Icon name="lucide:rocket" class="size-4 text-orange-500" />
-    </a>
+        href="https://calendly.com/bubobubo/intro?month=2024-12"
+        class={cn(
+          buttonVariants({ size: "sm", rounded: "full" }),
+          "gap-1",
+          "sm:text-xs sm:py-1 sm:px-3", // Small screen adjustments
+          "md:text-sm md:px-4 md:py-2" // Medium and larger screen adjustments
+        )}
+      >
+        <span class="hidden sm:block">Request a Quote</span> <!-- Show this on larger screens -->
+        <span class="sm:hidden">Quote</span> <!-- Show this on smaller screens -->
+        <Icon name="lucide:rocket" class="size-4 text-orange-500" />
+      </a>
       <ThemeToggle client:load />
     </div>
   </Header>

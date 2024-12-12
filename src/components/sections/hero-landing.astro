@@ -21,19 +21,19 @@ import { siteConfig } from "@/config/site";
       <div class="bullet-container">
         <ul class="bullet-list">
           <li class="bullet-item">
-            <p class="text-justify text-left">
+            <p class="text-justify text-left text-xs sm:text-base"> <!-- Adjust font size -->
               <span class="be_blur first_word">State-of-the-art</span>
               <span class="zoom-effect">Data & AI consulting</span>
             </p>
           </li>
           <li class="bullet-item">
-            <p class="text-justify text-left">
+            <p class="text-justify text-left text-xs sm:text-base"> <!-- Adjust font size -->
               <span class="zoom-effect">Tailor-made</span>
               <span class="be_blur">software development</span>
             </p>
           </li>
           <li class="bullet-item">
-            <p class="text-justify text-left">
+            <p class="text-justify text-left text-xs sm:text-base"> <!-- Adjust font size -->
               <span class="be_blur">Innovative and useful</span>
               <span class="zoom-effect">products</span>
               <span class="be_blur">to help your project take flight.</span>
@@ -42,6 +42,7 @@ import { siteConfig } from "@/config/site";
         </ul>
       </div>
     </div>
+    
 
     <div class="flex justify-center space-x-2 md:space-x-4">
       <a href="https://calendly.com/bubobubo/intro?month=2024-12" class={cn(buttonVariants({ size: "lg", rounded: "full" }), "gap-2")}>
@@ -88,6 +89,22 @@ import { siteConfig } from "@/config/site";
     color: #ff6700;
     z-index: 10;
   }
+
+  /* Taille de la police pour les petits écrans (mobile) */
+@media (max-width: 640px) {
+  .zoom-effect {
+    font-size: 1rem; /* Taille réduite pour mobile */
+  }
+  .bullet-item::before {
+    content: "•"; 
+    color: #ff6700; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+    position: absolute;
+    left: -0.8rem; 
+    top: -0.6rem; 
+  }
+}
 </style>
 
 <script>
