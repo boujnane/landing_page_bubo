@@ -20,6 +20,18 @@ const { title, description, bodyClass } = Astro.props;
     <BaseHead title={title} description={description} />
     <!-- Add Analytics Component -->
     <Analytics mode="production" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11500393110"></script>
+    <script>
+      if (typeof window !== 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'AW-11500393110');
+      }
+    </script>
   </head>
   <body class={cn("flex flex-col min-h-screen", bodyClass)}>
     <slot />
