@@ -50,5 +50,3 @@ The partnership led to significant, measurable outcomes:
 - The company could now handle larger document volumes, processing up to ~2000 documents per day with ease.
 - The organized, indexed data structure improved information retrieval, offering clients a seamless experience and supporting better decision-making processes.
 
-> "Partnering with Bubo allowed us to enhance our platform’s capabilities in automated document intelligence. Their expertise in AI solutions transformed our data extraction processes, enabling us to deliver faster, more accurate insights to our clients. Bubo’s approach to AI-driven document analysis has been integral to our growth and ability to scale. We look forward to continued collaboration to further enhance our platform’s potential."  
-– CTO, reciTAL

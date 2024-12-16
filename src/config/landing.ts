@@ -85,13 +85,6 @@ export const features = [
     icon: "atradius",
   },
   {
-    title: "Recital",
-    description:
-      "Exploring key value pairs (KVP) to enhance language model performance and contextual understanding.",
-    link: "/data&AIconsulting/recital/",
-    icon: "recital",
-  },
-  {
     title: "Legal",
     description:
       "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
