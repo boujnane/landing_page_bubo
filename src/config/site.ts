@@ -2,15 +2,15 @@ import type { SidebarNavItem, SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
   name: "Bubo",
-  description: "Bubo's Landing page",
-  url: "https://www.bubobu.bo", // Remplacement de l'URL avec le domaine principal
-  ogImage: "/bubo_logo.png",    // Remplacer par une image Open Graph valide
+  description:
+    "Bubo's Landing page",
+  url: "https://astro-nomy.vercel.app",
+  ogImage: "",
   links: {
     twitter: "https://twitter.com/",
     github: "https://github.com/",
   },
 };
-
 
 export const footerLinks: SidebarNavItem[] = [
   {

@@ -9,7 +9,7 @@ import simpleStackForm from "simple-stack-form";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.bubobu.bo",
+  site: "https://wwww.bubobu.bo",
   integrations: [
     mdx({
       syntaxHighlight: "shiki",
@@ -26,6 +26,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
+    // db(),
     simpleStackForm(),
   ],
   output: "hybrid",
