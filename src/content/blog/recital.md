@@ -3,7 +3,7 @@ title: "AI - LLM: KVP task"
 description: ""
 pubDate: "Sep 10 2023"
 cover: "/images/blog/bubo_recital.jpg"
-category: "Missions: Data & AI"
+category: "Others"
 sidebarInfo:
   industry: "Data & AI"
   headquarters: "Paris, France"
