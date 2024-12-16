@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
   name: "Bubo",
   description:
     "Bubo's Landing page",
-  url: "https://astro-nomy.vercel.app",
+  url: "https://wwww.bubobu.bo",
   ogImage: "",
   links: {
     twitter: "https://twitter.com/",
