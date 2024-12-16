@@ -1,4 +1,6 @@
 User-agent: *
+Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /*?noindex=true$
 Sitemap: https://www.bubobu.bo/sitemap.xml

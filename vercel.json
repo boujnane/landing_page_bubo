@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "https://astro-nomy.vercel.app/:path*",
+        "destination": "https://www.bubobu.bo/:path*",
+        "permanent": true
+      }
+    ]
+  }
