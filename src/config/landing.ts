@@ -99,13 +99,6 @@ export const features = [
     icon: "watermelon",
   },
   {
-    title: "Tvrad",
-    description:
-      "Leveraging computer vision to accurately identify and classify radiological incidences for improved diagnostics.",
-    link: "/data&AIconsulting/tvrad/",
-    icon: "bubo_xray",
-  },
-  {
     title: "Gioza",
     description:
       "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances.",

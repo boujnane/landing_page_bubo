@@ -3,7 +3,7 @@ title: "AI - Computer vision: recognition of radiological incidence"
 description: ""
 pubDate: "Jul 02 2022"
 cover: "/images/blog/bubo_tvrad.png"
-category: "Missions: Data & AI"
+category: "Others"
 ---
 
 ### *Enhancing radiological efficiency with AI: Image classification for a well known aligners firm*
@@ -44,4 +44,4 @@ Bubo partnered with the company to design an advanced AI solution for radiograph
 
 >Collaborating with Bubo has greatly streamlined our radiology workflow. Their AI solution for radiographic image classification has transformed our documentation process, making it faster and more accurate. This advancement has freed up our team to focus more on patient care and less on manual administrative tasks, which has been invaluable in enhancing the quality and efficiency of our services.
 
-Dr Selmi, Radiologist
+Radiologist
