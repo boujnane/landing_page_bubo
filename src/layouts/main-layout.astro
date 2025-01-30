@@ -10,6 +10,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/config/site";
 import { Icon } from "astro-icon/components";
 import { buttonVariants } from "@/components/ui/button";
+import LanguagePicker from "@/components/language-picker.astro";
 // import { marketingConfig } from "@/config/marketing";
 // import MainNav from "@/components/layout/main-nav.astro";
 
@@ -50,6 +51,7 @@ const { title, description, mainClass } = Astro.props;
         <Icon name="lucide:rocket" class="size-4 text-orange-500" />
       </a>
       <ThemeToggle client:load />
+        <LanguagePicker />
     </div>
   </Header>
 

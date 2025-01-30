@@ -4,13 +4,13 @@ export const navMenuConfig: NavMenuConfig = {
   links: [
     {
       title: "Accelerate",
-      href: "/accelerate",
+      href: "accelerate",
       description: "Example description",
       image: "/images/examples/image.jpg",
     },
     {
       title: "Research",
-      href: "/research",
+      href: "research",
       description: "A reproduction of Starlog template with Tailwind CSS.",
       image: "/images/examples/changelog.jpg",
     }
@@ -27,13 +27,13 @@ export const navMenuConfig: NavMenuConfig = {
         // },
         {
           title: "Data & AI consulting",
-          href: "/data&AIconsulting",
+          href: "data&AIconsulting",
           description: "We help you on your data & AI projects",
           image: "/images/examples/about.jpg",
         },
         {
           title: "Products",
-          href: "/products",
+          href: "products",
           description:
             "We build useful products",
           image: "/images/examples/waitlist.jpg",
@@ -47,7 +47,7 @@ export const navMenuConfig: NavMenuConfig = {
         // },
         {
           title: "Tailor-made Software",
-          href: "/tailor-made",
+          href: "tailor-made",
           description:
             "Your needs, our work",
           image: "/images/examples/newsletter.jpg",
@@ -61,7 +61,7 @@ export const navMenuConfig: NavMenuConfig = {
       items: [
         {
           title: "People",
-          href: "/about",
+          href: "about",
           description: "People who work hard every day",
           image: "/images/examples/static-blog.jpg",
         },
@@ -74,14 +74,14 @@ export const navMenuConfig: NavMenuConfig = {
         // },
         {
           title: "Values",
-          href: "/values",
+          href: "values",
           description:
             "The values that drive us",
           image: "",
         },
         {
           title: "Partners",
-          href: "/partners",
+          href: "partners",
           description:
             "Companies and people who place their trust in us",
           image: "/images/examples/animes.jpg",

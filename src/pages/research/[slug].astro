@@ -1,4 +1,5 @@
 ---
+import { changeLanguage } from "i18next";
 import { getCollection } from "astro:content";
 import MainLayout from "@/layouts/main-layout.astro";
 import { cn, formatDate } from "@/lib/utils";
@@ -6,15 +7,15 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
 
+changeLanguage("en");
+
 export async function getStaticPaths() {
-  const research = await getCollection("research");
-
-  return research.map((item) => ({
-    params: { slug: item.slug },
-    props: { research: item },
-  }));
+    const research = await getCollection("research");
+    return research.map((item) => ({
+        params: { slug: item.slug },
+        props: { research: item },
+    }));
 }
-
 const { research } = Astro.props;
 const { Content } = await research.render();
 ---

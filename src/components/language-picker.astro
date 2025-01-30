@@ -1,0 +1,28 @@
+---
+import { LanguageSelector } from "astro-i18next/components";
+---
+<!-- <NavigationMenuItem> -->
+  <!-- {
+    Object.entries(languages).map(([lang, label]) => {
+      return (
+        <a href={`/${route}/`}>
+          {label === "EN" ? (
+            `${`${label} | `}`
+          ) : (
+            <span style={{ marginLeft: 5 }}>{label}</span>
+          )}
+        </a>
+      );
+    })
+  } -->
+  <!-- <LanguageSelector showFlag={true} class="my-select-class" /> -->
+  <!-- <LanguageSelector
+    showFlag={true}
+    languageMapping={{ en: "Anglais" }}
+    class="my-select-class"
+  /> -->
+<!-- </NavigationMenuItem> -->
+<LanguageSelector 
+  showFlag 
+  class="text-gray-900 bg-white border-gray-300 dark:text-white dark:bg-black" 
+/>

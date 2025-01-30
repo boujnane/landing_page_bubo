@@ -1,4 +1,5 @@
 ---
+import { changeLanguage } from "i18next";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
 import MainLayout from "@/layouts/main-layout.astro";
@@ -6,15 +7,16 @@ import { getPosts } from "@/lib/fetchers";
 import Timeline from "@/components/Timeline.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
 
-const posts = await getPosts();
+changeLanguage("en");
 
+const posts = await getPosts();
 const events = [
-  { date: "2017-01-01", title: "Creation of the company", description: "Celebrating the start of the adventure." },
-  { date: "2020-02-14", title: "First Huge Contract", description: "A day to celebrate love and affection." },
-  { date: "2021-03-17", title: "CIR/CII approval", description: "Celebrating Irish culture and heritage." },
-  { date: "2022-10-31", title: "Extend to Cameroon", description: "A day for costumes and treats." },
-  { date: "2023-12-25", title: "First prize - Bâtisseurs Africains", description: "Celebrating the birth of Jesus Christ." },
-  // Add more events as needed
+    { date: "2017-01-01", title: "Creation of the company", description: "Celebrating the start of the adventure." },
+    { date: "2020-02-14", title: "First Huge Contract", description: "A day to celebrate love and affection." },
+    { date: "2021-03-17", title: "CIR/CII approval", description: "Celebrating Irish culture and heritage." },
+    { date: "2022-10-31", title: "Extend to Cameroon", description: "A day for costumes and treats." },
+    { date: "2023-12-25", title: "First prize - B\u00E2tisseurs Africains", description: "Celebrating the birth of Jesus Christ." },
+    // Add more events as needed
 ];
 ---
 

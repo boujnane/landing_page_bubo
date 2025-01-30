@@ -1,9 +1,11 @@
 ---
+import { changeLanguage } from "i18next";
 export const prerender = false;
-
 import { AnimesTabs } from "@/components/animes-tabs";
 import MainLayout from "@/layouts/main-layout.astro";
 import { getPlanningAnimes } from "@/lib/graphql";
+
+changeLanguage("en");
 
 const data = await getPlanningAnimes();
 ---

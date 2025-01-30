@@ -1,9 +1,12 @@
 ---
+import { changeLanguage } from "i18next";
 import MainLayout from "@/layouts/main-layout.astro";
 import { Image } from "astro:assets";
 import { hobbies } from "@/config/about.ts";
 import { Star, Heart, Bolt } from "lucide-react"; // Importation des icônes de lucide-react
 import { values } from "@/config/values.ts"; // Importation des valeurs depuis votre fichier values.ts
+
+changeLanguage("en");
 ---
 
 <MainLayout title="Our Values" description="Découvrez les valeurs qui nous animent chez Bubo">

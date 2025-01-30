@@ -1,10 +1,13 @@
 ---
+import { changeLanguage } from "i18next";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
 import MainLayout from "@/layouts/main-layout.astro";
 import { getPosts } from "@/lib/fetchers";
 import { Icon } from "astro-icon/components";
+
+changeLanguage("en");
 
 const posts = await getPosts();
 ---

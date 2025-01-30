@@ -1,0 +1,40 @@
+---
+import { changeLanguage } from "i18next";
+import MainLayout from "@/layouts/main-layout.astro";
+import { Image } from "astro:assets";
+import { hobbies } from "@/config/about.ts";
+import { Button } from "@/components/ui/button";
+import { Icon } from "astro-icon/components";
+import { people } from "@/config/people.ts"; // Ensure you have a people.ts file with an array of people objects
+
+changeLanguage("fr");
+---
+
+<MainLayout title="About" description="about people">
+  <section class="space-y-5">
+    <section class="space-y-10">
+      <h1 class="text-4xl font-heading text-foreground text-center mt-16">Meet Our Team</h1>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-screen-lg">
+        {people.map(person => (
+          <div class="flex flex-col items-center text-center">
+            <Image
+              class="rounded-full mb-4 w-32 h-32 object-cover shadow-lg"
+              src={person.image}
+              alt={person.name}
+              width={128}
+              height={128}
+            />
+            <h2 class="text-xl font-semibold text-foreground">{person.name}</h2>
+            <p class="text-base text-muted-foreground">{person.title}</p>
+            <p class="mt-2 text-sm text-muted-foreground">{person.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+    <div
+      class="relative z-10 flex flex-col justify-center overflow-hidden lg:overflow-visible pb-16"
+    >
+
+    </div>
+  </section>
+</MainLayout>

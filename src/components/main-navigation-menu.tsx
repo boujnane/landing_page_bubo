@@ -12,10 +12,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { navMenuConfig } from "@/config/nav-menu";
 import type { MenuItem } from "@/types";
+import i18next from "i18next";
 
 const links = navMenuConfig.links;
 const pages = navMenuConfig.pagesNav[0];
 const examples = navMenuConfig.examplesNav[0];
+const isFrench = i18next.language === "fr";
 
 export function MainNavigationMenu() {
   return (
@@ -27,7 +29,7 @@ export function MainNavigationMenu() {
             {links.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={isFrench ? `/fr/${link.href}` : link.href}
                 className={navigationMenuTriggerStyle()}
                 {...(link.forceReload ? { "data-astro-reload": true } : {})}
               >

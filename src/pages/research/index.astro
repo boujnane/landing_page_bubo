@@ -1,9 +1,12 @@
 ---
+import { changeLanguage } from "i18next";
 import PageHeader from "@/components/page-header.astro";
 import { Badge } from "@/components/ui/badge";
 import MainLayout from "@/layouts/main-layout.astro";
 import { formatDate } from "@/lib/utils";
 import { getCollection } from "astro:content";
+
+changeLanguage("en");
 
 const projects = await getCollection("research");
 projects.sort((a, b) => +b.data.date - +a.data.date);
