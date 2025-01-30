@@ -4,6 +4,7 @@ import BaseHead from "@/components/layout/base-head.astro";
 import TailwindIndicator from "@/components/tailwind-indicator.astro";
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
+import i18next from "i18next";
 
 type Props = {
   title: string;
@@ -15,7 +16,7 @@ const { title, description, bodyClass } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html class="scroll-smooth" lang={i18next.language}>
   <head>
     <BaseHead title={title} description={description} />
     <!-- Add Analytics Component -->

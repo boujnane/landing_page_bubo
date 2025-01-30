@@ -1,4 +1,5 @@
 ---
+import { changeLanguage } from "i18next";
 // import BlogCard from "@/components/cards/blog-card.astro";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
@@ -8,17 +9,18 @@ import { navMenuConfig } from "@/config/nav-menu";
 import MainLayout from "@/layouts/main-layout.astro";
 import { getPosts } from "@/lib/fetchers";
 
+changeLanguage("en");
+
 const examples = navMenuConfig.examplesNav[0].items;
 const posts = await getPosts();
-
 const events = [
-{ date: "2017-01-01", title: "Creation of the company", description: "The beginning of our journey." },
-{ date: "2020-02-14", title: "First Huge Contract", description: "Securing our first major partnership." },
-{ date: "2021-03-17", title: "CIR/CII approval", description: "Achieving CIR/CII accreditation for research and innovation." },
-{ date: "2022-10-31", title: "Expand to Cameroon", description: "Expanding operations to Cameroon, embracing new opportunities." },
-{ date: "2023-12-25", title: "First prize - Bâtisseurs Africains", description: "Winning the Bâtisseurs Africains award, a recognition of our impact." },
-{ date: "2024-11-09", title: "Participation in JNDA", description: "Participating in the Journée Nationale de la Diaspora Africaine as an exhibitor." }
-  // Add more events as needed
+    { date: "2017-01-01", title: "Creation of the company", description: "The beginning of our journey." },
+    { date: "2020-02-14", title: "First Huge Contract", description: "Securing our first major partnership." },
+    { date: "2021-03-17", title: "CIR/CII approval", description: "Achieving CIR/CII accreditation for research and innovation." },
+    { date: "2022-10-31", title: "Expand to Cameroon", description: "Expanding operations to Cameroon, embracing new opportunities." },
+    { date: "2023-12-25", title: "First prize - B\u00E2tisseurs Africains", description: "Winning the B\u00E2tisseurs Africains award, a recognition of our impact." },
+    { date: "2024-11-09", title: "Participation in JNDA", description: "Participating in the Journ\u00E9e Nationale de la Diaspora Africaine as an exhibitor." }
+    // Add more events as needed
 ];
 ---
 

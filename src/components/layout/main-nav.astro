@@ -1,6 +1,7 @@
 ---
 import { cn, extractSegmentURL } from "@/lib/utils";
 import type { MainNavItem } from "@/types";
+import i18next from "i18next";
 
 type Props = {
   items: MainNavItem[];
@@ -8,6 +9,8 @@ type Props = {
 
 const { items } = Astro.props;
 const segment = extractSegmentURL(Astro.url.pathname);
+const isFrench = i18next.language === "fr"
+console.log("Langauage: ", i18next.language)
 ---
 
 {
@@ -15,7 +18,7 @@ const segment = extractSegmentURL(Astro.url.pathname);
     <nav class="hidden gap-6 md:flex">
       {items?.map((item) => (
         <a
-          href={item.disabled ? "#" : item.href}
+          href={item.disabled ? "#" : isFrench ? `/fr/${item.href}`: `/${item.href}`}
           class={cn(
             "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
             item.href.startsWith(`/${segment}`)

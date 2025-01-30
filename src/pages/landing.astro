@@ -1,4 +1,5 @@
 ---
+import { changeLanguage } from "i18next";
 import BentoGrid from "@/components/sections/bentogrid.astro";
 import Features from "@/components/sections/features.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
@@ -6,9 +7,10 @@ import HeroLanding from "@/components/sections/hero-landing.astro";
 import InfoLanding from "@/components/sections/info-landing.astro";
 // import PreviewLanding from "@/components/sections/preview-landing.astro";
 import Testimonials from "@/components/sections/testimonials.astro";
-
 import { infos } from "@/config/landing";
 import MainLayout from "@/layouts/main-layout.astro";
+
+changeLanguage("en");
 ---
 
 <MainLayout title="Landing">

@@ -8,7 +8,8 @@
     "build-local": "astro build",
     "build": "astro build --remote",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "translate": "npx astro-i18next generate"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",
@@ -33,6 +34,7 @@
     "@types/react-dom": "^18.3.1",
     "@vercel/analytics": "^1.4.1",
     "astro": "^4.16.8",
+    "astro-i18next": "^1.0.0-beta.21",
     "astro-icon": "^1.1.1",
     "balance-text": "^3.3.1",
     "class-variance-authority": "^0.7.0",

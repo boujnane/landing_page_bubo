@@ -1,7 +1,10 @@
 ---
+import { changeLanguage } from "i18next";
 import MainLayout from "@/layouts/main-layout.astro";
 import { Image } from "astro:assets";
 import { partners } from "@/config/partners.ts"; // Ensure you have a partners.ts file with an array of partner objects
+
+changeLanguage("en");
 ---
 
 <MainLayout title="Our Partners" description="Meet our esteemed partners who help us achieve our goals.">

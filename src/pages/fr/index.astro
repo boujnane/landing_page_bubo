@@ -1,0 +1,45 @@
+---
+import { t, changeLanguage } from "i18next";
+import Features from "@/components/sections/features.astro";
+import HeroLanding from "@/components/sections/hero-landing.astro";
+import InfoLanding from "@/components/sections/info-landing.astro";
+import Testimonials from "@/components/sections/testimonials.astro";
+import { infos } from "@/config/landing";
+import BlogHeader from "@/components/blog-header.astro";
+import BlogCard from "@/components/cards/blog-card.astro";
+import MainLayout from "@/layouts/main-layout.astro";
+import { getPosts } from "@/lib/fetchers";
+import Timeline from "@/components/Timeline.astro";
+import HeaderSection from "@/components/sections/header-section.astro";
+
+changeLanguage("fr");
+---
+
+<MainLayout title="Bubo">
+  <HeroLanding />
+  <Features />
+  <HeaderSection
+  label="Products"
+  title={t('home.title')}
+  subtitle="Products that will improve the way your employees work, day after day"
+  />
+  <InfoLanding data={infos[0]} reverse={true} />
+  <InfoLanding data={infos[1]} />
+  <InfoLanding data={infos[2]} reverse={true} />
+  <!-- <section class="container py-10">
+      <HeaderSection
+        label="Timeline"
+        title="Discover our history."
+        subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur."
+      />
+    <Timeline events={events} />
+    
+    <BlogHeader title="Accelerate" />
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8">
+      {posts.map((post) => <BlogCard {...post} />)}
+    </div>
+
+  </section> -->
+  <Testimonials />
+</MainLayout>

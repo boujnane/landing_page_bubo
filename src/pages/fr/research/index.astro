@@ -1,0 +1,60 @@
+---
+import { changeLanguage } from "i18next";
+import PageHeader from "@/components/page-header.astro";
+import { Badge } from "@/components/ui/badge";
+import MainLayout from "@/layouts/main-layout.astro";
+import { formatDate } from "@/lib/utils";
+import { getCollection } from "astro:content";
+
+changeLanguage("fr");
+
+const projects = await getCollection("research");
+projects.sort((a, b) => +b.data.date - +a.data.date);
+---
+
+<MainLayout title="Recherche et Développement">
+  <section class="container max-w-screen-lg space-y-6 pt-12">
+    <PageHeader
+      heading="Our R&D Projects"
+      text="Explore our research and development initiatives aimed at innovating and improving the future."
+    />
+
+    <ul class="pt-6">
+      {
+        projects.map((project) => (
+          <li class="flex flex-col max-md:gap-y-4 md:flex-row w-full">
+            <div class="md:basis-32 lg:basis-56 shrink-0 grow-0">
+              <div class="md:sticky md:top-24 w-auto mr-6">
+                <a
+                  href={`/research/${project.slug}`}
+                  class="flex flex-col gap-y-2 pb-4"
+                >
+                  <Badge
+                    variant="default"
+                    radius="lg"
+                    className="w-14 h-7 justify-center text-md bg-bubo-primary text-white"
+                  >
+                    {project.data.projectCode}
+                  </Badge>
+                  <span class="text-sm text-muted-foreground">
+                    {formatDate(project.data.date)}
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="prose dark:prose-invert prose-img:rounded-3xl max-w-none w-full pb-24">
+              <h3 class="text-xl font-semibold">{project.data.title}</h3>
+              <p class="text-muted-foreground text-base">
+                {project.data.description}
+              </p>
+              {project.render().then(({ Content }) => (
+                <Content />
+              ))}
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</MainLayout>

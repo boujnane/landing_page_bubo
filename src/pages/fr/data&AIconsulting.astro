@@ -1,0 +1,97 @@
+---
+import { changeLanguage } from "i18next";
+import BlogHeader from "@/components/blog-header.astro";
+import BlogCard from "@/components/cards/blog-card.astro";
+import HeaderSection from "@/components/sections/header-section.astro";
+import MainLayout from "@/layouts/main-layout.astro";
+import { getPosts } from "@/lib/fetchers";
+import { Icon } from "astro-icon/components";
+
+changeLanguage("fr");
+
+const posts = await getPosts();
+---
+
+<MainLayout title="Data & AI consulting" description="Data & AI consulting section">
+    <section class="container py-16">
+        <!-- Blog Section -->
+        <HeaderSection
+        label="Data & AI consulting"
+        title="Our Process"
+        subtitle="Transforming data into actionable insights with AI-driven solutions"
+        />
+        <section>
+            <div class="py-32">
+              <div class="container max-w-7xl">
+                <div class="relative">
+                  <div class="relative z-10 grid grid-cols-6 gap-6">
+                    {/* Étape 1 : Collecte des données */}
+                    <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
+                      <Icon name="lucide:database" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Data Collection
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground">
+                        Gathering data from various sources to create a comprehensive foundation.
+                      </p>
+                    </div>
+          
+                    {/* Étape 2 : Nettoyage des données */}
+                    <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
+                      <Icon name="lucide:brush" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Data Cleaning
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground">
+                        Preparing and structuring data for analysis to ensure accuracy.
+                      </p>
+                    </div>
+          
+                    {/* Étape 3 : Modélisation */}
+                    <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
+                      <Icon name="lucide:trending-up" class="size-10 text-[#fe8301]" />
+                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                        Modeling
+                      </h2>
+                      <p class="mt-4 text-center text-muted-foreground">
+                        Building analytical or predictive models using the cleaned data.
+                      </p>
+                    </div>
+          
+                    {/* Étape 4 : Entraînement (avec grille interne) */}
+                    <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
+                        <Icon name="lucide:activity" class="size-10 text-[#fe8301]" />
+                        <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                            Training
+                        </h2>
+                        <p class="mt-4 text-center text-muted-foreground max-w-md">
+                            Training models on data to maximize accuracy and performance.
+                        </p>
+                    </div>
+        
+                    {/* Étape 5 : Déploiement (avec grille interne) */}
+                    <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
+                        <Icon name="lucide:rocket" class="size-10 text-[#fe8301]" />
+                        <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                            Deployment
+                        </h2>
+                        <p class="mt-4 text-center text-muted-foreground max-w-md">
+                            Deploying the model into production to generate real-time insights.
+                        </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <BlogHeader title="Use Cases" />
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
+          {posts
+            .filter((post) => post.data.category !== "Others")
+            .map((post) => <BlogCard key={post.id} {...post} />)}
+        </div>
+      </section>
+</MainLayout>

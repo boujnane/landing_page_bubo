@@ -1,6 +1,6 @@
 ---
+import { changeLanguage } from "i18next";
 export const prerender = false;
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import MainLayout from "@/layouts/main-layout.astro";
@@ -10,40 +10,38 @@ import { createForm } from "simple:form";
 import z from "zod";
 import { useState } from "react";
 
+changeLanguage("en");
+
 let error: boolean = false;
-
 const quoteForm = createForm({
-  projectDescription: z.string().optional(),
-  goals: z.string().optional(),
-  interest: z.enum(["ai", "products", "software"]).optional(),
-  scope: z.string().optional(),
-  additionalNotes: z.string().optional(),
-  email: z.string().email(),
+    projectDescription: z.string().optional(),
+    goals: z.string().optional(),
+    interest: z.enum(["ai", "products", "software"]).optional(),
+    scope: z.string().optional(),
+    additionalNotes: z.string().optional(),
+    email: z.string().email(),
 });
-
 const res = await Astro.locals.form.getData(quoteForm);
-
 if (res?.data) {
-  const response = await fetch(Astro.url.origin + "/api/waitlist", {
-    method: "POST",
-    headers: {
-      Accept: "application.json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(res.data),
-  });
-  const data = await response.json();
-
-  if (data.message === "success") {
-    Astro.cookies.set("sub-newsletter", "true");
-  } else {
-    error = true;
-  }
+    const response = await fetch(Astro.url.origin + "/api/waitlist", {
+        method: "POST",
+        headers: {
+            Accept: "application.json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(res.data),
+    });
+    const data = await response.json();
+    if (data.message === "success") {
+        Astro.cookies.set("sub-newsletter", "true");
+    }
+    else {
+        error = true;
+    }
 }
-
 const cookie = Astro.cookies.get("sub-newsletter")?.boolean();
 if (cookie) {
-  Astro.cookies.delete("sub-newsletter");
+    Astro.cookies.delete("sub-newsletter");
 }
 ---
 
