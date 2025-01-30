@@ -6,12 +6,8 @@ import { hobbies } from "@/config/about.ts";
 import { Button } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
 import { people } from "@/config/people.ts"; // Ensure you have a people.ts file with an array of people objects
-import { getStaticPaths } from "@/lib/staticPaths";
 
 changeLanguage("fr");
-
-export { getStaticPaths };
-const { lang } = Astro.params;
 ---
 
 <MainLayout title="About" description="about people">
