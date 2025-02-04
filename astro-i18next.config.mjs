@@ -12,6 +12,13 @@ export default {
     // ns: ['common'], // Namespaces for translations
     // defaultNS: 'common',
   },
+  load: ["server", "client"],
+  i18nextServerPlugins: {
+    "{initReactI18next}": "react-i18next",
+  },
+  i18nextClientPlugins: {
+    "{initReactI18next}": "react-i18next",
+  },
   routes: {
     fr: {
       accelerate: "accelerate",

@@ -12,14 +12,15 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { navMenuConfig } from "@/config/nav-menu";
 import type { MenuItem } from "@/types";
-import i18next from "i18next";
+import useLocation from "@/hooks/useLocation";
 
 const links = navMenuConfig.links;
 const pages = navMenuConfig.pagesNav[0];
 const examples = navMenuConfig.examplesNav[0];
-const isFrench = i18next.language === "fr";
 
 export function MainNavigationMenu() {
+  const { localizeUrl } = useLocation();
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -29,7 +30,7 @@ export function MainNavigationMenu() {
             {links.map((link) => (
               <a
                 key={link.href}
-                href={isFrench ? `/fr/${link.href}` : link.href}
+                href={localizeUrl(link.href)}
                 className={navigationMenuTriggerStyle()}
                 {...(link.forceReload ? { "data-astro-reload": true } : {})}
               >
@@ -77,12 +78,13 @@ const ListItem: React.FC<MenuItem> = ({
   forceReload,
 }) => {
   const target = external ? "_blank" : undefined;
+  const { localizeUrl } = useLocation();
 
   return (
     <li>
       <a
         target={target}
-        href={disabled ? undefined : href}
+        href={disabled ? undefined : localizeUrl(href)}
         {...(forceReload ? { "data-astro-reload": true } : {})}
         className={cn(
           "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",

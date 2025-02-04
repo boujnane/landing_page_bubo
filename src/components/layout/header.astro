@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "@/config/site";
+import { useLocation } from "@/lib/location";
 import { cn } from "@/lib/utils";
 import { Icon } from "astro-icon/components";
 import i18next from "i18next";
@@ -10,8 +11,7 @@ type Props = {
 
 const { className } = Astro.props;
 const logoBubo = 'src/icons/logo_bubo.png';
-const isFrench = i18next.language === "fr";
-console.log("HEADER: ", i18next.language)
+const { localizeUrl } = useLocation(Astro.url.pathname);
 ---
 
 <header
@@ -22,7 +22,7 @@ console.log("HEADER: ", i18next.language)
 >
   <div class="relative container flex items-center justify-between w-full">
     <div class="flex items-center gap-6 md:gap-8 lg:gap-10">
-      <a href={isFrench ? "/fr": "/"} class="hidden items-center space-x-2 md:flex">
+      <a href={localizeUrl("/")} class="hidden items-center space-x-2 md:flex">
         <Icon name="logo-bubo" class="size-8" />
         <span class="hidden font-bold sm:inline-block">
           {siteConfig.name}
@@ -40,7 +40,7 @@ console.log("HEADER: ", i18next.language)
     <div
       class="absolute top-1/2 left-1/2 -translate-x-4 -translate-y-4 md:hidden"
     >
-      <a href={isFrench ? "/fr": "/"} aria-label="Astronomy homepage">
+      <a href={localizeUrl("/")} aria-label="Astronomy homepage">
         <Icon name="logo-bubo" class="size-8" />
       </a>
     </div>
