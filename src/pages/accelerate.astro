@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 // import BlogCard from "@/components/cards/blog-card.astro";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
@@ -29,23 +29,22 @@ const events = [
         <!-- Main Text Section -->
         <div class="text-center mb-12 md:mb-20 px-4">
             <h2 class="text-4xl font-semibold mb-6">
-              𝙱𝚞𝚋𝚘 𝚋𝚞𝚋𝚘 (owl)
+              𝙱𝚞𝚋𝚘 𝚋𝚞𝚋𝚘 ({t('accelerate.subtitle')})
             </h2>
             <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-justify">
-              <em>The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.</em>
+              <em>{t('accelerate.title')}</em>
             </p>
             
             <ul class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed list-disc pl-8 text-justify">
-              <li><strong>At <span class="font-semibold">Bubo</span></strong>, we believe in the power of software and the potential of digital to transform everyday life, <strong>not as a barrier, but as an ally</strong>. Our mission is to design digital solutions that simplify life and open up new perspectives. Useful, intuitive tools that facilitate access to information and empower those who use them.</li>
+              <li><strong>{t('accelerate.part1')}<span class="font-semibold">Bubo</span></strong>{t('accelerate.part2')}<strong>{t('accelerate.part3')}</strong>{t('accelerate.part4')}</li>
             </br>
-              <li><strong><span class="font-semibold">Research</span></strong> and a rigorous scientific approach are the foundation of our project: we are convinced that well-directed artificial intelligence is a vector of acceleration and opportunity. We are working to ensure that everyone can make this technology their own, because its future must be deeply aligned with the real needs of the men and women who will drive it forward. We are proud of our <strong>CIR accreditation from Ministère de l'Enseignement Supérieur et de la Recherche</strong>, which strengthens our position in this crucial area.</li>
+              <li><strong><span class="font-semibold">{t('accelerate.part5')}</span></strong>{t('accelerate.part6')}<strong>{t('accelerate.part7')}</strong>{t('accelerate.part8')}</li>
             </br>
-              <li><strong>Our project</strong> also carries with it a <strong>strong commitment to Africa</strong>. This continent, so close to our hearts, harbors immense potential that we want to help reveal. <strong>Cameroon</strong>, a land of growth and opportunity, is for us an anchor point, a place where we invest to build the future.</li>
+              <li><strong>{t('accelerate.part9')}</strong>{t('accelerate.part10')}<strong>{t('accelerate.part11')}</strong>{t('accelerate.part12')}<strong>{t('accelerate.part13')}</strong>{t('accelerate.part14')}</li>
             </ul>
           
             <blockquote class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed italic border-l-4 pl-4 border-orange-500 text-justify">
-              Bubo is much more than a company; it's a vision of a future where digital and human move forward hand in hand, 
-              where <strong>every innovation is rooted in the values of simplicity, progress and responsibility</strong>.
+              {t('accelerate.part15')}<strong>{t('accelerate.part16')}</strong>.
             </blockquote>
           </div>
           
@@ -54,10 +53,14 @@ const events = [
         <!-- Timeline Section -->
         <HeaderSection
           label="Timeline"
-          title="Discover our history."
-          subtitle="Some key milestones in the Bubo's history."
+          title={t('timeline.title') as string}
+          subtitle={t('timeline.subtitle') ?? ""}
         />
-        <Timeline events={events} />
+        <Timeline events={events.map(event => ({
+          date: event.date,
+          title: t(`timeline.events.${event.date}.title`),
+          description: t(`timeline.events.${event.date}.description`)
+        }))} />
       </section>
 </MainLayout>
 

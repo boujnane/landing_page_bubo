@@ -6,5 +6,55 @@
   "home": {
     "title": "Discover all products.",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+  },
+  "accelerate": {
+    "title": "The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.",
+    "subtitle": "owl",
+    "part1": "At ",
+    "part2": ", we believe in the power of software and the potential of digital to transform everyday life, ",
+    "part3": "not as a barrier, but as an ally",
+    "part4": ". Our mission is to design digital solutions that simplify life and open up new perspectives. Useful, intuitive tools that facilitate access to information and empower those who use them.",
+    "part5": "Research",
+    "part6": " and a rigorous scientific approach are the foundation of our project: we are convinced that well-directed artificial intelligence is a vector of acceleration and opportunity. We are working to ensure that everyone can make this technology their own, because its future must be deeply aligned with the real needs of the men and women who will drive it forward. We are proud of our ",
+    "part7": "CIR accreditation from Ministère de l'Enseignement Supérieur et de la Recherche",
+    "part8": ", which strengthens our position in this crucial area.",
+    "part9": "Our project",
+    "part10": " also carries with it a ",
+    "part11": "strong commitment to Africa",
+    "part12": ". This continent, so close to our hearts, harbors immense potential that we want to help reveal. ",
+    "part13": "Cameroon",
+    "part14": ", a land of growth and opportunity, is for us an anchor point, a place where we invest to build the future.",
+    "part15": "Bubo is much more than a company; it's a vision of a future where digital and human move forward hand in hand, where ",
+    "part16": "every innovation is rooted in the values of simplicity, progress and responsibility"
+  },
+  "timeline": {
+    "title": "Discover our history.",
+    "subtitle": "Some key milestones in Bubo's history.",
+    "events": {
+      "2017-01-01": {
+        "title": "Creation of the company",
+        "description": "The beginning of our journey."
+      },
+      "2020-02-14": {
+        "title": "First Huge Contract",
+        "description": "Securing our first major partnership."
+      },
+      "2021-03-17": {
+        "title": "CIR/CII approval",
+        "description": "Achieving CIR/CII accreditation for research and innovation."
+      },
+      "2022-10-31": {
+        "title": "Expand to Cameroon",
+        "description": "Expanding operations to Cameroon, embracing new opportunities."
+      },
+      "2023-12-25": {
+        "title": "First prize - Bâtisseurs Africains",
+        "description": "Winning the Bâtisseurs Africains award, a recognition of our impact."
+      },
+      "2024-11-09": {
+        "title": "Participation in JNDA",
+        "description": "Participating in the Journée Nationale de la Diaspora Africaine as an exhibitor."
+      }
+    }
   }
 }

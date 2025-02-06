@@ -46,7 +46,7 @@ export const navMenuConfig: NavMenuConfig = {
         //   image: "/images/examples/pricing.jpg",
         // },
         {
-          title: "Tailor-made Software",
+          title: "Tailor-made software",
           href: "tailor-made",
           description:
             "Your needs, our work",
