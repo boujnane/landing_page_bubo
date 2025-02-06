@@ -3,42 +3,44 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
 import { siteConfig } from "@/config/site";
+import { t } from "i18next";
+
 ---
 <section class="space-y-6 py-12 sm:py-20 lg:py-20">
   <div class="container flex max-w-5xl flex-col items-center gap-5 text-center">
     <h1 class="text-balance font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[66px]">
-      Soar to new heights with{" "}
+      <span>{t('services.soar_to_new_heights')}</span> 
       <span class="bg-gradient-to-r from-orange-600 to-yellow-300 bg-clip-text text-transparent font-extrabold">
-        Bubo Team
+        {t('services.bubo_team')}
       </span>
     </h1>
-
+    
     <p class="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-      We offer :
+      {t('services.we_offer')}
     </p>
+    
 
     <div class="max-w-2xl space-y-3 text-muted-foreground sm:text-xl sm:leading-8">
       <div class="bullet-container">
         <ul class="bullet-list">
           <li class="bullet-item">
-            <p class="text-justify text-left text-xs sm:text-base"> <!-- Adjust font size -->
-              <span class="be_blur first_word">State-of-the-art</span>
-              <span class="zoom-effect">Data & AI consulting</span>
+            <p class="text-justify text-left text-xs sm:text-base">
+              <span class="be_blur first_word">{t('services.state_of_the_art')}</span>
+              <span class="zoom-effect">{t('services.data_ai_consulting')}</span>
             </p>
-          </li>
-          <li class="bullet-item">
-            <p class="text-justify text-left text-xs sm:text-base"> <!-- Adjust font size -->
-              <span class="zoom-effect">Tailor-made</span>
-              <span class="be_blur">software development</span>
-            </p>
-          </li>
-          <li class="bullet-item">
-            <p class="text-justify text-left text-xs sm:text-base"> <!-- Adjust font size -->
-              <span class="be_blur">Innovative and useful</span>
-              <span class="zoom-effect">products</span>
-              <span class="be_blur">to help your project take flight.</span>
-            </p>
-          </li>
+            <li class="bullet-item">
+              <p class="text-justify text-left text-xs sm:text-base">
+                <span class="zoom-effect">{t('services.tailor_made')}</span>
+                <span class="be_blur">{t('services.software_development')}</span>
+              </p>
+            </li>
+            <li class="bullet-item">
+              <p class="text-justify text-left text-xs sm:text-base">
+                <span class="be_blur">{t('services.innovative_useful')}</span>
+                <span class="zoom-effect">{t('services.products')}</span>
+                <span class="be_blur">{t('services.take_flight')}</span>
+              </p>
+            </li>
         </ul>
       </div>
     </div>

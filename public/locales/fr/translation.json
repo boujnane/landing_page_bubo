@@ -56,5 +56,17 @@
         "description": "Participation en tant qu’exposant à la Journée Nationale de la Diaspora Africaine."
       }
     }
+  },
+ "services": {
+    "soar_to_new_heights": "Atteignez de nouveaux sommets avec",
+    "bubo_team": "L'équipe Bubo",
+    "we_offer": "Nous offrons :",
+    "state_of_the_art": "À la pointe de la technologie",
+    "data_ai_consulting": "Consultation en Data & IA",
+    "tailor_made": "Sur mesure",
+    "software_development": "Développement logiciel",
+    "innovative_useful": "Innovant et utile",
+    "products": "Produits",
+    "take_flight": "Pour faire décoller votre projet"
   }
 }
