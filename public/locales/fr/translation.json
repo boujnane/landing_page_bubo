@@ -6,5 +6,55 @@
   "home": {
     "title": "Découvrez tous les produits.",
     "subtitle": "Ceci est une chaine de charactères <0>plus compliquée</0> à traduire, il y a des <1>éléments html</1>, comme <2>un super lien</2> par exemple !"
+    },
+  "accelerate": {
+    "title": "Le hibou grand-duc d'Eurasie, depuis la nuit des temps, vole sans bruit, avec sagesse et précision vers sa proie.",
+    "subtitle": "hibou",
+    "part1": "Chez ",
+    "part2": ", nous croyons fermement dans le pouvoir du logiciel et au potentiel du numérique pour transformer la vie quotidienne, ",
+    "part3": "non pas comme une barrière entre les gens, mais comme un puissant allié. ",
+    "part4": "Notre mission est de concevoir des solutions numériques qui simplifient la vie et ouvrent de nouvelles perspectives. Des outils utiles et intuitifs qui facilitent l'accès à l'information et responsabilisent ceux qui les utilisent.",
+    "part5": "La Recherche",
+    "part6": " et l'approche scientifique rigoureuse sont à la base de notre projet : nous sommes convaincus que l'intelligence artificielle bien dirigée est un vecteur d'accélération et d'opportunité. Nous œuvrons pour que chacun puisse s'approprier cette technologie, car son avenir doit être profondément aligné sur les besoins réels des hommes et des femmes qui la feront avancer. Nous sommes fiers de ",
+    "part7": "l'accréditation CIR décernée par le Ministère de l'Enseignement Supérieur et de la Recherche,",
+    "part8": " et qui renforce notre position dans ce domaine crucial.",
+    "part9": "Notre projet",
+    "part10": " s'accompagne également d'un ",
+    "part11": "engagement fort en faveur de l'Afrique",
+    "part12": ". Ce continent, qui nous tient tant à cœur, recèle un immense potentiel que nous voulons contribuer à révéler.",
+    "part13": " Le Cameroun",
+    "part14": ", terre de croissance et d'opportunités, est pour nous un point d'ancrage, un lieu où nous investissons pour construire l'avenir.",
+    "part15": "Bubo est bien plus qu'une entreprise, c'est la vision d'un avenir où le numérique et l'humain avancent main dans la main, ",
+    "part16": "où chaque innovation est ancrée dans des valeurs de simplicité, de progrès et de responsabilité"
+  },
+  "timeline": {
+    "title": "Découvrez notre histoire.",
+    "subtitle": "Quelques étapes clés de l’histoire de Bubo.",
+    "events": {
+      "2017-01-01": {
+        "title": "Création de l'entreprise",
+        "description": "Le début de notre aventure."
+      },
+      "2020-02-14": {
+        "title": "Premier grand contrat",
+        "description": "Obtention de notre premier partenariat majeur."
+      },
+      "2021-03-17": {
+        "title": "Accréditation CIR/CII",
+        "description": "Obtention de l’accréditation CIR/CII pour la recherche et l’innovation."
+      },
+      "2022-10-31": {
+        "title": "Expansion au Cameroun",
+        "description": "Expansion de nos activités au Cameroun, embrassant de nouvelles opportunités."
+      },
+      "2023-12-25": {
+        "title": "Premier prix - Bâtisseurs Africains",
+        "description": "Récompensé par le prix Bâtisseurs Africains, une reconnaissance de notre impact."
+      },
+      "2024-11-09": {
+        "title": "Participation à la JNDA",
+        "description": "Participation en tant qu’exposant à la Journée Nationale de la Diaspora Africaine."
+      }
+    }
   }
 }
