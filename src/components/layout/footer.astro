@@ -1,14 +1,17 @@
 ---
 import { ThemeToggle } from "@/components/theme-toggle";
 import { footerLinks, siteConfig } from "@/config/site";
+import { useLocation } from "@/lib/location";
 import { cn } from "@/lib/utils";
 import { Icon } from "astro-icon/components";
+import { t, changeLanguage } from "i18next";
 
 type Props = {
   className?: string;
 };
 
 const { className } = Astro.props;
+const { isFrench } = useLocation(Astro.url.pathname);
 ---
 
 <footer class={cn("border-t", className)}>
@@ -19,7 +22,7 @@ const { className } = Astro.props;
       footerLinks.map((section) => (
         <div>
           <span class="text-sm font-medium text-foreground">
-            {section.title}
+            {t(section.title)}
           </span>
           <ul class="mt-4 list-inside space-y-3">
             {section.items?.map((link) => (
@@ -28,7 +31,7 @@ const { className } = Astro.props;
                   href={link.href}
                   class="text-sm text-muted-foreground hover:text-primary"
                 >
-                  {link.title}
+                  {t(link.title)}
                 </a>
               </li>
             ))}

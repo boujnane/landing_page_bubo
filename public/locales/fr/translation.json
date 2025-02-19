@@ -68,5 +68,24 @@
     "innovative_useful": "Innovant et utile",
     "products": "Produits",
     "take_flight": "Pour faire décoller votre projet"
+  },
+  "footer": {
+    "vision": {
+      "title": "Vision",
+      "accelerate": "Accélérer",
+      "research": "Recherche"
+    },
+    "explore": {
+      "title": "Explorer",
+      "dataAIconsulting": "Conseil en données et IA",
+      "tailor_made": "Logiciel sur mesure",
+      "products": "Produits"
+    },
+    "about_us": {
+      "title": "A propos",
+      "people": "Personnes",
+      "values": "Valeurs",
+      "partners": "Partenaires"
+    }
   }
 }
