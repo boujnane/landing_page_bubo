@@ -3,15 +3,17 @@ import { Button } from "@/components/ui/button";
 import { features } from "@/config/landing";
 import { Icon } from "astro-icon/components";
 import HeaderSection from "./header-section.astro";
+import { t } from "i18next";
+
 ---
 
 <section>
   <div class="pb-6 pt-28">
     <div class="container max-w-6xl">
       <HeaderSection
-        label="Data & AI consulting"
-        title="Discover all cases."
-        subtitle="Bringing our customers' ideas & projects to life"
+        label={t("home.data_ai_consulting") || ""}
+        title={t("home.discover_all_cases")}
+        subtitle={t("home.bringing_our_customers_ideas") || ""}
       />
 
       <div class="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -28,7 +30,7 @@ import HeaderSection from "./header-section.astro";
                 </div>
 
                 <p class="mt-6 pb-6 text-muted-foreground">
-                  {feature.description}
+                  {t(feature.description)}
                 </p>
 
                 <div class="-mb-5 flex gap-3 border-t border-muted py-4 md:-mb-7">
@@ -39,7 +41,7 @@ import HeaderSection from "./header-section.astro";
                     className="px-4"
                   >
                     <a href={feature.link} class="flex items-center gap-2">
-                      <span>Read more...</span>
+                      <span>{t("common.read_more")}...</span>
                       <Icon name="lucide:arrow-up-right" class="size-4" />
                     </a>
                   </Button>

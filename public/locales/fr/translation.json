@@ -5,7 +5,19 @@
   },
   "home": {
     "title": "Découvrez tous les produits.",
-    "subtitle": "Ceci est une chaine de charactères <0>plus compliquée</0> à traduire, il y a des <1>éléments html</1>, comme <2>un super lien</2> par exemple !"
+    "discover_all_cases": "Découvrez tous les cas.",
+    "data_ai_consulting": "Conseil en données et IA",
+    "bringing_our_customers_ideas": "Donner vie aux idées et aux projets de nos clients",
+    "products_that_will_improve": "Des produits qui améliorent la façon dont vos employés travaillent, jour après jour",
+    "discover_our_revolutionary_archiving": "Découvrez notre solution révolutionnaire d'archivage et de gestion des documents. Avec la recherche avancée basée sur l'IA et le chat instantané comme GPT, retrouvez vos informations en un instant.",
+    "work_together_with_your": "Travaillez avec les membres de votre équipe en temps réel.",
+    "stay_ahead_of_the_curve": "Gardez une longueur d'avance grâce à l'accès à des mises à jour constantes.",
+    "our_platform_offers_the": "Notre plateforme offre l'évolutivité nécessaire pour s'adapter à vos besoins.",
+    "explore_the_internet_in_depth": "Explorez Internet en profondeur et transformez vos recherches en stratégies éclairées pour guider votre prise de décision, en tirant parti des meilleures méthodes de la PNL pour y parvenir.",
+    "customize_your_integrations": "Personnalisez vos intégrations pour répondre à vos besoins spécifiques.",
+    "streamline_your_processes": "Rationalisez vos processus et réduisez les efforts manuels.",
+    "rely_on_our_robust_infrastructure": "Faites confiance à notre infrastructure solide et à notre documentation complète.",
+    "discover_our_web_application_that": "Découvrez notre application web qui prédit les résultats sportifs avec plus de précision que l'algorithme de n'importe quel bookmaker."
     },
   "accelerate": {
     "title": "Le hibou grand-duc d'Eurasie, depuis la nuit des temps, vole sans bruit, avec sagesse et précision vers sa proie.",
@@ -87,5 +99,20 @@
       "values": "Valeurs",
       "partners": "Partenaires"
     }
+  },
+    "common": {
+      "read_more": "En savoir plus",
+      "collaborative": "Collaboratif",
+      "innovative": "Innovatif",
+      "scalable": "Évolutif",
+      "flexible": "Flexible",
+      "efficient": "Efficace",
+      "reliable": "Fiable"
+    },
+  "features": {
+    "reconciling_disparate_data_models": "Rapprocher des modèles de données disparates afin de garantir la cohérence et l'exactitude des systèmes et des applications d'intelligence artificielle.",
+    "utilizing_large_language_models": "Utilisation de grands modèles linguistiques pour rationaliser l'analyse des documents juridiques et améliorer l'efficacité de la gestion des dossiers.",
+    "applying_automatic_speech_recognition": "Application de la reconnaissance automatique de la parole (ASR) et des grands modèles de langage (LLM) à l'analyse des discussions en réunion pour obtenir des informations exploitables.",
+    "implementing_non_intrusive_load": "Mise en œuvre de techniques de surveillance de la charge non intrusive (NILM) pour analyser et décomposer la consommation d'énergie par appareil individuel."
   }
 }

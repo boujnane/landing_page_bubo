@@ -5,8 +5,19 @@
   },
   "home": {
     "title": "Discover all products.",
-    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
-    "vision": "Visionage"
+    "discover_all_cases": "Discover all cases.",
+    "data_ai_consulting": "Data & AI consulting",
+    "bringing_our_customers_ideas": "Bringing our customers' ideas & projects to life",
+    "products_that_will_improve": "Products that will improve the way your employees work, day after day",
+    "discover_our_revolutionary_archiving": "Discover our revolutionary archiving and document management solution. With advanced AI-based search and instant chat like GPT, find your information in an instant.",
+    "work_together_with_your": "Work together with your team members in real-time.",
+    "stay_ahead_of_the_curve": "Stay ahead of the curve with access constant updates.",
+    "our_platform_offers_the": "Our platform offers the scalability needed to adapt to your needs.",
+    "explore_the_internet_in_depth": "Explore the Internet in depth and transform your research into informed strategies to guide your decision-making, leveraging the best NLP methods to achieve this.",
+    "customize_your_integrations": "Customize your integrations to fit your unique requirements.",
+    "streamline_your_processes": "Streamline your processes and reducing manual effort.",
+    "rely_on_our_robust_infrastructure": "Rely on our robust infrastructure and comprehensive documentation.",
+    "discover_our_web_application_that": "Discover our web application that predicts sports results more accurately than any bookmaker's algorithm."
   },
   "accelerate": {
     "title": "The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.",
@@ -71,22 +82,37 @@
     "take_flight": "To help your project take flight"
   },
   "footer": {
-    "vision": {
-      "title": "Vision",
-      "accelerate": "Accelerate",
-      "research": "Research"
-    },
-    "explore": {
-      "title": "Explore",
-      "dataAIconsulting": "Data & AI consulting",
-      "tailor_made": "Tailor-made software",
-      "products": "Products"
-    },
-    "about_us": {
-      "title": "About Us",
-      "people": "People",
-      "values": "Values",
-      "partners": "Partners"
+      "vision": {
+        "title": "Vision",
+        "accelerate": "Accelerate",
+        "research": "Research"
+      },
+      "explore": {
+        "title": "Explore",
+        "dataAIconsulting": "Data & AI consulting",
+        "tailor_made": "Tailor-made software",
+        "products": "Products"
+      },
+      "about_us": {
+        "title": "About Us",
+        "people": "People",
+        "values": "Values",
+        "partners": "Partners"
     }
+  },
+  "common": {
+    "read_more": "Read_more",
+    "collaborative": "Collaborative",
+    "innovative": "Innovative",
+    "scalable": "Scalable",
+    "flexible": "Flexible",
+    "efficient": "Efficient",
+    "reliable": "Reliable"
+  },
+  "features": {
+    "reconciling_disparate_data_models": "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
+    "utilizing_large_language_models": "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
+    "applying_automatic_speech_recognition": "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
+    "implementing_non_intrusive_load": "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances."
   }
 }

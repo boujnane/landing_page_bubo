@@ -4,23 +4,23 @@ export const infos: InfoLdg[] = [
   {
     title: "Kumbu GED",
     description:
-      "Discover our revolutionary archiving and document management solution. With advanced AI-based search and instant chat like GPT, find your information in an instant.",
+      "home.discover_our_revolutionary_archiving",
     image: "/images/blog/Logo_Kumbu_with_name.svg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "common.collaborative",
+        description: "home.work_together_with_your",
         icon: "lucide:laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "common.innovative",
+        description: "home.stay_ahead_of_the_curve",
         icon: "lucide:settings",
       },
       {
-        title: "Scalable",
+        title: "common.scalable",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "home.our_platform_offers_the",
         icon: "lucide:search",
       },
     ],
@@ -28,24 +28,24 @@ export const infos: InfoLdg[] = [
   {
     title: "Bubo Analytics",
     description:
-      "Explore the Internet in depth and transform your research into informed strategies to guide your decision-making, leveraging the best NLP methods to achieve this.",
+      "home.explore_the_internet_in_depth",
     image: "/images/blog/bubo_analytics.png",
     list: [
       {
-        title: "Flexible",
+        title: "common.flexible",
         description:
-          "Customize your integrations to fit your unique requirements.",
+          "home.customize_your_integrations",
         icon: "lucide:laptop",
       },
       {
-        title: "Efficient",
-        description: "Streamline your processes and reducing manual effort.",
+        title: "common.efficient",
+        description: "home.streamline_your_processes",
         icon: "lucide:search",
       },
       {
-        title: "Reliable",
+        title: "common.reliable",
         description:
-          "Rely on our robust infrastructure and comprehensive documentation.",
+          "home.rely_on_our_robust_infrastructure",
         icon: "lucide:settings",
       },
     ],
@@ -53,23 +53,23 @@ export const infos: InfoLdg[] = [
   {
     title: "Bubo Sports",
     description:
-      "Discover our web application that predicts sports results more accurately than any bookmaker's algorithm.",
+      "home.discover_our_web_application_that",
     image: "/images/blog/bubocycling.png",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "common.collaborative",
+        description: "home.work_together_with_your",
         icon: "lucide:laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "common.innovative",
+        description: "home.stay_ahead_of_the_curve",
         icon: "lucide:settings",
       },
       {
-        title: "Scalable",
+        title: "common.scalable",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "home.our_platform_offers_the",
         icon: "lucide:search",
       },
     ],
@@ -79,29 +79,25 @@ export const infos: InfoLdg[] = [
 export const features = [
   {
     title: "Atradius",
-    description:
-      "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
+    description: "features.reconciling_disparate_data_models",
     link: "/data&AIconsulting/atradius/",
     icon: "atradius",
   },
   {
     title: "Legal",
-    description:
-      "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
+    description: "features.utilizing_large_language_models",
     link: "/data&AIconsulting/legallaw/",
     icon: "law",
   },
   {
     title: "Sweez",
-    description:
-      "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
+    description: "features.applying_automatic_speech_recognition",
     link: "/data&AIconsulting/sweez/",
     icon: "watermelon",
   },
   {
     title: "Gioza",
-    description:
-      "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances.",
+    description: "features.reconciling_disparate_data_models",
     link: "/data&AIconsulting/gioza/",
     icon: "gioza_logo",
   },
