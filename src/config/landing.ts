@@ -106,44 +106,39 @@ export const features = [
 export const testimonials = [
   {
     name: "Karim Bougherfa",
-    job: "Full Stack Developer",
+    job: "common.full_stack_developer",
     image: "https://randomuser.me/api/portraits/men/31.jpg",
-    review:
-      "Working with Bubo has been an incredible experience! The team is so supportive and always ready to help. Thanks to their expertise, I was able to develop custom solutions quickly, without worrying about the technical details. Their attention to the needs of my clients has transformed my practice. I feel more confident in my abilities, and the results speak for themselves!",
+    review: "home.working_with_bubo_has_been"
   },
   {
     name: "Moussa Traoré",
-    job: "Technical Director",
+    job: "common.technical_director",
     image: "https://randomuser.me/api/portraits/men/59.jpg",
-    review:
-      "Bubo has helped me successfully execute my roadmap! Deployments have also become a breeze, thanks to their tailored solutions.",
+    review: "home.bubo_has_helped_me_successfully"
   },
   {
     name: "Clémence Dubois",
-    job: "Product Manager",
+    job: "common.product_manager",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
-    review:
-      "What I really appreciate about Bubo is the focus on quality and collaboration. As a Product Manager, I can count on a team that shares my vision. Together, we've launched products that truly meet market needs, like Kumbu for efficient document management.",
+    review: "home.what_i_really_appreciate_about"
   },
   {
     name: "Aminata Koulibaly",
-    job: "Business Owner",
+    job: "common.business_owner",
     image: "https://randomuser.me/api/portraits/women/35.jpg",
-    review:
-      "Bubo provided me with the tools to explore user data. It's amazing to be able to optimize our analyses while ensuring data security, which is crucial for my business decisions.",
+    review: "home.bubo_provided_me_with_the"
   },
   {
     name: "Olivier Koffi",
-    job: "Criminal Defense Lawyer",
+    job: "common.criminal_defense_lawyer",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
-    review:
-      "Working on Kumbu, one of Bubo's products, has transformed the way I manage my cases. Their tool streamlined my organization and saved me so much time in my research. The results speak for themselves!",
+    review: "home.working_on_kumbu_one_of_bubo"
   },  
   {
     name: "Julie Martinelli",
-    job: "Lead Data Scientist",
+    job: "common.lead_data_scientist",
     image: "https://randomuser.me/api/portraits/women/32.jpg",
-    review:
-      "As the Lead Data Scientist at my company, working with Bubo has been a game-changer. Their AI-powered tools have empowered us to build advanced models that predict trends and uncover hidden patterns in our data. The team at Bubo has a deep understanding of the technical complexities, and their expertise has allowed us to deliver actionable insights faster. The collaboration has significantly boosted our decision-making process, helping us shape more effective strategies based on data-driven predictions.",  },
+    review: "home.as_the_lead_data_scientist"
+  },
 ];
 

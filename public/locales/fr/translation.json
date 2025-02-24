@@ -17,8 +17,15 @@
     "customize_your_integrations": "Personnalisez vos intégrations pour répondre à vos besoins spécifiques.",
     "streamline_your_processes": "Rationalisez vos processus et réduisez les efforts manuels.",
     "rely_on_our_robust_infrastructure": "Faites confiance à notre infrastructure solide et à notre documentation complète.",
-    "discover_our_web_application_that": "Découvrez notre application web qui prédit les résultats sportifs avec plus de précision que l'algorithme de n'importe quel bookmaker."
-    },
+    "discover_our_web_application_that": "Découvrez notre application web qui prédit les résultats sportifs avec plus de précision que l'algorithme de n'importe quel bookmaker.",
+    "bubo_has_helped_me_successfully": "Bubo m'a aidé à exécuter avec succès ma feuille de route ! Les déploiements sont également devenus un jeu d'enfant, grâce à leurs solutions sur mesure.",
+    "what_i_really_appreciate_about": "Ce que j'apprécie vraiment chez Bubo, c'est l'accent mis sur la qualité et la collaboration. En tant que Product Manager, je peux compter sur une équipe qui partage ma vision. Ensemble, nous avons lancé des produits qui répondent vraiment aux besoins du marché, comme Kumbu pour une gestion efficace des documents.",
+    "bubo_provided_me_with_the": "Bubo m'a fourni les outils pour explorer les données des utilisateurs. C'est formidable de pouvoir optimiser nos analyses tout en assurant la sécurité des données, ce qui est crucial pour mes décisions commerciales.",
+    "working_on_kumbu_one_of_bubo": "Travailler sur Kumbu, l'un des produits de Bubo, a transformé la façon dont je gère mes dossiers. Leur outil a rationalisé mon organisation et m'a fait gagner beaucoup de temps dans mes recherches. Les résultats parlent d'eux-mêmes !",
+    "as_the_lead_data_scientist": "En tant que Lead Data Scientist au sein de mon entreprise, la collaboration avec Bubo a changé la donne. Leurs outils alimentés par l'IA nous ont permis de construire des modèles avancés qui prédisent les tendances et découvrent des modèles cachés dans nos données. L'équipe de Bubo a une compréhension profonde des complexités techniques, et leur expertise nous a permis de fournir des informations exploitables plus rapidement. La collaboration a considérablement stimulé notre processus de prise de décision, nous aidant à élaborer des stratégies plus efficaces basées sur des prédictions fondées sur des données.",
+    "what_our_clients_are_sharing": "Ce que nos clients disent.",
+    "discover_the_glowing_feedback": "Découvrez les commentaires élogieux de nos clients ravis dans le monde entier."
+  },
   "accelerate": {
     "title": "Le hibou grand-duc d'Eurasie, depuis la nuit des temps, vole sans bruit, avec sagesse et précision vers sa proie.",
     "subtitle": "hibou",
@@ -81,34 +88,22 @@
     "products": "Produits",
     "take_flight": "Pour faire décoller votre projet"
   },
-  "footer": {
-    "vision": {
-      "title": "Vision",
-      "accelerate": "Accélérer",
-      "research": "Recherche"
-    },
-    "explore": {
-      "title": "Explorer",
-      "dataAIconsulting": "Conseil en données et IA",
-      "tailor_made": "Logiciel sur mesure",
-      "products": "Produits"
-    },
-    "about_us": {
-      "title": "A propos",
-      "people": "Personnes",
-      "values": "Valeurs",
-      "partners": "Partenaires"
-    }
+  "common": {
+    "read_more": "En savoir plus",
+    "collaborative": "Collaboratif",
+    "innovative": "Innovatif",
+    "scalable": "Évolutif",
+    "flexible": "Flexible",
+    "efficient": "Efficace",
+    "reliable": "Fiable",
+    "full_stack_developer": " Développeur Full Stack",
+    "technical_director": "Directeur technique",
+    "product_manager": "Chef de produit",
+    "business_owner": "Chef d'entreprise",
+    "criminal_defense_lawyer": "Avocat de la défense pénale",
+    "lead_data_scientist": "Lead Data Scientist",
+    "testimonials": "Témoignages"
   },
-    "common": {
-      "read_more": "En savoir plus",
-      "collaborative": "Collaboratif",
-      "innovative": "Innovatif",
-      "scalable": "Évolutif",
-      "flexible": "Flexible",
-      "efficient": "Efficace",
-      "reliable": "Fiable"
-    },
   "features": {
     "reconciling_disparate_data_models": "Rapprocher des modèles de données disparates afin de garantir la cohérence et l'exactitude des systèmes et des applications d'intelligence artificielle.",
     "utilizing_large_language_models": "Utilisation de grands modèles linguistiques pour rationaliser l'analyse des documents juridiques et améliorer l'efficacité de la gestion des dossiers.",

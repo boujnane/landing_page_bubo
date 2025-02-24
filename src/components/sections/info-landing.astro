@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import type { InfoLdg } from "@/types";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
+import { t } from "i18next";
 
 interface Props {
   reverse?: boolean;
@@ -19,10 +20,10 @@ const { reverse, data } = Astro.props;
       <h2
         class="font-heading text-3xl text-foreground md:text-4xl lg:text-[40px]"
       >
-        {data.title}
+        {t(data.title)}
       </h2>
       <p class="mt-6 text-lg text-muted-foreground">
-        {data.description}
+        {t(data.description)}
       </p>
       <dl class="mt-6 space-y-4 leading-7">
         {
@@ -34,10 +35,10 @@ const { reverse, data } = Astro.props;
                     name={item.icon}
                     class="absolute left-0 top-1 size-5 stroke-purple-700"
                   />
-                  <span>{item.title}</span>
+                  <span>{t(item.title)}</span>
                 </dt>
                 <dd class="text-sm text-muted-foreground">
-                  {item.description}
+                  {t(item.description)}
                 </dd>
               </div>
             );
@@ -55,7 +56,7 @@ const { reverse, data } = Astro.props;
         <Image
           class="size-full object-cover object-center"
           src={data.image}
-          alt={data.title}
+          alt={t(data.title)}
           width={1000}
           height={500}
           loading="eager"

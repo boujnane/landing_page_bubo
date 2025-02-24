@@ -2,14 +2,16 @@
 import { testimonials } from "@/config/landing";
 import { Image } from "astro:assets";
 import HeaderSection from "./header-section.astro";
+import { t } from "i18next";
+
 ---
 
 <section>
   <div class="container flex max-w-7xl flex-col gap-10 py-32 sm:gap-y-16">
     <HeaderSection
-      label="Testimonials"
-      title="What our clients are sharing."
-      subtitle="Discover the glowing feedback from our delighted customers worldwide."
+      label={t("common.testimonials") || ""}
+      title={t("home.what_our_clients_are_sharing")}
+      subtitle={t("home.discover_the_glowing_feedback") || ""}
     />
 
     <div class="column-1 gap-5 space-y-5 md:columns-2 lg:columns-3 xl:columns-4">
@@ -33,10 +35,10 @@ import HeaderSection from "./header-section.astro";
                       <p class="text-sm font-semibold text-foreground">
                         {item.name}
                       </p>
-                      <p class="text-sm text-muted-foreground">{item.job}</p>
+                      <p class="text-sm text-muted-foreground">{t(item.job)}</p>
                     </div>
                   </div>
-                  <q class="text-muted-foreground">{item.review}</q>
+                  <q class="text-muted-foreground">{t(item.review)}</q>
                 </div>
               </div>
             </div>

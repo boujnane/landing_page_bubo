@@ -17,7 +17,15 @@
     "customize_your_integrations": "Customize your integrations to fit your unique requirements.",
     "streamline_your_processes": "Streamline your processes and reducing manual effort.",
     "rely_on_our_robust_infrastructure": "Rely on our robust infrastructure and comprehensive documentation.",
-    "discover_our_web_application_that": "Discover our web application that predicts sports results more accurately than any bookmaker's algorithm."
+    "discover_our_web_application_that": "Discover our web application that predicts sports results more accurately than any bookmaker's algorithm.",
+    "working_with_bubo_has_been": "Working with Bubo has been an incredible experience! The team is so supportive and always ready to help. Thanks to their expertise, I was able to develop custom solutions quickly, without worrying about the technical details. Their attention to the needs of my clients has transformed my practice. I feel more confident in my abilities, and the results speak for themselves!",
+    "bubo_has_helped_me_successfully": "Bubo has helped me successfully execute my roadmap! Deployments have also become a breeze, thanks to their tailored solutions.",
+    "what_i_really_appreciate_about": "What I really appreciate about Bubo is the focus on quality and collaboration. As a Product Manager, I can count on a team that shares my vision. Together, we've launched products that truly meet market needs, like Kumbu for efficient document management.",
+    "bubo_provided_me_with_the": "Bubo provided me with the tools to explore user data. It's amazing to be able to optimize our analyses while ensuring data security, which is crucial for my business decisions.",
+    "working_on_kumbu_one_of_bubo": "Working on Kumbu, one of Bubo's products, has transformed the way I manage my cases. Their tool streamlined my organization and saved me so much time in my research. The results speak for themselves!",
+    "as_the_lead_data_scientist": "As the Lead Data Scientist at my company, working with Bubo has been a game-changer. Their AI-powered tools have empowered us to build advanced models that predict trends and uncover hidden patterns in our data. The team at Bubo has a deep understanding of the technical complexities, and their expertise has allowed us to deliver actionable insights faster. The collaboration has significantly boosted our decision-making process, helping us shape more effective strategies based on data-driven predictions.",
+    "what_our_clients_are_sharing": "What our clients are sharing.",
+    "discover_the_glowing_feedback": "Discover the glowing feedback from our delighted customers worldwide."
   },
   "accelerate": {
     "title": "The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.",
@@ -107,7 +115,14 @@
     "scalable": "Scalable",
     "flexible": "Flexible",
     "efficient": "Efficient",
-    "reliable": "Reliable"
+    "reliable": "Reliable",
+    "full_stack_developer": "Full Stack Developer",
+    "technical_director": "Technical Director",
+    "product_manager": "Product Manager",
+    "business_owner": "Business Owner",
+    "criminal_defense_lawyer": "Criminal Defense Lawyer",
+    "lead_data_scientist": "Lead Data Scientist",
+    "testimonials": "Testimonials"
   },
   "features": {
     "reconciling_disparate_data_models": "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
