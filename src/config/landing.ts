@@ -4,23 +4,23 @@ export const infos: InfoLdg[] = [
   {
     title: "Kumbu GED",
     description:
-      "Discover our revolutionary archiving and document management solution. With advanced AI-based search and instant chat like GPT, find your information in an instant.",
+      "home.discover_our_revolutionary_archiving",
     image: "/images/blog/Logo_Kumbu_with_name.svg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "common.collaborative",
+        description: "home.work_together_with_your",
         icon: "lucide:laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "common.innovative",
+        description: "home.stay_ahead_of_the_curve",
         icon: "lucide:settings",
       },
       {
-        title: "Scalable",
+        title: "common.scalable",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "home.our_platform_offers_the",
         icon: "lucide:search",
       },
     ],
@@ -28,24 +28,24 @@ export const infos: InfoLdg[] = [
   {
     title: "Bubo Analytics",
     description:
-      "Explore the Internet in depth and transform your research into informed strategies to guide your decision-making, leveraging the best NLP methods to achieve this.",
+      "home.explore_the_internet_in_depth",
     image: "/images/blog/bubo_analytics.png",
     list: [
       {
-        title: "Flexible",
+        title: "common.flexible",
         description:
-          "Customize your integrations to fit your unique requirements.",
+          "home.customize_your_integrations",
         icon: "lucide:laptop",
       },
       {
-        title: "Efficient",
-        description: "Streamline your processes and reducing manual effort.",
+        title: "common.efficient",
+        description: "home.streamline_your_processes",
         icon: "lucide:search",
       },
       {
-        title: "Reliable",
+        title: "common.reliable",
         description:
-          "Rely on our robust infrastructure and comprehensive documentation.",
+          "home.rely_on_our_robust_infrastructure",
         icon: "lucide:settings",
       },
     ],
@@ -53,23 +53,23 @@ export const infos: InfoLdg[] = [
   {
     title: "Bubo Sports",
     description:
-      "Discover our web application that predicts sports results more accurately than any bookmaker's algorithm.",
+      "home.discover_our_web_application_that",
     image: "/images/blog/bubocycling.png",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "common.collaborative",
+        description: "home.work_together_with_your",
         icon: "lucide:laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "common.innovative",
+        description: "home.stay_ahead_of_the_curve",
         icon: "lucide:settings",
       },
       {
-        title: "Scalable",
+        title: "common.scalable",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "home.our_platform_offers_the",
         icon: "lucide:search",
       },
     ],
@@ -79,29 +79,25 @@ export const infos: InfoLdg[] = [
 export const features = [
   {
     title: "Atradius",
-    description:
-      "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
+    description: "features.reconciling_disparate_data_models",
     link: "/data&AIconsulting/atradius/",
     icon: "atradius",
   },
   {
     title: "Legal",
-    description:
-      "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
+    description: "features.utilizing_large_language_models",
     link: "/data&AIconsulting/legallaw/",
     icon: "law",
   },
   {
     title: "Sweez",
-    description:
-      "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
+    description: "features.applying_automatic_speech_recognition",
     link: "/data&AIconsulting/sweez/",
     icon: "watermelon",
   },
   {
     title: "Gioza",
-    description:
-      "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances.",
+    description: "features.reconciling_disparate_data_models",
     link: "/data&AIconsulting/gioza/",
     icon: "gioza_logo",
   },
@@ -110,44 +106,39 @@ export const features = [
 export const testimonials = [
   {
     name: "Karim Bougherfa",
-    job: "Full Stack Developer",
+    job: "common.full_stack_developer",
     image: "https://randomuser.me/api/portraits/men/31.jpg",
-    review:
-      "Working with Bubo has been an incredible experience! The team is so supportive and always ready to help. Thanks to their expertise, I was able to develop custom solutions quickly, without worrying about the technical details. Their attention to the needs of my clients has transformed my practice. I feel more confident in my abilities, and the results speak for themselves!",
+    review: "home.working_with_bubo_has_been"
   },
   {
     name: "Moussa Traoré",
-    job: "Technical Director",
+    job: "common.technical_director",
     image: "https://randomuser.me/api/portraits/men/59.jpg",
-    review:
-      "Bubo has helped me successfully execute my roadmap! Deployments have also become a breeze, thanks to their tailored solutions.",
+    review: "home.bubo_has_helped_me_successfully"
   },
   {
     name: "Clémence Dubois",
-    job: "Product Manager",
+    job: "common.product_manager",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
-    review:
-      "What I really appreciate about Bubo is the focus on quality and collaboration. As a Product Manager, I can count on a team that shares my vision. Together, we've launched products that truly meet market needs, like Kumbu for efficient document management.",
+    review: "home.what_i_really_appreciate_about"
   },
   {
     name: "Aminata Koulibaly",
-    job: "Business Owner",
+    job: "common.business_owner",
     image: "https://randomuser.me/api/portraits/women/35.jpg",
-    review:
-      "Bubo provided me with the tools to explore user data. It's amazing to be able to optimize our analyses while ensuring data security, which is crucial for my business decisions.",
+    review: "home.bubo_provided_me_with_the"
   },
   {
     name: "Olivier Koffi",
-    job: "Criminal Defense Lawyer",
+    job: "common.criminal_defense_lawyer",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
-    review:
-      "Working on Kumbu, one of Bubo's products, has transformed the way I manage my cases. Their tool streamlined my organization and saved me so much time in my research. The results speak for themselves!",
+    review: "home.working_on_kumbu_one_of_bubo"
   },  
   {
     name: "Julie Martinelli",
-    job: "Lead Data Scientist",
+    job: "common.lead_data_scientist",
     image: "https://randomuser.me/api/portraits/women/32.jpg",
-    review:
-      "As the Lead Data Scientist at my company, working with Bubo has been a game-changer. Their AI-powered tools have empowered us to build advanced models that predict trends and uncover hidden patterns in our data. The team at Bubo has a deep understanding of the technical complexities, and their expertise has allowed us to deliver actionable insights faster. The collaboration has significantly boosted our decision-making process, helping us shape more effective strategies based on data-driven predictions.",  },
+    review: "home.as_the_lead_data_scientist"
+  },
 ];
 
