@@ -14,26 +14,26 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Vision",
+    title: "footer.vision.title",
     items: [
-      { title: "Accelerate", href: "/accelerate" },
-      { title: "Research", href: "/research" },
+      { title: "footer.vision.accelerate", href: "/accelerate" },
+      { title: "footer.vision.research", href: "/research" },
     ],
   },
   {
-    title: "Explore",
+    title: "footer.explore.title",
     items: [
-      { title: "Data & AI consulting", href: "/data&AIconsulting" },
-      { title: "Tailor-made software", href: "/tailor-made" },
-      { title: "Products", href: "/products" },
+      { title: "footer.explore.dataAIconsulting", href: "/data&AIconsulting" },
+      { title: "footer.explore.tailor_made", href: "/tailor-made" },
+      { title: "footer.explore.products", href: "/products" },
     ],
   },
   {
-    title: "About Us",
+    title: "footer.about_us.title",
     items: [
-      { title: "People", href: "/about" },
-      { title: "Values", href: "/values" },
-      { title: "Partners", href: "/partners" },
+      { title: "footer.about_us.people", href: "/about" },
+      { title: "footer.about_us.values", href: "/values" },
+      { title: "footer.about_us.partners", href: "/partners" },
     ],
   }
   // {

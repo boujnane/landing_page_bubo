@@ -5,7 +5,8 @@
   },
   "home": {
     "title": "Discover all products.",
-    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+    "vision": "Visionage"
   },
   "accelerate": {
     "title": "The Eurasian eagle-owl, since the dawn of time, has flown noiselessly, wisely, and precisely towards its prey.",
@@ -68,5 +69,24 @@
     "innovative_useful": "Innovative and useful",
     "products": "Products",
     "take_flight": "To help your project take flight"
+  },
+  "footer": {
+    "vision": {
+      "title": "Vision",
+      "accelerate": "Accelerate",
+      "research": "Research"
+    },
+    "explore": {
+      "title": "Explore",
+      "dataAIconsulting": "Data & AI consulting",
+      "tailor_made": "Tailor-made software",
+      "products": "Products"
+    },
+    "about_us": {
+      "title": "About Us",
+      "people": "People",
+      "values": "Values",
+      "partners": "Partners"
+    }
   }
 }
