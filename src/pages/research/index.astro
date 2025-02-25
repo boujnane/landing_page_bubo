@@ -4,11 +4,13 @@ import PageHeader from "@/components/page-header.astro";
 import { Badge } from "@/components/ui/badge";
 import MainLayout from "@/layouts/main-layout.astro";
 import { formatDate } from "@/lib/utils";
+import { useLocation } from "@/lib/location";
 import { getCollection } from "astro:content";
 
 changeLanguage("en");
 
 const projects = await getCollection("research");
+const { lang } = useLocation(Astro.url.pathname);
 projects.sort((a, b) => +b.data.date - +a.data.date);
 ---
 
@@ -18,10 +20,9 @@ projects.sort((a, b) => +b.data.date - +a.data.date);
       heading="Our R&D Projects"
       text="Explore our research and development initiatives aimed at innovating and improving the future."
     />
-
     <ul class="pt-6">
       {
-        projects.map((project) => (
+        projects.filter(project => project.data.lang === lang).map((project) => (
           <li class="flex flex-col max-md:gap-y-4 md:flex-row w-full">
             <div class="md:basis-32 lg:basis-56 shrink-0 grow-0">
               <div class="md:sticky md:top-24 w-auto mr-6">

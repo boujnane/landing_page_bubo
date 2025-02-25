@@ -3,6 +3,7 @@ export interface LocationData {
   isFrench: boolean;
   currentPath: string;
   localizeUrl: (url: string) => string;
+  lang: "fr" | "en";
 }
 
 export function useLocation(pathname: string): LocationData {
@@ -13,5 +14,6 @@ export function useLocation(pathname: string): LocationData {
     isFrench,
     currentPath: pathname,
     localizeUrl,
+    lang: isFrench ? "fr": "en"
   };
 }

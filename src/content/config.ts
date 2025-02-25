@@ -72,6 +72,7 @@ const research = defineCollection({
         src: image(),
         alt: z.string(),
       }),
+      lang: z.string(),
       date: z.date({ coerce: true }),
       versionNumber: z.string(),  // Added versionNumber
     }),
