@@ -1,50 +1,50 @@
 export const people = [
     {
       name: "Paul-Alexis DRAY",
-      title: "CEO",
+      title: "common.ceo",
       image: "/images/team/pa.jpeg",
-      description: "Research engineer and developer in AI / Deep Learning and more specifically in NLP on generative models (GenAI)"
+      description: "people.research_engineer_and_developer"
     },
     {
       name: "Jean-Francois THAÏ",
-      title: "CTO",
+      title: "common.cto",
       image: "/images/team/jf.png",
-      description: "Information systems specialist with in-depth expertise in web dev and vision-oriented Deep Learning (Computer Vision)."
+      description: "people.information_systems_specialist"
     },
     {
       name: "Ady BOUJNANE",
-      title: "COO",
+      title: "common.coo",
       image: "/images/team/ady_boujnane.png",
-      description: "Software development engineer. He oversees day-to-day operations and implements strategy to keep the company running smoothly."
+      description: "people.software_development_engineer"
     },
     {
       name: "Armel FOTSOH",
-      title: "Head of Engineering",
+      title: "common.head_of_engineering",
       image: "/images/team/armel.jpeg",
-      description: "PhD is an expert in software architecture and design, specializing in platforms integrating artificial intelligence."
+      description: "people.phD_is_an_expert_in"
     },
     {
       name: "Marc SITZE",
-      title: "Frontend Developer",
+      title: "common.frontend_developer",
       image: "/images/team/Marc_sitze.png",
-      description: "Marc is responsible for building interactive user interfaces and ensuring a seamless experience on the web."
+      description: "people.marc_is_responsible_for"
     },
     {
       name: "Dan Ngimdock ZEMFACK",
-      title: "Frontend Developer",
+      title: "common.frontend_developer",
       image: "/images/team/profile-dan.png",
-      description: "Dan works on front-end development, focusing on building user-centric designs and improving web performance."
+      description: "people.dan_works_on_frontend"
     },
     {
       name: "Edmond MAKOLLE",
-      title: "Backend Developer",
+      title: "common.backend_developer",
       image: "/images/team/edmond_makolle.jpeg",
-      description: "Edmond specializes in backend development, handling the server-side logic and database management to ensure smooth system functionality."
+      description: "people.edmond_specializes_in_backend"
     },
     {
       name: "Frank BLACK",
-      title: "Customer Support",
+      title: "common.customer_support",
       image: "/images/team/jf_lunettes.png",
-      description: "Frank is dedicated to providing excellent customer service, helping users resolve issues and ensuring customer satisfaction."
+      description: "people.frank_is_dedicated_to_providing"
     },
   ];

@@ -76,7 +76,7 @@
       }
     }
   },
- "services": {
+  "services": {
     "soar_to_new_heights": "Atteignez de nouveaux sommets avec",
     "bubo_team": "L'équipe Bubo",
     "we_offer": "Nous offrons :",
@@ -87,6 +87,25 @@
     "innovative_useful": "Innovant et utile",
     "products": "Produits",
     "take_flight": "Pour faire décoller votre projet"
+  },
+  "footer": {
+    "vision": {
+      "title": "Vision",
+      "accelerate": "Accélérer",
+      "research": "Recherche"
+    },
+    "explore": {
+      "title": "Explorer",
+      "dataAIconsulting": "Conseil en données et IA",
+      "tailor_made": "Logiciel sur mesure",
+      "products": "Produits "
+    },
+    "about_us": {
+      "title": "À propos de nous",
+      "people": "Les personnes",
+      "values": "Valeurs",
+      "partners": "Partenaires"
+    }
   },
   "common": {
     "read_more": "En savoir plus",
@@ -102,12 +121,90 @@
     "business_owner": "Chef d'entreprise",
     "criminal_defense_lawyer": "Avocat de la défense pénale",
     "lead_data_scientist": "Lead Data Scientist",
-    "testimonials": "Témoignages"
+    "testimonials": "Témoignages",
+    "our_process": "Notre processus",
+    "data_collection": "Collecte des données",
+    "data_cleaning": "Nettoyage des données",
+    "modeling": "Modélisation",
+    "training": "Formation",
+    "deployment": "Déploiement",
+    "needs_analysis": "Analyse des besoins",
+    "solution_design": "Conception de solutions",
+    "development": "Développement",
+    "testing_and_validation": "Tests et validation",
+    "deployment_and_support": "Déploiement et support",
+    "meet_our_team": "Notre équipe",
+    "ceo": "PDG",
+    "cto": "DIRECTEUR TECHNIQUE",
+    "coo": "COO",
+    "head_of_engineering": "Chef de l'ingénierie",
+    "frontend_developer": "Développeur Frontend",
+    "backend_developer": "Développeur Backend",
+    "customer_support": "Support client",
+    "our_values": "Nos valeurs",
+    "our_moments": "Nos moments",
+    "excellence": "Excellence",
+    "boldness": "Audace",
+    "passion": "Passion",
+    "explore": "Explorer",
+    "tailor_made": "Logiciel sur mesure",
+    "about_us": "À propos",
+    "people": "Les personnes",
+    "values": "Valeurs",
+    "partners": "Partenaires"
   },
   "features": {
     "reconciling_disparate_data_models": "Rapprocher des modèles de données disparates afin de garantir la cohérence et l'exactitude des systèmes et des applications d'intelligence artificielle.",
     "utilizing_large_language_models": "Utilisation de grands modèles linguistiques pour rationaliser l'analyse des documents juridiques et améliorer l'efficacité de la gestion des dossiers.",
     "applying_automatic_speech_recognition": "Application de la reconnaissance automatique de la parole (ASR) et des grands modèles de langage (LLM) à l'analyse des discussions en réunion pour obtenir des informations exploitables.",
     "implementing_non_intrusive_load": "Mise en œuvre de techniques de surveillance de la charge non intrusive (NILM) pour analyser et décomposer la consommation d'énergie par appareil individuel."
+  },
+  "explore": {
+    "transforming_data_into": "Transformer les données en informations exploitables grâce à des solutions basées sur l'IA",
+    "gathering_data_from_various": "Rassembler des données provenant de différentes sources afin de créer une base complète.",
+    "preparing_and_structuring": "Préparer et structurer les données pour l'analyse afin d'en garantir l'exactitude.",
+    "building_analytical_or": "Construire des modèles analytiques ou prédictifs à partir des données nettoyées.",
+    "training_models_on_data": "Entraînement des modèles sur les données pour maximiser la précision et la performance.",
+    "deploying_the_model": "Déployer le modèle en production pour générer des informations en temps réel.",
+    "bringing_our_customers": "Déployer le modèle en production pour générer des informations en temps réel.",
+    "understand_the_client_requirements": "Comprendre les exigences et les objectifs du client pour créer une solution sur mesure.",
+    "develop_detailed_specifications": "Élaborer des spécifications détaillées et un prototype pour valider l'orientation du projet.",
+    "build_the_custom_solution": "Construire la solution personnalisée en suivant les spécifications et les meilleures pratiques de codage.",
+    "test_the_solution_to_ensure": "Tester la solution pour s'assurer de sa qualité, de sa stabilité et de sa conformité aux besoins du client.",
+    "deploy_the_solution_to_production": "Déployer la solution en production et assurer un support continu pour garantir son bon fonctionnement."
+  },
+  "people": {
+    "research_engineer_and_developer": "Ingénieur de recherche et développeur en IA / Deep Learning et plus particulièrement en NLP sur des modèles génératifs (GenAI).",
+    "information_systems_specialist": "Spécialiste des systèmes d'information avec une expertise approfondie dans le développement web et l'apprentissage profond orienté vision (vision par ordinateur).",
+    "software_development_engineer": "Ingénieur en développement de logiciels. Il supervise les opérations quotidiennes et met en œuvre des stratégies pour assurer le bon fonctionnement de l'entreprise.",
+    "phD_is_an_expert_in": "PhD est un expert en architecture et conception de logiciels, spécialisé dans les plateformes intégrant l'intelligence artificielle.",
+    "marc_is_responsible_for": "Marc est responsable de la création d'interfaces utilisateur interactives et de la garantie d'une expérience transparente sur le web.",
+    "dan_works_on_frontend": "Dan travaille sur le développement frontal, en se concentrant sur la construction de designs centrés sur l'utilisateur et l'amélioration des performances web.",
+    "edmond_specializes_in_backend": "Edmond se spécialise dans le développement du backend, s'occupant de la logique côté serveur et de la gestion de la base de données afin d'assurer le bon fonctionnement du système.",
+    "frank_is_dedicated_to_providing": "Frank s'attache à fournir un excellent service à la clientèle, à aider les utilisateurs à résoudre leurs problèmes et à garantir la satisfaction des clients."
+  },
+  "values": {
+    "excellence_is_not_just": "L'excellence n'est pas seulement un objectif, c'est une quête permanente. Chez Bubo, nous nous engageons à repousser les limites de la qualité et de la performance à chaque étape de notre parcours. Nous ne nous contentons pas de la moyenne, nous visons le sommet. Chaque projet que nous entreprenons, chaque défi que nous relevons, est une occasion de perfectionner notre travail et de fournir des résultats exceptionnels qui font une réelle différence pour nos clients et nos partenaires.",
+    "boldness_is_the_driving": "L'audace est le moteur de notre transformation. Nous croyons fermement qu'il est essentiel de prendre des risques, de penser différemment et d'oser innover. C'est grâce à cette audace que nous franchissons les limites de l'impossible et que nous créons des solutions ayant un impact réel et durable. Nous ne craignons pas les défis, car chaque défi est une occasion d'explorer de nouvelles voies, de générer de nouvelles idées et de façonner un avenir audacieux, sans crainte.",
+    "our_passion_is_what": "Notre passion est ce qui nous pousse à aller au-delà des attentes et des conventions. Chaque jour, nous travaillons avec une énergie débordante, alimentée par un amour profond pour ce que nous faisons et une croyance forte en notre mission. Cette passion est le fil conducteur de nos actions, le battement de cœur de notre engagement en faveur de l'innovation et de l'excellence. Nous vivons notre travail avec une intensité qui nous pousse à aller plus loin, à créer, à inspirer et à laisser un impact durable dans tout ce que nous faisons."
+  },
+  "partners": {
+    "our_partners_and_customers": "Nos partenaires et clients",
+    "atradius_group_offers_credit": "Le groupe Atradius propose des solutions d'assurance-crédit, de recouvrement et de cautionnement dans le monde entier, avec une présence dans plus de 50 pays.<br/><br/>Ses solutions protègent les entreprises contre les impayés. Atradius est l'un des principaux assureurs-crédit au monde.",
+    "descartes_mauss_is_deploying": "Descartes & Mauss déploie la première plateforme SaaS alimentée par l'IA qui automatise le processus de planification stratégique.",
+    "izySoft_group_is_our": "IzySoft Group est notre principal partenaire local en Afrique, basé au Cameroun. <br/><br/>Nous travaillons en étroite collaboration sur divers projets liés au développement de logiciels.",
+    "gioza_is_building_the": "Gioza construit le premier système de gestion de l'énergie (EMS) sans capteur pour réduire les factures d'énergie de l'industrie jusqu'à 20 %.",
+    "the_bâtisseurs_africains": "The Bâtisseurs Africains network is a community of entrepreneurs selected through international programs.<br/><br/>Every day, the network's entrepreneurs contribute to the development of the African continent through their high-impact, commercial products and services.<br/><br/>Their ambition is clear: to transform the face of the continent and bring it in line with global economic competition."
+  },
+  "nav": {
+    "accelerate": "Accélérer",
+    "research": "Recherche",
+    "a_reproduction_of_Starlog": "Une reproduction du modèle Starlog avec Tailwind CSS.",
+    "we_help_you_on_your_data": "Nous vous aidons sur vos projets de données et d'intelligence artificielle.",
+    "we_build_useful_products": "Nous construisons des produits utiles",
+    "your_needs_our_work": "Vos besoins, notre travail",
+    "people_who_work_hard": "Les personnes qui travaillent dur chaque jour",
+    "the_values_that_drive_us": "Les valeurs qui nous animent",
+    "companies_and_people_who": "Les entreprises et les personnes qui nous font confiance"
   }
 }

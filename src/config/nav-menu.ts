@@ -3,21 +3,21 @@ import type { NavMenuConfig } from "@/types";
 export const navMenuConfig: NavMenuConfig = {
   links: [
     {
-      title: "Accelerate",
+      title: "nav.accelerate",
       href: "accelerate",
       description: "Example description",
       image: "/images/examples/image.jpg",
     },
     {
-      title: "Research",
+      title: "nav.research",
       href: "research",
-      description: "A reproduction of Starlog template with Tailwind CSS.",
+      description: "nav.a_reproduction_of_Starlog",
       image: "/images/examples/changelog.jpg",
     }
   ],
   pagesNav: [
     {
-      title: "Explore",
+      title: "common.explore",
       items: [
         // {
         //   title: "Landing",
@@ -26,16 +26,16 @@ export const navMenuConfig: NavMenuConfig = {
         //   image: "/images/examples/landing.jpg",
         // },
         {
-          title: "Data & AI consulting",
+          title: "home.data_ai_consulting",
           href: "data&AIconsulting",
-          description: "We help you on your data & AI projects",
+          description: "nav.we_help_you_on_your_data",
           image: "/images/examples/about.jpg",
         },
         {
-          title: "Products",
+          title: "services.products",
           href: "products",
           description:
-            "We build useful products",
+            "nav.we_build_useful_products",
           image: "/images/examples/waitlist.jpg",
           forceReload: true,
         },
@@ -46,10 +46,10 @@ export const navMenuConfig: NavMenuConfig = {
         //   image: "/images/examples/pricing.jpg",
         // },
         {
-          title: "Tailor-made software",
+          title: "common.tailor_made",
           href: "tailor-made",
           description:
-            "Your needs, our work",
+            "nav.your_needs_our_work",
           image: "/images/examples/newsletter.jpg",
         },
       ],
@@ -57,12 +57,12 @@ export const navMenuConfig: NavMenuConfig = {
   ],
   examplesNav: [
     {
-      title: "About us",
+      title: "common.about_us",
       items: [
         {
-          title: "People",
+          title: "common.people",
           href: "about",
-          description: "People who work hard every day",
+          description: "nav.people_who_work_hard",
           image: "/images/examples/static-blog.jpg",
         },
         // {
@@ -73,17 +73,17 @@ export const navMenuConfig: NavMenuConfig = {
         //   image: "/images/examples/documentation.jpg",
         // },
         {
-          title: "Values",
+          title: "common.values",
           href: "values",
           description:
-            "The values that drive us",
+            "nav.the_values_that_drive_us",
           image: "",
         },
         {
-          title: "Partners",
+          title: "common.partners",
           href: "partners",
           description:
-            "Companies and people who place their trust in us",
+            "nav.companies_and_people_who",
           image: "/images/examples/animes.jpg",
         }
       ],

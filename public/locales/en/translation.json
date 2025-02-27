@@ -109,7 +109,7 @@
     }
   },
   "common": {
-    "read_more": "Read_more",
+    "read_more": "Read more",
     "collaborative": "Collaborative",
     "innovative": "Innovative",
     "scalable": "Scalable",
@@ -122,12 +122,90 @@
     "business_owner": "Business Owner",
     "criminal_defense_lawyer": "Criminal Defense Lawyer",
     "lead_data_scientist": "Lead Data Scientist",
-    "testimonials": "Testimonials"
+    "testimonials": "Testimonials",
+    "our_process": "Our Process",
+    "data_collection": "Data Collection",
+    "data_cleaning": "Data Cleaning",
+    "modeling": "Modeling",
+    "training": "Training",
+    "deployment": "Deployment",
+    "needs_analysis": "Needs Analysis",
+    "solution_design": "Solution Design",
+    "development": "Development",
+    "testing_and_validation": "Testing and Validation",
+    "deployment_and_support": "Deployment and Support",
+    "meet_our_team": "Meet Our Team",
+    "ceo": "CEO",
+    "cto": "CTO",
+    "coo": "COO",
+    "head_of_engineering": "Head of Engineering",
+    "frontend_developer": "Frontend Developer",
+    "backend_developer": "Backend Developer",
+    "customer_support": "Customer Support",
+    "our_values": "Our values",
+    "our_moments": "Our moments",
+    "excellence": "Excellence",
+    "boldness": "Boldness",
+    "passion": "Passion",
+    "explore": "Explore",
+    "tailor_made": "Tailor-made software",
+    "about_us": "About Us",
+    "people": "People",
+    "values": "Values",
+    "partners": "Partners"
   },
   "features": {
     "reconciling_disparate_data_models": "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
     "utilizing_large_language_models": "Utilizing large language models to streamline legal document analysis and improve case management efficiency.",
     "applying_automatic_speech_recognition": "Applying automatic speech recognition (ASR) and large language models (LLM) to analyze meeting discussions for actionable insights.",
     "implementing_non_intrusive_load": "Implementing Non-Intrusive Load Monitoring (NILM) techniques to analyze and break down energy usage by individual appliances."
+  },
+  "explore": {
+    "transforming_data_into": "Transforming data into actionable insights with AI-driven solutions",
+    "gathering_data_from_various": "Gathering data from various sources to create a comprehensive foundation.",
+    "preparing_and_structuring": "Preparing and structuring data for analysis to ensure accuracy.",
+    "building_analytical_or": "Building analytical or predictive models using the cleaned data.",
+    "training_models_on_data": "Training models on data to maximize accuracy and performance.",
+    "deploying_the_model": "Deploying the model into production to generate real-time insights.",
+    "bringing_our_customers": "Bringing our customers' ideas & projects to life",
+    "understand_the_client_requirements": "Understand the client's requirements and objectives to create a tailored solution.",
+    "develop_detailed_specifications": "Develop detailed specifications and a prototype to validate the project's direction.",
+    "build_the_custom_solution": "Build the custom solution following the specifications and coding best practices.",
+    "test_the_solution_to_ensure": "Test the solution to ensure quality, stability, and compliance with the client's needs.",
+    "deploy_the_solution_to_production": "Deploy the solution to production and provide ongoing support to ensure its proper operation."
+  },
+  "people": {
+    "research_engineer_and_developer": "Research engineer and developer in AI / Deep Learning and more specifically in NLP on generative models (GenAI)",
+    "information_systems_specialist": "Information systems specialist with in-depth expertise in web dev and vision-oriented Deep Learning (Computer Vision).",
+    "software_development_engineer": "Software development engineer. He oversees day-to-day operations and implements strategy to keep the company running smoothly.",
+    "phD_is_an_expert_in": "PhD is an expert in software architecture and design, specializing in platforms integrating artificial intelligence.",
+    "marc_is_responsible_for": "Marc is responsible for building interactive user interfaces and ensuring a seamless experience on the web.",
+    "dan_works_on_frontend": "Dan works on front-end development, focusing on building user-centric designs and improving web performance.",
+    "edmond_specializes_in_backend": "Edmond specializes in backend development, handling the server-side logic and database management to ensure smooth system functionality.",
+    "frank_is_dedicated_to_providing": "Frank is dedicated to providing excellent customer service, helping users resolve issues and ensuring customer satisfaction."
+  },
+  "values": {
+    "excellence_is_not_just": "Excellence is not just a goal; it is a constant pursuit. At Bubo, we are committed to pushing the boundaries of quality and performance at every step of our journey. We don't settle for average; we aim for the summit. Every project we undertake, every challenge we face, is an opportunity to perfect our work and deliver exceptional results that make a real difference for our clients and partners.",
+    "boldness_is_the_driving": "Boldness is the driving force behind our transformation. We firmly believe that taking risks, thinking differently, and daring to innovate are essential. It is through this boldness that we break the boundaries of the impossible and create solutions with real and lasting impact. We don't fear challenges, because every challenge is an opportunity to explore new paths, generate new ideas, and shape a bold future, fearlessly.",
+    "our_passion_is_what": "Our passion is what drives us beyond expectations and conventions. Every day, we work with boundless energy, fueled by a deep love for what we do and a strong belief in our mission. This passion is the guiding thread of our actions, the heartbeat of our commitment to innovation and excellence. We live our work with an intensity that pushes us to go further, create, inspire, and leave a lasting impact in everything we do."
+  },
+  "partners": {
+    "our_partners_and_customers": "Our Partners and Customers",
+    "atradius_group_offers_credit": "Atradius Group offers credit insurance, collection, and bonding solutions worldwide, with a presence in over 50 countries.<br/><br/>Its solutions protect companies against non-payment. Atradius is one of the world's leading credit insurers.",
+    "descartes_mauss_is_deploying": "Descartes & Mauss is deploying the first AI-powered SaaS Platform automating the Strategic Planning process.",
+    "izySoft_group_is_our": "IzySoft Group is our leading local partner in Africa, based in Cameroon.<br/><br/>We work closely on various projects related to software development.",
+    "gioza_is_building_the": "Gioza is building the first sensorless Energy Management System (EMS) to reduce industrial energy bills by up to 20%.",
+    "the_bâtisseurs_africains": "The Bâtisseurs Africains network is a community of entrepreneurs selected through international programs.<br/><br/>Every day, the network's entrepreneurs contribute to the development of the African continent through their high-impact, commercial products and services.<br/><br/>Their ambition is clear: to transform the face of the continent and bring it in line with global economic competition."
+  },
+  "nav": {
+    "accelerate": "Accelerate",
+    "research": "Research",
+    "a_reproduction_of_Starlog": "A reproduction of Starlog template with Tailwind CSS.",
+    "we_help_you_on_your_data": "We help you on your data & AI projects",
+    "we_build_useful_products": "We build useful products",
+    "your_needs_our_work": "Your needs, our work",
+    "people_who_work_hard":"People who work hard every day",
+    "the_values_that_drive_us": "The values that drive us",
+    "companies_and_people_who": "Companies and people who place their trust in us"
   }
 }
