@@ -152,7 +152,13 @@
     "about_us": "About Us",
     "people": "People",
     "values": "Values",
-    "partners": "Partners"
+    "partners": "Partners",
+    "discover": "Discover",
+    "our_products": "Our Products",
+    "order": "Order",
+    "ingredients": "Ingredients",
+    "contact_us": "Contact Us",
+    "send": "Send"
   },
   "features": {
     "reconciling_disparate_data_models": "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
@@ -207,5 +213,21 @@
     "people_who_work_hard":"People who work hard every day",
     "the_values_that_drive_us": "The values that drive us",
     "companies_and_people_who": "Companies and people who place their trust in us"
+  },
+  "biscuits": {
+    "the_perfect_blend_of": "The perfect blend of gourmet pleasure and innovation",
+    "cookies_made_with": "Cookies made with carefully selected, quality ingredients.",
+    "place_your_order": "Place your order or ask us your questions!",
+    "a_delicious_cocoa_cookie": "A delicious cocoa cookie, perfect for a gourmet break.",
+    "a_spicy_touch": "A spicy touch for thrill-seekers!",
+    "a_simple_and_tasty": "A simple and tasty cookie, ideal to accompany your tea or coffee.",
+    "an_exotic_coconut": "An exotic coconut cookie for a touch of tropical sweetness.",
+    "potato_flour": "Potato flour",
+    "cacao": "Cacao",
+    "sugar": "Sugar",
+    "butter": "Butter",
+    "pepper": "Pepper",
+    "coconut": "Coconut",
+    "flour": "Flour"
   }
 }

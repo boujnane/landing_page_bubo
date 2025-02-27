@@ -151,7 +151,13 @@
     "about_us": "À propos",
     "people": "Les personnes",
     "values": "Valeurs",
-    "partners": "Partenaires"
+    "partners": "Partenaires",
+    "discover": "Découvrir",
+    "our_products": "Nos Produits",
+    "order": "Commander",
+    "ingredients": "Ingrédients",
+    "contact_us": "Contactez-nous",
+    "send": "Envoyer"
   },
   "features": {
     "reconciling_disparate_data_models": "Rapprocher des modèles de données disparates afin de garantir la cohérence et l'exactitude des systèmes et des applications d'intelligence artificielle.",
@@ -206,5 +212,21 @@
     "people_who_work_hard": "Les personnes qui travaillent dur chaque jour",
     "the_values_that_drive_us": "Les valeurs qui nous animent",
     "companies_and_people_who": "Les entreprises et les personnes qui nous font confiance"
+  },
+  "biscuits": {
+    "the_perfect_blend_of": "L’alliance parfaite entre gourmandise et innovation",
+    "cookies_made_with": "Biscuits élaborés à partir d’ingrédients de qualité, sélectionnés avec soin.",
+    "place_your_order": "Passez commande ou posez-nous vos questions !",
+    "a_delicious_cocoa_cookie": "Un délicieux biscuit au cacao, parfait pour une pause gourmande.",
+    "a_spicy_touch": "Une touche épicée pour les amateurs de sensations fortes !",
+    "a_simple_and_tasty": "Un biscuit simple et savoureux, idéal pour accompagner votre thé ou café.",
+    "an_exotic_coconut": "Un biscuit exotique à la noix de coco pour une touche de douceur tropicale.",
+    "potato_flour": "Farine de patate",
+    "cacao": "Cacao",
+    "sugar": "Sucre",
+    "butter": "Beurre",
+    "pepper": "Piment",
+    "coconut": "Noix de coco",
+    "flour": "Farine"
   }
 }
