@@ -5,7 +5,6 @@ import { Image } from "astro:assets";
 import { products } from "@/config/products.ts";
 import { Button } from "@/components/ui/button";
 
-// Change language to English
 changeLanguage("en");
 
 let test = "test";
@@ -17,15 +16,15 @@ let test = "test";
     <div class="absolute inset-0 bg-black bg-opacity-20 dark:bg-opacity-30"></div>
     <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <img src="/images/products/Bubo & fine biscuits.png" alt="Logo" class="w-48" />
-    </div>      
+    </div>
     <div class="relative z-10 translate-y-1/2">
       <h1 class="text-6xl font-extrabold text-white drop-shadow-2xl tracking-tight">
-        Bubo food présente Fine Biscuits
+        {t("biscuits.bubo_food_presents_fine")}
       </h1>
-      <p class="text-xl text-white mt-6">De délicieux biscuits au goût inimitable, depuis 1952</p>
+      <p class="text-xl text-white mt-6">{t("biscuits.delicious_cookies_with")}</p>
       <a href="#products">
         <button class="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-full shadow-lg transition">
-          Découvrir
+          {t("common.discover")}
         </button>
       </a>
     </div>
@@ -33,13 +32,13 @@ let test = "test";
 
   <!-- Section Produits -->
   <section id="products" class="py-16 max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-10 dark:text-gray-100">Nos produits</h2>
+    <h2 class="text-3xl font-bold text-center mb-10 dark:text-gray-100">{t("common.our_products")}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {products.map(product => (
         <div class="bg-neutral-100 dark:bg-neutral-900 rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
           <Image class="w-40 h-40 object-cover rounded-lg mb-4 group-hover:rotate-3 transition-transform" src={product.image} alt={product.name} width={160} height={160} />
-          <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{product.name}</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">{product.description}</p>
+          <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{t(product.name)}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">{t(product.description)}</p>
           <p class="text-lg font-bold mt-2 dark:text-gray-100">{product.price} € /  {product.weight}</p>
           <button class="mt-4 mb-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-full transition">
             {t("common.order")}
@@ -51,10 +50,10 @@ let test = "test";
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M4 6h16M4 14h16M9 18h6" />
                 </svg>
-                Ingrédients
+                {t("common.ingredients")}
               </h4>
               <p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
-                Biscuits élaborés à partir d’ingrédients de qualité, sélectionnés avec soin.
+                {t("biscuits.cookies_made_with")}
               </p>
   
               {/* Section pour les ingrédients avec scroll vertical */}
@@ -116,7 +115,7 @@ let test = "test";
                   return (
                     <div class="flex items-center space-x-2" key={index}>
                       <span class="text-2xl">{icon}</span>
-                      <p class="text-sm text-gray-700 dark:text-gray-300">{ingredient}</p>
+                      <p class="text-sm text-gray-700 dark:text-gray-300">{t(ingredient)}</p>
                     </div>
                   );
                 })}
@@ -132,8 +131,8 @@ let test = "test";
 
   <!-- Section Contact -->
   <section class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg dark:bg-opacity-100">
-    <h2 class="text-4xl font-bold mb-6">Contactez-nous</h2>
-    <p class="text-lg mb-6">Passez commande ou posez-nous vos questions !</p>
+    <h2 class="text-4xl font-bold mb-6">{t("common.contact_us")}</h2>
+    <p class="text-lg mb-6">{t("biscuits.place_your_order")}</p>
     <form class="max-w-md mx-auto">
       <input type="email" placeholder="Votre email" class="w-full px-4 py-3 rounded-lg mb-4" />
       <textarea placeholder="Votre message" class="w-full px-4 py-3 rounded-lg mb-4"></textarea>

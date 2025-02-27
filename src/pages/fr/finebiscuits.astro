@@ -11,95 +11,124 @@ let test = "test";
 ---
 
 <MainLayout title="Finebiscuit x BUBO" description="Découvrez la gamme Finebiscuit">
-  <!-- Section Hero -->
-  <section class="relative text-center py-32 bg-cover bg-center bg-gradient-to-r from-amber-400 to-orange-500 overflow-hidden" style="background-image: url('src/pages/finebiscuits.astro');">
+  <!-- Section Intro -->
+  <section class="relative text-center py-32 bg-cover bg-center bg-gradient-to-r from-amber-400 to-orange-500 overflow-hidden" style="background-image: url('/images/products/bg_finebiscuits.png');">
     <div class="absolute inset-0 bg-black bg-opacity-20 dark:bg-opacity-30"></div>
-    <div class="relative z-10">
+    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <img src="/images/products/Bubo & fine biscuits.png" alt="Logo" class="w-48" />
+    </div>
+    <div class="relative z-10 translate-y-1/2">
       <h1 class="text-6xl font-extrabold text-white drop-shadow-2xl tracking-tight">
-        Finebiscuits x BUBO
+        {t("biscuits.bubo_food_presents_fine")}
       </h1>
-      <p class="text-xl text-white mt-6">{t("biscuits.the_perfect_blend_of")}</p>
-      <button class="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-full shadow-lg transition">
-        {t("common.discover")}
-      </button>
+      <p class="text-xl text-white mt-6">{t("biscuits.delicious_cookies_with")}</p>
+      <a href="#products">
+        <button class="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-full shadow-lg transition">
+          {t("common.discover")}
+        </button>
+      </a>
     </div>
   </section>
 
-  
   <!-- Section Produits -->
-  <section class="py-16 max-w-6xl mx-auto px-4">
+  <section id="products" class="py-16 max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-10 dark:text-gray-100">{t("common.our_products")}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {products.map(product => (
         <div class="bg-neutral-100 dark:bg-neutral-900 rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-          <Image class="w-40 h-40 object-cover rounded-lg mb-4 group-hover:rotate-3 transition-transform"  src={product.image} alt={product.name} width={160} height={160} />
-          <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{product.name}</h3>
+          <Image class="w-40 h-40 object-cover rounded-lg mb-4 group-hover:rotate-3 transition-transform" src={product.image} alt={product.name} width={160} height={160} />
+          <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{t(product.name)}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">{t(product.description)}</p>
-          <p class="text-lg font-bold mt-2 dark:text-gray-100">{product.price} €</p>
+          <p class="text-lg font-bold mt-2 dark:text-gray-100">{product.price} € /  {product.weight}</p>
           <button class="mt-4 mb-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-full transition">
             {t("common.order")}
           </button>
-          
+  
           {product.ingredients && (
             <div class="bg-gray-50 dark:bg-neutral-800 p-4 rounded-lg shadow w-full mb-4">
-                <!-- Titre + icône -->
-                <h4 class="text-xl font-bold flex items-center mb-3 text-gray-800 dark:text-gray-100">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 mr-2 text-green-600 dark:text-green-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 10h18M4 6h16M4 14h16M9 18h6"
-                    />
+              <h4 class="text-xl font-bold flex items-center mb-3 text-gray-800 dark:text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M4 6h16M4 14h16M9 18h6" />
                 </svg>
                 {t("common.ingredients")}
-                </h4>
-                <p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+              </h4>
+              <p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
                 {t("biscuits.cookies_made_with")}
-                </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {product.ingredients.map((ingredient) => (
-                    <div class="flex items-start">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                        />
-                    </svg>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">
-                        {t(ingredient)}
-                    </p>
+              </p>
+  
+              {/* Section pour les ingrédients avec scroll vertical */}
+              <div class="max-h-32 overflow-y-auto space-y-2">
+                {product.ingredients.map((ingredient, index) => {
+                  let icon;
+                  switch (ingredient.toLowerCase()) {
+                    case "cacao":
+                      icon = "🟤";
+                      break;
+                    case "chocolat":
+                      icon= "🍫";
+                      break;
+                    case "oeufs":
+                    case "œufs":
+                      icon = "🥚";
+                      break;
+                    case "lait":
+                      icon = "🥛";
+                      break;
+                    case "sucre":
+                      icon = "🍬";
+                      break;
+                    case "sel":
+                      icon = "🧂";
+                      break;
+                    case "noix de coco":
+                      icon = "🥥";
+                      break;
+                    case "eau":
+                      icon = "💧";
+                      break;
+                    case "farine de patate":
+                      icon = "🥔";
+                      break;
+                    case "farine de blé":
+                      icon = "🌾";
+                      break;
+                    case "piment":
+                      icon = "🌶️";
+                      break;
+                    case "beurre":
+                      icon = "🧈";
+                      break;
+                    case "ail":
+                      icon = "🧄";
+                      break;
+                    default:
+                      icon = "🍽️"; // Icône par défaut pour d'autres ingrédients
+                      break;
+                  }
+  
+                  return (
+                    <div class="flex items-center space-x-2" key={index}>
+                      <span class="text-2xl">{icon}</span>
+                      <p class="text-sm text-gray-700 dark:text-gray-300">{t(ingredient)}</p>
                     </div>
-                ))}
-                </div>
+                  );
+                })}
+              </div>
             </div>
-            )}
+          )}
         </div>
       ))}
     </div>
   </section>
   
+
+
   <!-- Section Contact -->
-  <section class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg  dark:bg-opacity-100">
+  <section class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg dark:bg-opacity-100">
     <h2 class="text-4xl font-bold mb-6">{t("common.contact_us")}</h2>
     <p class="text-lg mb-6">{t("biscuits.place_your_order")}</p>
     <form class="max-w-md mx-auto">
-      <input type="email" placeholder="Votre email" class="w-full px-4 py-3 rounded-lg mb-4">
+      <input type="email" placeholder="Votre email" class="w-full px-4 py-3 rounded-lg mb-4" />
       <textarea placeholder="Votre message" class="w-full px-4 py-3 rounded-lg mb-4"></textarea>
       <button class="bg-black text-white px-6 py-3 rounded-lg">{t("common.send")}</button>
     </form>

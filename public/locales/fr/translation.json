@@ -227,6 +227,20 @@
     "butter": "Beurre",
     "pepper": "Piment",
     "coconut": "Noix de coco",
-    "flour": "Farine"
+    "flour": "Farine",
+    "wheat_flour": "Farine de blé",
+    "milk": "Lait",
+    "water": "Eau",
+    "salt": "Sel",
+    "eggs": "Oeufs",
+    "chocolate": "Chocolat",
+    "cocoa": "Cacao",
+    "garlic": "Ail",
+    "bubo_food_presents_fine": "Bubo food présente Fine biscuits",
+    "delicious_cookies_with": "De délicieux biscuits au goût inimitable, depuis 1952",
+    "cocoa_flavor": "Saveur Cacao",
+    "garlic_Chilli_flavour": "Saveur Ail & Piment",
+    "sugar_free_flavor": "Saveur Sans Sucre",
+    "coconut_flavor": "Saveur Noix de coco"
   }
 }

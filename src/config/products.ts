@@ -1,35 +1,34 @@
 export const products = [
-    {
-      name: "Saveur Cacao",
-      description: "Un délicieux biscuit au cacao, parfait pour une pause gourmande.",
-      price: 2.20,
-      image: "/images/products/fb_cacao-nobg.png",
-      ingredients: ["Farine de patate douce", "Lait", "Sucre", "Eau", "Beurre", "Sel", "Oeufs", "Chocolat", "Cacao"],
-      weight: "50 g"
-    },
-    {
-      name: "Saveur Ail & Piment",
-      description: "Une touche épicée pour les amateurs de sensations fortes !",
-      price: 2.20,
-      image: "/images/products/fb_piment-nobg.png",
-      ingredients: ["Farine de patate douce", "Lait", "Sucre", "Eau", "Beurre", "Sel", "Oeufs", "Ail", "Piment", "Poivre blanc de Pendja"],
-      weight: "50 g"
-    },
-    {
-      name: "Saveur Sans Sucre",
-      description: "Un biscuit simple et savoureux, idéal pour accompagner votre thé ou café.",
-      price: 2.20,
-      image: "/images/products/fb_sanssucre-nobg.png",
-      ingredients: ["Farine de patate douce", "Lait", "Eau", "Beurre", "Sel", "Oeufs"],
-      weight: "50 g"
-    },
-    {
-      name: "Saveur Noix de coco",
-      description: "Un biscuit exotique à la noix de coco pour une touche de douceur tropicale.",
-      price: 2.20,
-      image: "/images/products/fb_coco-nobg.png",
-      ingredients: ["Farine de patate douce", "Lait", "Sucre", "Eau", "Beurre", "Sel", "Oeufs", "Noix de coco"],
-      weight: "50 g"
-    }
-  ];
-  
+  {
+    name: "biscuits.cocoa_flavor",
+    description: "biscuits.a_delicious_cocoa_cookie",
+    price: 2.20,
+    image: "/images/products/fb_cacao-nobg.png",
+    ingredients: ["biscuits.potato_flour", "biscuits.wheat_flour", "biscuits.milk", "biscuits.sugar", "biscuits.water", "biscuits.butter", "biscuits.salt", "biscuits.eggs", "biscuits.chocolate", "biscuits.cocoa"],
+    weight: "50 g"
+  },
+  {
+    name: "biscuits.garlic_Chilli_flavour",
+    description: "biscuits.a_spicy_touch",
+    price: 2.20,
+    image: "/images/products/fb_piment-nobg.png",
+    ingredients: ["biscuits.potato_flour", "biscuits.wheat_flour", "biscuits.milk", "biscuits.sugar", "biscuits.water", "biscuits.butter", "biscuits.salt", "biscuits.eggs", "biscuits.garlic", "biscuits.pepper"],
+    weight: "50 g"
+  },
+  {
+    name: "biscuits.sugar_free_flavor",
+    description: "biscuits.a_simple_and_tasty",
+    price: 2.20,
+    image: "/images/products/fb_sanssucre-nobg.png",
+    ingredients: ["biscuits.potato_flour", "biscuits.wheat_flour", "biscuits.milk", "biscuits.water", "biscuits.butter", "biscuits.salt", "biscuits.eggs"],
+    weight: "50 g"
+  },
+  {
+    name: "biscuits.coconut_flavor",
+    description: "biscuits.an_exotic_coconut",
+    price: 2.20,
+    image: "/images/products/fb_coco-nobg.png",
+    ingredients: ["biscuits.potato_flour", "biscuits.wheat_flour", "biscuits.milk", "biscuits.sugar", "biscuits.water", "biscuits.butter", "biscuits.salt", "biscuits.eggs", "biscuits.coconut"],
+    weight: "50 g"
+  }
+];
