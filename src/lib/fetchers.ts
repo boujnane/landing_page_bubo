@@ -10,7 +10,6 @@ export async function getCategories() {
 }
 
 export async function getPosts(lang?: string) {
-  console.log("LANG: ", lang)
   const posts = (await getCollection("blog")).filter(item => item.data.lang === lang).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );
