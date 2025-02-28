@@ -133,10 +133,26 @@ let test = "test";
   <section class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg dark:bg-opacity-100">
     <h2 class="text-4xl font-bold mb-6">{t("common.contact_us")}</h2>
     <p class="text-lg mb-6">{t("biscuits.place_your_order")}</p>
-    <form class="max-w-md mx-auto">
+    <button class="whatsapp"><img src="/images/whatsapp.png" width="100" /></button>
+    <!-- <form class="max-w-md mx-auto">
       <input type="email" placeholder="Votre email" class="w-full px-4 py-3 rounded-lg mb-4" />
       <textarea placeholder="Votre message" class="w-full px-4 py-3 rounded-lg mb-4"></textarea>
       <button class="bg-black text-white px-6 py-3 rounded-lg">{t("common.send")}</button>
-    </form>
+    </form> -->
   </section>
+  <script>
+    function sendMessage() {
+      let shopName = "Awesome Shop"; // Replace with your shop name dynamically
+      let phone = "237699576276"; // Your WhatsApp Business Number
+      let message = encodeURIComponent(`Bonjour ! Merci de votre intérêt pour nos délicieux biscuits faits maison. 🍪💛
+    Dites-nous comment nous pouvons vous aider ! 😊`);
+
+      let whatsappURL = `https://wa.me/${phone}?text=${message}`;
+      window.open(whatsappURL, "_blank");
+    }
+    const button = document.querySelector('.whatsapp');
+    button?.addEventListener('click', async () => {
+      sendMessage()
+    });
+  </script>
 </MainLayout>

@@ -3,13 +3,13 @@ import type { NavMenuConfig } from "@/types";
 export const navMenuConfig: NavMenuConfig = {
   links: [
     {
-      title: "nav.accelerate",
+      title: "Accelerate",
       href: "accelerate",
       description: "Example description",
       image: "/images/examples/image.jpg",
     },
     {
-      title: "nav.research",
+      title: "Research",
       href: "research",
       description: "nav.a_reproduction_of_Starlog",
       image: "/images/examples/changelog.jpg",
@@ -17,7 +17,7 @@ export const navMenuConfig: NavMenuConfig = {
   ],
   pagesNav: [
     {
-      title: "common.explore",
+      title: "Explore",
       items: [
         // {
         //   title: "Landing",
@@ -57,7 +57,7 @@ export const navMenuConfig: NavMenuConfig = {
   ],
   examplesNav: [
     {
-      title: "common.about_us",
+      title: "About Us",
       items: [
         {
           title: "common.people",
