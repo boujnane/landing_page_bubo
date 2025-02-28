@@ -12,23 +12,26 @@ let test = "test";
 
 <MainLayout title="Bubo & Fine Biscuits" description="Découvrez la gamme Finebiscuit">
   <!-- Section Intro -->
-  <section class="relative text-center py-32 bg-cover bg-center bg-gradient-to-r from-amber-400 to-orange-500 overflow-hidden" style="background-image: url('/images/products/bg_finebiscuits.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-20 dark:bg-opacity-30"></div>
-    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <img src="/images/products/Bubo & fine biscuits.png" alt="Logo" class="w-48" />
-    </div>
-    <div class="relative z-10 translate-y-1/2">
-      <h1 class="text-6xl font-extrabold text-white drop-shadow-2xl tracking-tight">
-        {t("biscuits.bubo_food_presents_fine")}
-      </h1>
-      <p class="text-xl text-white mt-6">{t("biscuits.delicious_cookies_with")}</p>
-      <a href="#products">
-        <button class="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-full shadow-lg transition">
-          {t("common.discover")}
-        </button>
-      </a>
-    </div>
-  </section>
+    <section class="relative text-center py-32 bg-cover bg-center bg-gradient-to-r from-amber-400 to-orange-500 overflow-hidden pb-16 md:pb-32" style="background-image: url('/images/products/bg_finebiscuits.png');">
+      <div class="absolute inset-0 bg-black bg-opacity-20 dark:bg-opacity-30"></div>
+      <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img src="/images/products/Bubo & fine biscuits.png" alt="Logo" class="w-36 md:w-48" />
+      </div>
+      <div class="relative z-10 md:translate-y-1/2">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl tracking-tight">
+          {t("biscuits.bubo_food_presents_fine")}
+        </h1>
+        <p class="text-lg md:text-xl text-white mt-4 md:mt-6">
+          {t("biscuits.delicious_cookies_with")}
+        </p>
+        <a href="#products">
+          <button class="mt-6 md:mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-full shadow-lg transition">
+            {t("common.discover")}
+          </button>
+        </a>
+      </div>
+    </section>
+    
 
   <!-- Section Produits -->
   <section id="products" class="py-16 max-w-6xl mx-auto px-4">
@@ -39,10 +42,8 @@ let test = "test";
           <Image class="w-40 h-40 object-cover rounded-lg mb-4 group-hover:rotate-3 transition-transform" src={product.image} alt={product.name} width={160} height={160} />
           <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{t(product.name)}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">{t(product.description)}</p>
-          <p class="text-lg font-bold mt-2 dark:text-gray-100">{product.price} € /  {product.weight}</p>
-          <button class="mt-4 mb-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-full transition">
-            {t("common.order")}
-          </button>
+          <p class="text-lg font-bold mt-2 dark:text-gray-100 mb-4">{product.price} € / unite </p>
+
   
           {product.ingredients && (
             <div class="bg-gray-50 dark:bg-neutral-800 p-4 rounded-lg shadow w-full mb-4">
@@ -54,6 +55,8 @@ let test = "test";
               </h4>
               <p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
                 {t("biscuits.cookies_made_with")}
+                <br/>
+                {product.weight}
               </p>
   
               {/* Section pour les ingrédients avec scroll vertical */}
@@ -86,10 +89,7 @@ let test = "test";
                     case "biscuits.water":
                       icon = "💧";
                       break;
-                    case "biscuits.potato_flour":
-                      icon = "🥔";
-                      break;
-                    case "farine de patate douce":
+                    case "biscuits.sweet_potato_flour":
                       icon = "🍠";
                       break;
                     case "biscuits.wheat_flour":
@@ -133,12 +133,17 @@ let test = "test";
   <section class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg dark:bg-opacity-100">
     <h2 class="text-4xl font-bold mb-6">{t("common.contact_us")}</h2>
     <p class="text-lg mb-6">{t("biscuits.place_your_order")}</p>
-    <button class="whatsapp"><img src="/images/whatsapp.png" width="100" /></button>
+    <button class="whatsapp mb-4"><img src="/images/whatsapp.png" width="100" /></button>
     <!-- <form class="max-w-md mx-auto">
       <input type="email" placeholder="Votre email" class="w-full px-4 py-3 rounded-lg mb-4" />
       <textarea placeholder="Votre message" class="w-full px-4 py-3 rounded-lg mb-4"></textarea>
       <button class="bg-black text-white px-6 py-3 rounded-lg">{t("common.send")}</button>
     </form> -->
+    <p class="text-lg mb-6">
+      <a href="mailto:food@bubobu.bo" class="text-black hover:underline">
+        food@bubobu.bo
+      </a>
+    </p>
   </section>
   <script>
     function sendMessage() {
