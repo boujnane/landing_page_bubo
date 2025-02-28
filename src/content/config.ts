@@ -8,6 +8,7 @@ const blog = defineCollection({
       description: z.string(),
       cover: z.string(),
       category: z.string(),
+      lang: z.string(),
       // Transform string to Date object
       pubDate: z
         .string()
@@ -72,6 +73,7 @@ const research = defineCollection({
         src: image(),
         alt: z.string(),
       }),
+      lang: z.string(),
       date: z.date({ coerce: true }),
       versionNumber: z.string(),  // Added versionNumber
     }),

@@ -4,6 +4,7 @@ description: ""
 pubDate: "Sep 10 2023"
 cover: "/images/blog/bubo_recital.jpg"
 category: "Others"
+lang: "en"
 sidebarInfo:
   industry: "Data & AI"
   headquarters: "Paris, France"

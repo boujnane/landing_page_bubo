@@ -4,6 +4,7 @@ description: ""
 pubDate: "Jul 11 2022"
 cover: "/images/blog/bubo_law.png"
 category: "Software development"
+lang: "en"
 ---
 
 ### *Revolutionizing Legal Practice: How Bubo enhanced a lawyers firm efficiency with a fine-tuned legal AI assistant*
