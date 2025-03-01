@@ -4,6 +4,7 @@ description: ""
 pubDate: "Jul 02 2022"
 cover: "/images/blog/bubo_tvrad.png"
 category: "Others"
+lang: "en"
 ---
 
 ### *Enhancing radiological efficiency with AI: Image classification for a well known aligners firm*

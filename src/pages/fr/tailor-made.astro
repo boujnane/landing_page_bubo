@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 // import BlogCard from "@/components/cards/blog-card.astro";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
@@ -18,8 +18,8 @@ const posts = await getPosts();
         <!-- Blog Section -->
         <HeaderSection
         label="Tailor-made"
-        title="Our Process"
-        subtitle="Bringing our customers' ideas & projects to life"
+        title={t("common.our_process")}
+        subtitle={t("explore.bringing_our_customers") || ""}
         />
         <section>
             <div class="py-32">
@@ -30,10 +30,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:file-text" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Needs Analysis
+                        {t("common.needs_analysis")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Understand the client's requirements and objectives to create a tailored solution.
+                        {t("explore.understand_the_client_requirements")}
                       </p>
                     </div>
           
@@ -41,10 +41,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:layers" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Solution Design
+                        {t("common.solution_design")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Develop detailed specifications and a prototype to validate the project's direction.
+                        {t("explore.develop_detailed_specifications")}
                       </p>
                     </div>
           
@@ -52,10 +52,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:code" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Development
+                        {t("common.development")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Build the custom solution following the specifications and coding best practices.
+                        {t("explore.build_the_custom_solution")}
                       </p>
                     </div>
           
@@ -63,10 +63,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
                       <Icon name="lucide:check-circle" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Testing and Validation
+                        {t("common.testing_and_validation")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground max-w-md">
-                        Test the solution to ensure quality, stability, and compliance with the client's needs.
+                        {t("explore.test_the_solution_to_ensure")}
                       </p>
                     </div>
           
@@ -74,10 +74,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
                       <Icon name="lucide:cloud" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Deployment and Support
+                        {t("common.deployment_and_support")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground max-w-md">
-                        Deploy the solution to production and provide ongoing support to ensure its proper operation.
+                        {t("explore.deploy_the_solution_to_production")}
                       </p>
                     </div>
                   </div>

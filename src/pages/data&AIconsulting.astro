@@ -1,24 +1,26 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
 import MainLayout from "@/layouts/main-layout.astro";
 import { getPosts } from "@/lib/fetchers";
 import { Icon } from "astro-icon/components";
+import { useLocation } from "@/lib/location";
 
 changeLanguage("en");
 
-const posts = await getPosts();
+const { lang } = useLocation(Astro.url.pathname);
+const posts = await getPosts(lang);
 ---
 
 <MainLayout title="Data & AI consulting" description="Data & AI consulting section">
     <section class="container py-16">
         <!-- Blog Section -->
         <HeaderSection
-        label="Data & AI consulting"
-        title="Our Process"
-        subtitle="Transforming data into actionable insights with AI-driven solutions"
+        label={t("home.data_ai_consulting") || ""}
+        title={t("common.our_process")}
+        subtitle={t("explore.transforming_data_into") || ""}
         />
         <section>
             <div class="py-32">
@@ -29,10 +31,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:database" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Data Collection
+                        {t("common.data_collection")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Gathering data from various sources to create a comprehensive foundation.
+                        {t("explore.gathering_data_from_various")}
                       </p>
                     </div>
           
@@ -40,10 +42,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:brush" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Data Cleaning
+                        {t("common.data_cleaning")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Preparing and structuring data for analysis to ensure accuracy.
+                        {t("explore.preparing_and_structuring")}
                       </p>
                     </div>
           
@@ -51,10 +53,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:trending-up" class="size-10 text-[#fe8301]" />
                       <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        Modeling
+                        {t("common.modeling")}
                       </h2>
                       <p class="mt-4 text-center text-muted-foreground">
-                        Building analytical or predictive models using the cleaned data.
+                        {t("explore.building_analytical_or")}
                       </p>
                     </div>
           
@@ -62,10 +64,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
                         <Icon name="lucide:activity" class="size-10 text-[#fe8301]" />
                         <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                            Training
+                          {t("common.training")}
                         </h2>
                         <p class="mt-4 text-center text-muted-foreground max-w-md">
-                            Training models on data to maximize accuracy and performance.
+                          {t("explore.training_models_on_data")}
                         </p>
                     </div>
         
@@ -73,10 +75,10 @@ const posts = await getPosts();
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
                         <Icon name="lucide:rocket" class="size-10 text-[#fe8301]" />
                         <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                            Deployment
+                          {t("common.deployment")}
                         </h2>
                         <p class="mt-4 text-center text-muted-foreground max-w-md">
-                            Deploying the model into production to generate real-time insights.
+                          {t("explore.deploying_the_model")}
                         </p>
                     </div>
 
@@ -86,7 +88,7 @@ const posts = await getPosts();
             </div>
           </section>
 
-        <BlogHeader title="Data & AI consulting" />
+        <BlogHeader title={t("home.data_ai_consulting")} />
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
           {posts

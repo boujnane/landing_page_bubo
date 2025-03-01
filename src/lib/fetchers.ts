@@ -9,8 +9,8 @@ export async function getCategories() {
   return categories;
 }
 
-export async function getPosts() {
-  const posts = (await getCollection("blog")).sort(
+export async function getPosts(lang?: string) {
+  const posts = (await getCollection("blog")).filter(item => item.data.lang === lang).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );
 

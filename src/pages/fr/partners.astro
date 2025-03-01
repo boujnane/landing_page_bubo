@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import MainLayout from "@/layouts/main-layout.astro";
 import { Image } from "astro:assets";
 import { partners } from "@/config/partners.ts"; // Ensure you have a partners.ts file with an array of partner objects
@@ -9,7 +9,7 @@ changeLanguage("fr");
 
 <MainLayout title="Our Partners" description="Meet our esteemed partners who help us achieve our goals.">
   <section class="space-y-10 mb-20 px-6 sm:px-12 lg:px-20">
-    <h1 class="text-4xl font-heading text-foreground text-center mt-16">Our Partners and Customers</h1>
+    <h1 class="text-4xl font-heading text-foreground text-center mt-16">{t("partners.our_partners_and_customers")}</h1>
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto max-w-screen-lg">
       {partners.map(partner => (
         <div class="flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
@@ -21,7 +21,7 @@ changeLanguage("fr");
             height={100}
           />
           <h2 class="text-xl font-semibold text-foreground mb-3">{partner.name}</h2>
-          <p class="text-sm text-justify text-muted-foreground" set:html={partner.description}></p>
+          <p class="text-sm text-justify text-muted-foreground" set:html={t(partner.description)}></p>
         </div>
       ))}
     </div>
