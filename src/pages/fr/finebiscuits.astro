@@ -15,7 +15,7 @@ let test = "test";
     <section class="relative text-center py-32 bg-cover bg-center bg-gradient-to-r from-amber-400 to-orange-500 overflow-hidden pb-16 md:pb-32" style="background-image: url('/images/products/bg_finebiscuits.png');">
       <div class="absolute inset-0 bg-black bg-opacity-20 dark:bg-opacity-30"></div>
       <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <img src="/images/products/Bubo & fine biscuits.png" alt="Logo" class="w-36 md:w-48" />
+        <img src="/images/products/Bubo & fine biscuits.png" alt="Logo" class="relative -top-10 w-36 md:w-48" />
       </div>
       <div class="relative z-10 md:translate-y-1/2">
         <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl tracking-tight">
@@ -42,7 +42,6 @@ let test = "test";
           <Image class="w-40 h-40 object-cover rounded-lg mb-4 group-hover:rotate-3 transition-transform" src={product.image} alt={product.name} width={160} height={160} />
           <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{t(product.name)}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">{t(product.description)}</p>
-          <p class="text-lg font-bold mt-2 dark:text-gray-100 mb-4">{product.price} € / unite </p>
 
   
           {product.ingredients && (
