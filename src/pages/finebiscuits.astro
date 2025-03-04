@@ -22,7 +22,7 @@ let test = "test";
           {t("biscuits.bubo_food_presents_fine")}
         </h1>
         <p class="text-lg md:text-xl text-white mt-4 md:mt-6">
-          {t("biscuits.delicious_cookies_with")}
+          <i>{t("biscuits.delicious_cookies_with")}</i>
         </p>
         <a href="#products">
           <button class="mt-6 md:mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-full shadow-lg transition">
@@ -42,7 +42,11 @@ let test = "test";
           <Image class="w-40 h-40 object-cover rounded-lg mb-4 group-hover:rotate-3 transition-transform" src={product.image} alt={product.name} width={160} height={160} />
           <h3 class="text-2xl font-semibold mb-2 dark:text-gray-100">{t(product.name)}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">{t(product.description)}</p>
-
+          <a href="#contact">
+            <button class="mt-4 mb-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-full transition">
+              Commander
+            </button>
+          </a>
   
           {product.ingredients && (
             <div class="bg-gray-50 dark:bg-neutral-800 p-4 rounded-lg shadow w-full mb-4">
@@ -129,7 +133,7 @@ let test = "test";
 
 
   <!-- Section Contact -->
-  <section class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg dark:bg-opacity-100">
+  <section id="contact" class="py-16 bg-gradient-to-r from-amber-400 to-orange-500 text-center text-black rounded-lg shadow-lg dark:bg-opacity-100">
     <h2 class="text-4xl font-bold mb-6">{t("common.contact_us")}</h2>
     <p class="text-lg mb-6">{t("biscuits.place_your_order")}</p>
     <button class="whatsapp mb-4"><img src="/images/whatsapp.png" width="100" /></button>
