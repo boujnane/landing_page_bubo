@@ -117,6 +117,12 @@ export const testimonials = [
     review: "home.bubo_has_helped_me_successfully"
   },
   {
+    name: "Moussa Traoré",
+    job: "common.technical_director",
+    image: "https://randomuser.me/api/portraits/men/59.jpg",
+    review: "home.bubo_has_helped_me_successfully"
+  },
+  {
     name: "Clémence Dubois",
     job: "common.product_manager",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
@@ -139,6 +145,36 @@ export const testimonials = [
     job: "common.lead_data_scientist",
     image: "https://randomuser.me/api/portraits/women/32.jpg",
     review: "home.as_the_lead_data_scientist"
+  },
+  {
+    name: "Clémence Dubois",
+    job: "common.product_manager",
+    image: "https://randomuser.me/api/portraits/women/34.jpg",
+    review: "home.what_i_really_appreciate_about"
+  },
+  {
+    name: "Aminata Koulibaly",
+    job: "common.business_owner",
+    image: "https://randomuser.me/api/portraits/women/35.jpg",
+    review: "home.bubo_provided_me_with_the"
+  },
+  {
+    name: "Aminata Koulibaly",
+    job: "common.business_owner",
+    image: "https://randomuser.me/api/portraits/women/35.jpg",
+    review: "home.bubo_provided_me_with_the"
+  },
+  {
+    name: "Aminata Koulibaly",
+    job: "common.business_owner",
+    image: "https://randomuser.me/api/portraits/women/35.jpg",
+    review: "home.bubo_provided_me_with_the"
+  },
+  {
+    name: "Aminata Koulibaly",
+    job: "common.business_owner",
+    image: "https://randomuser.me/api/portraits/women/35.jpg",
+    review: "home.bubo_provided_me_with_the"
   },
 ];
 
