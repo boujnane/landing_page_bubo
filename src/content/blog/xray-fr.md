@@ -1,0 +1,51 @@
+---
+title: "Xray"
+description: ""
+pubDate: "Jul 11 2022"
+cover: "/images/blog/bubo_law.png"
+category: "Software development"
+lang: "fr"
+sidebarInfo:
+  industry: "Dental aligners"
+  headquarters: "Berlin, Germany"
+  founded: "2016"
+  employees: "200+"
+---
+### **Amélioration de l'efficacité radiologique grâce à l'IA : classification d'images pour une entreprise qui commercialise des aligneurs dentaires**
+---
+
+### **1. Contexte commercial du client**
+
+Le client, acteur clef dans le domaine des aligneurs dentaires invisibles, se concentre sur l'optimisation de chaque étape du processus de traitement orthodontique, y compris la radiologie, afin d'améliorer les résultats pour les patients et de rationaliser les flux de travail cliniques. 
+Notre client a cherché à mettre en œuvre une solution basée sur l'IA capable de reconnaître et de classer automatiquement les images radiographiques en fonction de leur incidence, ce qui permet de pré-remplir plus rapidement et plus précisément les descriptions techniques dans les rapports de radiologie. Cette transformation de l'IA fait partie d'une ambition plus large de soutenir les dentistes avec des outils automatisés, améliorant l'efficacité et contribuant à la rentabilité globale en accélérant les parcours de soins des patients.
+
+---
+### **2. Les défis liés à l'IA et aux données**
+
+Les images radiographiques provenant de sources multiples et n'étant pas validées de manière cohérente, la classification et l'organisation sont devenues complexes et laborieuses. En raison de l'absence de données étiquetées, les méthodes conventionnelles d'apprentissage supervisé n'étaient pas applicables. Un tel modèle permettrait au système de reconnaître et de regrouper les images radiologiques en fonction d'incidences similaires, ce qui faciliterait la documentation automatisée.
+
+En outre, le client avait besoin d'une solution évolutive pouvant s'intégrer de manière transparente aux systèmes d'archivage et de communication d'images (PACS) de ses radiologues indépendants afin d'assurer un traitement rapide sans perturber les flux de travail existants. Sans une telle solution, les inefficacités dans le traitement des données persisteraient, affectant le flux de travail et ralentissant l'analyse des images nécessaire à la planification du traitement.
+
+---
+
+### **3. Solution proposée par Bubo**
+
+Bubo s'est associé à l'entreprise pour concevoir une solution d'IA pour la classification des images radiographiques.
+L'équipe a utilisé des réseaux neuronaux convolutifs (CNN), une technique particulière de modèles deep learning, pour effectuer une classification non supervisée des images, permettant à l'IA d'apprendre et d'identifier des groupes d'incidences radiologiques sans données étiquetées préalablement.
+
+1.*Prétraitement des données et extraction des caractéristiques* : Bubo a commencé par concevoir un pipeline de prétraitement robuste pour préparer les images radiographiques brutes à l'entraînement du modèle. Des caractéristiques clés ont été extraites pour aider le modèle à reconnaître des modèles distincts et des marqueurs visuels associés à différentes incidences.
+2.*Regroupement non supervisé d'images avec CNN* : En s'appuyant sur les CNN, Bubo a mis en œuvre un modèle de regroupement pour analyser les caractéristiques des images et classer automatiquement les radiographies par type d'incidence. Le modèle a identifié les similitudes visuelles inhérentes entre les images, créant des clusters logiques (qui reprennent les incidences radiologiques standard). Ce regroupement a permis au client de pré-remplir les descriptions dans les rapports, ce qui a permis de gagner du temps et de minimiser les erreurs manuelles.
+3. *Intégration du PACS et optimisation du flux de travail* : Pour assurer une utilisation transparente par les radiologues indépendants, Bubo a facilité l'intégration avec les systèmes PACS existants, permettant au modèle d'IA de classer et d'étiqueter automatiquement les radiographies au fur et à mesure qu'elles sont téléchargées. Cela a rationalisé le flux de travail, permettant aux radiologues de passer moins de temps sur la documentation et plus sur la prise de décision clinique.
+
+---
+
+### **4. Résultats**
+
+- La classification automatisée a considérablement réduit le temps nécessaire pour pré-remplir les détails techniques dans les rapports de radiologie.
+- Plus de 85 % de précision dans l'identification des incidences radiologiques, permettant de réduire les erreurs de documentation et d'interprétation.
+- Une documentation et une classification plus rapides signifient une planification plus rapide du traitement, ce qui améliore l'expérience du patient.
+
+> La collaboration avec Bubo a considérablement rationalisé et simplifié notre flux de travail en radiologie. Leur solution d'IA, déployées localement, pour la classification des images radiographiques a transformé notre processus de documentation, le rendant plus rapide et plus précis. Cette avancée a permis à notre équipe de se concentrer davantage sur les soins aux patients et moins sur les tâches administratives manuelles, ce qui s'est avéré utile pour améliorer la qualité et l'efficacité de nos services.
+> 
+
+Dr Selmi, Radiologue

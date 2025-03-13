@@ -53,7 +53,7 @@
     "events": {
       "2017-01-01": {
         "title": "Creation of the company",
-        "description": "The beginning of our journey."
+        "description": "We were students, but the motivation and drive were there, ready to take off."
       },
       "2020-02-14": {
         "title": "First Huge Contract",
@@ -61,7 +61,7 @@
       },
       "2021-03-17": {
         "title": "CIR/CII approval",
-        "description": "Achieving CIR/CII accreditation for research and innovation."
+        "description": "Achieving CIR/CII accreditation for research and innovation in France."
       },
       "2022-10-31": {
         "title": "Expand to Cameroon",
@@ -102,7 +102,7 @@
         "products": "Products"
       },
       "about_us": {
-        "title": "About Us",
+        "title": "About us",
         "people": "People",
         "values": "Values",
         "partners": "Partners"
@@ -149,7 +149,7 @@
     "passion": "Passion",
     "explore": "Explore",
     "tailor_made": "Tailor-made software",
-    "about_us": "About Us",
+    "about_us": "About us",
     "people": "People",
     "values": "Values",
     "partners": "Partners",
