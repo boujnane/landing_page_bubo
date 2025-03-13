@@ -53,4 +53,10 @@ export const hobbies: HobbiesProps[] = [
       "/images/team/marc_cameroun.jpeg",
     alt: "dalmatian",
   },
+  // To be refactor first column items
+  {
+    image:
+      "/images/team/yaounde_campus.jpg",
+    alt: "yaounde campus",
+  },
 ];

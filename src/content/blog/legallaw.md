@@ -5,6 +5,11 @@ pubDate: "Jul 11 2022"
 cover: "/images/blog/bubo_law.png"
 category: "Software development"
 lang: "en"
+sidebarInfo:
+  industry: "Law firm"
+  headquarters: "Paris, France"
+  founded: "2008"
+  employees: "20+"
 ---
 
 ### *Revolutionizing Legal Practice: How Bubo enhanced a lawyers firm efficiency with a fine-tuned legal AI assistant*
@@ -25,7 +30,7 @@ Technical limitations also hindered efficiency; traditional tools lacked the ada
 
 ---
 
-### *3. How Bubo helped*
+### *3. How Bubo helped/ Custom AI model trainings:*
 
 To meet these challenges, Bubo designed a tailored AI solution with a fine-tuned language model specifically crafted for legal use. Our approach included several key steps:
 
@@ -36,6 +41,8 @@ To meet these challenges, Bubo designed a tailored AI solution with a fine-tuned
 - *Efficiency*: By automating routine processes, Bubo’s solution transformed the firm ability to handle high document volumes with consistent quality. Our model could draft, analyze, and organize information with accuracy, freeing up legal professionals to focus more on strategic work and client relations.
 
 Through this structured approach, Bubo delivered a solution uniquely adapted to the lawyers firm needs, enhancing their workflow and supporting their commitment to client-centered legal service.
+
+- This model is deployed locally in the customer's private cloud, ensuring that the data does not leave the practice.
 
 ---
 
@@ -49,4 +56,5 @@ Following the AI implementation by Bubo, the client achieved operational improve
 
 > Bubo has been instrumental in transforming our practice through innovative AI solutions. Since ChatGPT, everyone wants to understand how to work with GenAI, how to use it on a day-to-day basis, but to do concrete and useful experiments really is another level. Bubo expertise in tailoring the model for legal applications has given us an edge in efficiency, allowing our team to dedicate more time to client strategy. The seamless integration has exceeded our expectations, and we look forward to furthering this partnership as we continue to grow.
 
--Managing Partner, Lawyers firm based in Paris
+- Managing Partner, Lawyers firm based in Paris
+- Customer data is now under control and does not leave the firm for the USA or elsewhere.
