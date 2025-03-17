@@ -17,7 +17,7 @@ const posts = await getPosts();
     <section class="container py-16">
         <!-- Blog Section -->
         <HeaderSection
-        label="Tailor-made"
+        label={t("services.tailor_made") || ""}
         title={t("common.our_process")}
         subtitle={t("explore.bringing_our_customers") || ""}
         />
@@ -36,7 +36,6 @@ const posts = await getPosts();
                         {t("explore.understand_the_client_requirements")}
                       </p>
                     </div>
-          
                     {/* Step 2: Solution Design */}
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:layers" class="size-10 text-[#fe8301]" />
@@ -47,7 +46,6 @@ const posts = await getPosts();
                         {t("explore.develop_detailed_specifications")}
                       </p>
                     </div>
-          
                     {/* Step 3: Development */}
                     <div class="relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
                       <Icon name="lucide:code" class="size-10 text-[#fe8301]" />
@@ -58,7 +56,6 @@ const posts = await getPosts();
                         {t("explore.build_the_custom_solution")}
                       </p>
                     </div>
-          
                     {/* Step 4: Testing and Validation (with internal grid) */}
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
                       <Icon name="lucide:check-circle" class="size-10 text-[#fe8301]" />
@@ -69,7 +66,6 @@ const posts = await getPosts();
                         {t("explore.test_the_solution_to_ensure")}
                       </p>
                     </div>
-          
                     {/* Step 5: Deployment and Support (with internal grid) */}
                     <div class="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
                       <Icon name="lucide:cloud" class="size-10 text-[#fe8301]" />
@@ -81,12 +77,16 @@ const posts = await getPosts();
                       </p>
                     </div>
                   </div>
+                  <BlogHeader title={t("services.tailor_made")} />
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
+                    {posts
+                      // .filter((post) => post.data.category !== "Others")
+                      .map((post) => <BlogCard key={post.id} {...post} />)}
+                  </div>
                 </div>
               </div>
             </div>
           </section>
-          
-          
-        
       </section>
 </MainLayout>
