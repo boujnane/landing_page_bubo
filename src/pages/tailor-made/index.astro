@@ -10,6 +10,7 @@ import { Icon } from "astro-icon/components";
 import { useLocation } from "@/lib/location";
 
 changeLanguage("en");
+
 const { lang } = useLocation(Astro.url.pathname);
 const posts = await getTailorMadePosts(lang);
 ---
