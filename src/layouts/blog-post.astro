@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import MainLayout from "./main-layout.astro";
 
-type Props = CollectionEntry<"blog">;
+type Props = CollectionEntry<"blog" | "tailor-made">;
 
 const slug = Astro.props.slug;
 const { title, description, pubDate, updatedDate, cover, category, sidebarInfo } =
