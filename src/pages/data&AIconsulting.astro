@@ -92,7 +92,7 @@ const posts = await getPosts(lang);
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
       {posts
-        .filter((post) => post.data.category !== "Others")
+        // .filter((post) => post.data.category !== "Others")
         .map((post) => <BlogCard key={post.id} {...post} />)}
     </div>
   </section>
