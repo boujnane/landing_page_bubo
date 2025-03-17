@@ -4,7 +4,7 @@ description: ""
 pubDate: "Sep 10 2023"
 cover: "/images/blog/dm_Black.png"
 category: "Others"
-lang: "en"
+lang: "fr"
 sidebarInfo:
   industry: "SaaS for strategic planning"
   headquarters: "Paris, France"

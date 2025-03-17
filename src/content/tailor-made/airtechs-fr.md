@@ -4,7 +4,7 @@ description: ""
 pubDate: "Sep 10 2023"
 cover: "/images/blog/airtechs_logo.jpeg"
 category: "Others"
-lang: "en"
+lang: "fr"
 sidebarInfo:
   industry: "Aircraft maintenance"
   headquarters: "Martinique, France"
