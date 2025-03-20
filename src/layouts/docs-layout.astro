@@ -50,8 +50,9 @@ const { title, description } = Astro.props;
         <Icon name="ri:search-line" class="size-5" />
         <span class="text-sm ml-2 hidden lg:flex">Search (coming soon)</span>
       </div>
-
-      <ThemeToggle client:load />
+      <div id="theme-toggle">
+        <ThemeToggle client:load />
+      </div>
     </div>
   </Header>
 
