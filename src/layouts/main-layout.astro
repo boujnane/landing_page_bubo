@@ -50,7 +50,9 @@ const { title, description, mainClass } = Astro.props;
         <span class="sm:hidden">Quote</span> <!-- Show this on smaller screens -->
         <Icon name="lucide:rocket" class="size-4 text-orange-500" />
       </a>
-      <ThemeToggle client:load />
+      <div id="theme-toggle">
+        <ThemeToggle client:load />
+      </div>
         <LanguagePicker />
     </div>
   </Header>

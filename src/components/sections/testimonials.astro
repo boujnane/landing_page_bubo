@@ -3,6 +3,8 @@ import { testimonials } from "@/config/landing";
 import { Image } from "astro:assets";
 import HeaderSection from "./header-section.astro";
 import { t } from "i18next";
+// const theme = localStorage.getItem("theme");
+// console.log("theme: ", theme);
 ---
 
 <section>
@@ -14,7 +16,7 @@ import { t } from "i18next";
     />
 
     <!-- Wrapper global -->
-    <div class="testimonial-wrapper">
+    <div id="testimonial-wrapper" class="testimonial-wrapper testimonial-wrapper-light">
       {
         testimonials.reduce((cols, item, index) => {
           const colIndex = index % 4;
@@ -61,6 +63,29 @@ import { t } from "i18next";
     </div>    
   </div>
 </section>
+<script>
+  const getTheme = () => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  }
+
+  const testimonialsWrapper = document.getElementById("testimonial-wrapper");
+  const theme = getTheme();
+  const toggleButton = document.getElementById("theme-toggle");
+
+  toggleButton?.addEventListener("click", () => {
+    if (theme === "light") {
+      testimonialsWrapper?.classList.toggle("testimonial-wrapper-light")
+    } else {
+      testimonialsWrapper?.classList.toggle("testimonial-wrapper")
+    }
+  })
+</script>
 
 <style>
   .testimonial-column {
@@ -83,7 +108,7 @@ import { t } from "i18next";
     to { transform: translateY(-50%); }
   }
 
-  .testimonial-wrapper {
+  .testimonial-wrapper, .testimonial-wrapper-light {
     position: relative;
     display: flex;
     gap: 1rem;
@@ -91,7 +116,9 @@ import { t } from "i18next";
   }
 
   .testimonial-wrapper::before,
-  .testimonial-wrapper::after {
+  .testimonial-wrapper::after,
+  .testimonial-wrapper-light::before,
+  .testimonial-wrapper-light::after {
     content: "";
     position: absolute;
     left: 0;
@@ -116,6 +143,24 @@ import { t } from "i18next";
       to top,
       #0a0a0a 0%,
       rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .testimonial-wrapper-light::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      hwb(0 0% 100% / 0) 100%
+    );
+  }
+
+  .testimonial-wrapper-light::after {
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      #fafafa 0%,
+      hwb(0 0% 100% / 0) 100%
     );
   }
 
