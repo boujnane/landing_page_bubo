@@ -16,7 +16,7 @@ import { t } from "i18next";
     />
 
     <!-- Wrapper global -->
-    <div id="testimonial-wrapper" class="testimonial-wrapper testimonial-wrapper-light">
+    <div id="testimonial-wrapper">
       {
         testimonials.reduce((cols, item, index) => {
           const colIndex = index % 4;
@@ -76,13 +76,25 @@ import { t } from "i18next";
 
   const testimonialsWrapper = document.getElementById("testimonial-wrapper");
   const theme = getTheme();
+
+  if (theme === "light") {
+    testimonialsWrapper?.classList.remove("testimonial-wrapper")
+    testimonialsWrapper?.classList.add("testimonial-wrapper-light")
+    } else {
+      testimonialsWrapper?.classList.remove("testimonial-wrapper-light")
+      testimonialsWrapper?.classList.add("testimonial-wrapper")
+    }
+
   const toggleButton = document.getElementById("theme-toggle");
 
   toggleButton?.addEventListener("click", () => {
-    if (theme === "light") {
-      testimonialsWrapper?.classList.toggle("testimonial-wrapper-light")
+    const newTheme = getTheme();
+    if (newTheme === "light") {
+      testimonialsWrapper?.classList.remove("testimonial-wrapper")
+      testimonialsWrapper?.classList.add("testimonial-wrapper-light")
     } else {
-      testimonialsWrapper?.classList.toggle("testimonial-wrapper")
+      testimonialsWrapper?.classList.remove("testimonial-wrapper-light")
+      testimonialsWrapper?.classList.add("testimonial-wrapper")
     }
   })
 </script>
