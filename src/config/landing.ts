@@ -2,7 +2,7 @@ import type { InfoLdg } from "@/types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Kumbu GED",
+    title: "Kumbu EDM",
     description:
       "home.discover_our_revolutionary_archiving",
     image: "/images/blog/Logo_Kumbu_with_name.svg",

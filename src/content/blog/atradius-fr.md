@@ -30,7 +30,7 @@ Actuellement, le processus de rapprochement est effectué manuellement par un so
 
 ---
 
-### **3. Solution proposée par Bubo **
+### **3. Solution proposée par Bubo**
 
 Notre équipe a travaillé en étroite collaboration avec Atradius pour concevoir une solution alimentée par l'IA qui automatiserait le processus de réconciliation des données. Voici comment nous avons relevé le défi :
 

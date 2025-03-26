@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import PageHeader from "@/components/page-header.astro";
 import { Badge } from "@/components/ui/badge";
 import MainLayout from "@/layouts/main-layout.astro";
@@ -18,8 +18,8 @@ const getSlug = (slug: string) => isFrench ? `${slug}-${lang}` : slug;
 <MainLayout title="Recherche et Développement">
   <section class="container max-w-screen-lg space-y-6 pt-12">
     <PageHeader
-      heading="Our R&D Projects"
-      text="Explore our research and development initiatives aimed at innovating and improving the future."
+      heading={t("research.title")}
+      text={t("research.subtitle") || ""}
     />
     <ul class="pt-6">
       {

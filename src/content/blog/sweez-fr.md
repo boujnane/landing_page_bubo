@@ -29,7 +29,7 @@ Sweez avait besoin d'une solution d'IA capable de transcrire les conversations a
 
 ---
 
-### **3. Solution proposée par Bubo **
+### **3. Solution proposée par Bubo**
 
 L'équipe de Bubo a travaillé à la mise en œuvre d'une solution d'IA complète utilisant des technologies de pointe adaptées aux besoins spécifiques de l'analyse des réunions.
 

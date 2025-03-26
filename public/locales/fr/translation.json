@@ -5,8 +5,8 @@
   },
   "home": {
     "title": "Découvrez tous les produits.",
-    "discover_all_cases": "Découvrez tous les cas.",
-    "data_ai_consulting": "Conseil en données et IA",
+    "discover_all_cases": "Découvrez tous les cas d’usage.",
+    "data_ai_consulting": "Conseil data et IA",
     "bringing_our_customers_ideas": "Donner vie aux idées et aux projets de nos clients",
     "products_that_will_improve": "Des produits qui améliorent la façon dont vos employés travaillent, jour après jour",
     "discover_our_revolutionary_archiving": "Découvrez notre solution révolutionnaire d'archivage et de gestion des documents. Avec la recherche avancée basée sur l'IA et le chat instantané comme GPT, retrouvez vos informations en un instant.",
@@ -46,16 +46,20 @@
     "part15": "Bubo est bien plus qu'une entreprise, c'est la vision d'un avenir où le numérique et l'humain avancent main dans la main, ",
     "part16": "où chaque innovation est ancrée dans des valeurs de simplicité, de progrès et de responsabilité"
   },
+  "research": {
+    "title": "Our R&D Projects",
+    "subtitle": "Découvrez nos initiatives de recherche et de développement visant à innover et à améliorer l'avenir."
+  },
   "timeline": {
     "title": "Découvrez notre histoire.",
     "subtitle": "Quelques étapes clés de l’histoire de Bubo.",
     "events": {
       "2017-01-01": {
         "title": "Création de l'entreprise",
-        "description": "Nous étions des étudiants, mais la motivation et le dynamisme étaient là, prêts à décoller."
+        "description": "Nous étions des étudiants, mais la motivation et le dynamisme étaient là, prêts à soulever des montagnes."
       },
       "2020-02-14": {
-        "title": "Premier grand contrat",
+        "title": "Premier contrat important",
         "description": "Obtention de notre premier partenariat majeur."
       },
       "2021-03-17": {
@@ -71,7 +75,7 @@
         "description": "Récompensé par le prix Bâtisseurs Africains, une reconnaissance de notre impact."
       },
       "2024-11-09": {
-        "title": "Participation à la JNDA",
+        "title": "Participation aux JNDA",
         "description": "Participation en tant qu’exposant à la Journée Nationale de la Diaspora Africaine."
       }
     }
@@ -80,13 +84,15 @@
     "soar_to_new_heights": "Atteignez de nouveaux sommets avec",
     "bubo_team": "L'équipe Bubo",
     "we_offer": "Nous offrons :",
-    "state_of_the_art": "À la pointe de la technologie",
+    "state_of_the_art": "Des prestations de conseil à la pointe de la technologie en",
     "data_ai_consulting": "Consultation en Data & IA",
-    "tailor_made": "Sur mesure",
+    "data_and_ia": "Data & IA",
+    "tailor_made": "Développement logiciel sur mesure",
+    "to_perfectly_match_your_needs": "pour correspondre parfaitement à vos besoins",
     "software_development": "Développement logiciel",
     "innovative_useful": "Innovant et utile",
     "products": "Produits",
-    "take_flight": "Pour faire décoller votre projet"
+    "take_flight": "innovants et utiles pour faire décoller votre business"
   },
   "footer": {
     "vision": {
@@ -96,13 +102,13 @@
     },
     "explore": {
       "title": "Explorer",
-      "dataAIconsulting": "Conseil en données et IA",
+      "dataAIconsulting": "Conseil data et IA",
       "tailor_made": "Logiciel sur mesure",
       "products": "Produits "
     },
     "about_us": {
       "title": "À propos de nous",
-      "people": "Les personnes",
+      "people": "L’équipe",
       "values": "Valeurs",
       "partners": "Partenaires"
     }
@@ -126,7 +132,7 @@
     "data_collection": "Collecte des données",
     "data_cleaning": "Nettoyage des données",
     "modeling": "Modélisation",
-    "training": "Formation",
+    "training": "Entrainement",
     "deployment": "Déploiement",
     "needs_analysis": "Analyse des besoins",
     "solution_design": "Conception de solutions",
@@ -157,7 +163,9 @@
     "order": "Commander",
     "ingredients": "Ingrédients",
     "contact_us": "Contactez-nous",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "request_quote": "Nous contacter",
+    "some": "Des"
   },
   "features": {
     "reconciling_disparate_data_models": "Rapprocher des modèles de données disparates afin de garantir la cohérence et l'exactitude des systèmes et des applications d'intelligence artificielle.",
@@ -167,12 +175,12 @@
   },
   "explore": {
     "transforming_data_into": "Transformer les données en informations exploitables grâce à des solutions basées sur l'IA",
-    "gathering_data_from_various": "Rassembler des données provenant de différentes sources afin de créer une base complète.",
-    "preparing_and_structuring": "Préparer et structurer les données pour l'analyse afin d'en garantir l'exactitude.",
+    "gathering_data_from_various": "Rassembler des données provenant de différentes sources afin de créer une base complète et unifiée.",
+    "preparing_and_structuring": "Préparer et structurer les données pour l'analyse afin d'en comprendre clairement les tenants et aboutissants.",
     "building_analytical_or": "Construire des modèles analytiques ou prédictifs à partir des données nettoyées.",
-    "training_models_on_data": "Entraînement des modèles sur les données pour maximiser la précision et la performance.",
-    "deploying_the_model": "Déployer le modèle en production pour générer des informations en temps réel.",
-    "bringing_our_customers": "Déployer le modèle en production pour générer des informations en temps réel.",
+    "training_models_on_data": "Entraînement des modèles sur les données pour maximiser les métriques d’évaluation et la performance.",
+    "deploying_the_model": "Déployer les modèles en production.",
+    "bringing_our_customers": "Donner vie aux idées et aux projets de nos clients",
     "understand_the_client_requirements": "Comprendre les exigences et les objectifs du client pour créer une solution sur mesure.",
     "develop_detailed_specifications": "Élaborer des spécifications détaillées et un prototype pour valider l'orientation du projet.",
     "build_the_custom_solution": "Construire la solution personnalisée en suivant les spécifications et les meilleures pratiques de codage.",
@@ -206,10 +214,10 @@
     "accelerate": "Accélérer",
     "research": "Recherche",
     "a_reproduction_of_Starlog": "Une reproduction du modèle Starlog avec Tailwind CSS.",
-    "we_help_you_on_your_data": "Nous vous aidons sur vos projets de données et d'intelligence artificielle.",
-    "we_build_useful_products": "Nous construisons des produits utiles",
-    "your_needs_our_work": "Vos besoins, notre travail",
-    "people_who_work_hard": "Les personnes qui travaillent dur chaque jour",
+    "we_help_you_on_your_data": "Confiez-nous vos projets data et intelligence artificielle.",
+    "we_build_useful_products": "Des produits pour vous simplifier la vie",
+    "your_needs_our_work": "Vos besoins spécifiques: notre priorité",
+    "people_who_work_hard": "Découvrez l’équipe Bubo",
     "the_values_that_drive_us": "Les valeurs qui nous animent",
     "companies_and_people_who": "Les entreprises et les personnes qui nous font confiance"
   },
