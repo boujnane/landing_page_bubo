@@ -1,24 +1,24 @@
 ---
-title: "AI - LLM: KVP task"
+title: "Ets Izysoft"
 description: ""
 pubDate: "Sep 10 2023"
-cover: "/images/blog/bubo_recital.jpg"
+cover: "/images/blog/logo_izysoft.png"
 category: "Others"
 lang: "en"
 sidebarInfo:
-  industry: "Data & AI"
-  headquarters: "Paris, France"
-  founded: "2015"
-  employees: "30+"
+  industry: "SaaS for waste management"
+  headquarters: "Toronto, Canada"
+  founded: "2019"
+  employees: "40+"
 ---
 
-### **Automated Document Intelligence with AI: Enhancing information extraction for a SaaS startup in Paris**
+### **Automated Document Intelligence with AI: Enhancing information extraction for a SaaS startup in Yaounde**
 
 ---
 
 ### **1. Business context for the client**
 
-Our customer, a leading French company in document intelligence, specializes in developing solutions for automatically extracting structured information from unstructured document bases. Their goal is ambitious: to harness AI for seamless extraction of critical data from complex documents like invoices and balance sheets. To support this vision, the company aims to enhance their platform with a robust, automated module capable of capturing and organizing knowledge from a variety of financial documents with high precision. This strategic advancement aimed to revolutionize their platform, making it more efficient and aligning with their commitment to delivering cutting-edge document intelligence.
+Our customer, a leading company in document intelligence, specializes in developing solutions for automatically extracting structured information from unstructured document bases. Their goal is ambitious: to harness AI for seamless extraction of critical data from complex documents like invoices and balance sheets. To support this vision, the company aims to enhance their platform with a robust, automated module capable of capturing and organizing knowledge from a variety of financial documents with high precision. This strategic advancement aimed to revolutionize their platform, making it more efficient and aligning with their commitment to delivering cutting-edge document intelligence.
 
 ---
 

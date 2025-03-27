@@ -79,4 +79,31 @@ const research = defineCollection({
     }),
 });
 
-export const collections = { blog, docs, guides, releases, research };
+const tailorMade = defineCollection({
+  // Type-check frontmatter using a schema
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      cover: z.string(),
+      category: z.string(),
+      lang: z.string(),
+      // Transform string to Date object
+      pubDate: z
+        .string()
+        .or(z.date())
+        .transform((val) => new Date(val)),
+      updatedDate: z
+        .string()
+        .optional()
+        .transform((str) => (str ? new Date(str) : undefined)),
+      sidebarInfo: z.object({
+        industry: z.string(),
+        headquarters: z.string(),
+        founded: z.string(),
+        employees: z.string(),
+      }).optional(), // Make it optional if not every post will have this info
+    }),
+});
+
+export const collections = { blog, docs, guides, releases, research, tailorMade };

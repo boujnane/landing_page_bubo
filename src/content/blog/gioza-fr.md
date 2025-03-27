@@ -30,7 +30,7 @@ Le client avait besoin d'une solution capable de traiter les données agrégées
 
 ---
 
-### **3. Solution proposée par Bubo **
+### **3. Solution proposée par Bubo**
 
 Pour relever ces défis, Bubo SAS a mis en place une solution NILM basée sur l'IA, voici comment nous avons abordé le projet :
 

@@ -47,6 +47,10 @@
     "part15": "Bubo is much more than a company; it's a vision of a future where digital and human move forward hand in hand, where ",
     "part16": "every innovation is rooted in the values of simplicity, progress and responsibility"
   },
+  "research": {
+    "title": "Our R&D Projects",
+    "subtitle": "Explore our research and development initiatives aimed at innovating and improving the future."
+  },
   "timeline": {
     "title": "Discover our history.",
     "subtitle": "Some key milestones in Bubo's history.",
@@ -56,7 +60,7 @@
         "description": "We were students, but the motivation and drive were there, ready to take off."
       },
       "2020-02-14": {
-        "title": "First Huge Contract",
+        "title": "First important contract",
         "description": "Securing our first major partnership."
       },
       "2021-03-17": {
@@ -83,11 +87,13 @@
     "we_offer": "We offer :",
     "state_of_the_art": "State-of-the-art",
     "data_ai_consulting": "Data & AI consulting",
+    "data_and_ia": "Data & AI consulting",
     "tailor_made": "Tailor-made",
-    "software_development": "Software development",
+    "software_development": "software development",
+    "to_perfectly_match_your_needs": "to perfectly match your needs",
     "innovative_useful": "Innovative and useful",
-    "products": "Products",
-    "take_flight": "To help your project take flight"
+    "products": "products",
+    "take_flight": "to help your project take flight"
   },
   "footer": {
       "vision": {
@@ -158,7 +164,9 @@
     "order": "Order",
     "ingredients": "Ingredients",
     "contact_us": "Contact Us",
-    "send": "Send"
+    "send": "Send",
+    "request_quote": "Request a quote",
+    "some": "Some"
   },
   "features": {
     "reconciling_disparate_data_models": "Reconciling disparate data models to ensure consistency and accuracy across AI systems and applications.",
