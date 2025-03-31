@@ -1,5 +1,5 @@
 ---
-title: "Harold"
+title: "Jules Ai"
 description: ""
 pubDate: "Sep 10 2023"
 cover: "/images/blog/haroldwaste_logo.png"

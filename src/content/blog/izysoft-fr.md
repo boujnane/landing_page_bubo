@@ -2,7 +2,7 @@
 title: "Ets Izysoft"
 description: ""
 pubDate: "Sep 10 2023"
-cover: "/images/blog/logo_izysoft.png"
+cover: "/images/blog/logo_izysoft_bubo.png"
 category: "Others"
 lang: "fr"
 sidebarInfo:
