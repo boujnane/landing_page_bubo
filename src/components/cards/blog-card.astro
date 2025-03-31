@@ -6,14 +6,13 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog" | "tailor-made">;
-
+const { lang, localizeUrl } = useLocation(Astro.url.pathname);
 const post = Astro.props as Props;
-const { localizeUrl } = useLocation(Astro.url.pathname);
 ---
 
 <article class="group space-y-4">
   <a
-    href={localizeUrl(`${Astro.url.pathname}/${post.slug}/`)}
+    href={`${Astro.url.pathname}/${post.slug}/`}
     class="flex h-52 group-hover:-translate-y-2 group-hover:shadow-xl transition duration-300"
   >
     <Image
@@ -29,7 +28,7 @@ const { localizeUrl } = useLocation(Astro.url.pathname);
 
   <div class="flex items-center justify-between">
     <a
-      href={localizeUrl(`${Astro.url.pathname}/category/${post.data.category}`)}
+      href={localizeUrl(`/data&AIconsulting/category/${post.data.category}`)}
       transition:name={"badge-cat-" + post.slug}
     >
       <Badge radius="md" className="capitalize">
@@ -45,7 +44,7 @@ const { localizeUrl } = useLocation(Astro.url.pathname);
   </div>
 
   <div>
-    <a href={localizeUrl(`${Astro.url.pathname}/${post.slug}/`)} class="group-hover:underline">
+    <a href={`${Astro.url.pathname}/${post.slug}/`} class="group-hover:underline">
       <h2
         class="font-heading text-xl md:text-2xl leading-snug line-clamp-3"
         transition:name={"title-" + post.slug}
