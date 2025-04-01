@@ -17,10 +17,10 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const slug = Astro.params.slug;
-const { pathname } = Astro.url;
-const getPathSlug = (url: string) => url.includes("-fr") ? url : url + "-fr";
-const newSlug = lang === "fr" ? pathname.replace("-fr", "") : getPathSlug(pathname);
-Astro.rewrite(newSlug);
+// const { pathname } = Astro.url;
+// const getPathSlug = (url: string) => url.includes("-fr") ? url : url + "-fr";
+// const newSlug = lang === "fr" ? pathname.replace("-fr", "") : getPathSlug(pathname);
+// Astro.rewrite(newSlug);
 const { Content } = await post.render();
 if (!slug || !post) {
     return new Response(null, {
