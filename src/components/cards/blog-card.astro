@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog" | "tailor-made">;
-const { lang, localizeUrl } = useLocation(Astro.url.pathname);
+const { localizeUrl } = useLocation(Astro.url.pathname);
 const post = Astro.props as Props;
 ---
 
