@@ -6,7 +6,6 @@ import { useLocation } from "@/lib/location";
 
 changeLanguage("fr");
 
-const { lang } = useLocation(Astro.url.pathname);
 export async function getStaticPaths() {
     const posts = await getCollection("blog");
     return posts.map((post) => ({
@@ -17,10 +16,16 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const slug = Astro.params.slug;
-// const { pathname } = Astro.url;
+const { lang } = useLocation(Astro.url.pathname);
+const { pathname } = Astro.url;
 // const getPathSlug = (url: string) => url.includes("-fr") ? url : url + "-fr";
 // const newSlug = lang === "fr" ? pathname.replace("-fr", "") : getPathSlug(pathname);
 // Astro.rewrite(newSlug);
+const getPathSlug = (url: string) => url.includes("-fr") ? url : url + "-fr";
+const newSlug = lang === "fr" ? pathname.replace("-fr", "") : getPathSlug(pathname);
+// if (lang === "fr") {
+Astro.rewrite(newSlug); // ✅ Use Astro.redirect
+// }
 const { Content } = await post.render();
 if (!slug || !post) {
     return new Response(null, {
