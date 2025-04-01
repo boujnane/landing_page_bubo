@@ -11,7 +11,7 @@ const useLocation = () => {
 
 
   const isFrench = currentPath.startsWith("/fr");
-  const localizeUrl = (url: string) => isFrench ? `/fr/${url}` : url
+  const localizeUrl = (url: string) => isFrench ? `/fr/${url}` : "/" + url;
 
   return {
     isFrench,
