@@ -19,7 +19,7 @@ const { url } = Astro.request;
 const getPathSlug = (url: string) => url.includes("-fr") ? url : url + "-fr";
 const newSlug = lang === "fr" ? url.replace("-fr", "") : getPathSlug(url);
 // if (lang === "fr") {
-Astro.rewrite(newSlug);
+Astro.redirect(newSlug);
 ---
 
 <MainLayout title={title} description={description}>
