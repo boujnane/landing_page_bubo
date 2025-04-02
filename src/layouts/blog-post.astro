@@ -6,12 +6,20 @@ import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import MainLayout from "./main-layout.astro";
+import { useLocation } from "@/lib/location";
 
 type Props = CollectionEntry<"blog" | "tailor-made">;
 
 const slug = Astro.props.slug;
 const { title, description, pubDate, updatedDate, cover, category, sidebarInfo } =
   Astro.props.data;
+
+const { lang } = useLocation(Astro.url.pathname);
+const { url } = Astro.request;
+const getPathSlug = (url: string) => url.includes("-fr") ? url : url + "-fr";
+const newSlug = lang === "fr" ? url.replace("-fr", "") : getPathSlug(url);
+// if (lang === "fr") {
+Astro.rewrite(newSlug);
 ---
 
 <MainLayout title={title} description={description}>
