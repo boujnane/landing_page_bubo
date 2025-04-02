@@ -2,6 +2,7 @@
 import { changeLanguage } from "i18next";
 import BlogPostLayout from "@/layouts/blog-post.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
+import { useLocation } from "@/lib/location";
 
 changeLanguage("fr");
 
@@ -13,16 +14,22 @@ export async function getStaticPaths() {
     }));
 }
 type Props = CollectionEntry<"blog">;
-const post = Astro.props;
-const slug = Astro.params.slug;
-const { Content } = await post.render();
-if (!slug || !post) {
-    return new Response(null, {
-        status: 404,
-        statusText: "Not found"
-    });
+const posts = await getCollection("blog");
+const { lang } = useLocation(Astro.url.pathname);
+const getPostSlug = (slug: string) => lang === "fr" ? slug + "-fr" : slug;
+// Find the post that matches the current slug and language
+const post = posts.find((p) => p.slug === getPostSlug(Astro.params.slug) && p.data.lang === lang);
+// Fallback to English if no match
+const defaultPost = posts.find((p) => p.slug === getPostSlug(Astro.params.slug) && p.data.lang === "en");
+if (!post && !defaultPost) {
+    return new Response(null, { status: 404, statusText: "Not found" });
 }
+if (!post) {
+    return new Response(null, { status: 404, statusText: "Not found" });
+}
+const selectedPost = post || defaultPost;
+const { Content } = await selectedPost.render();
 ---
-<BlogPostLayout {...post}>
+<BlogPostLayout {...selectedPost}>
 	<Content />
 </BlogPostLayout>
