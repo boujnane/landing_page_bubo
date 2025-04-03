@@ -6,6 +6,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { siteConfig } from "@/config/site";
 import { Icons } from "@/icons";
 import type { MainNavItem, SidebarNavItem } from "@/types";
+import { t } from "i18next";
+import useLocation from "@/hooks/useLocation";
 
 interface SheetMobileProps {
   mainNavItems?: MainNavItem[];
@@ -17,6 +19,7 @@ export function SheetMobileNav({
   sidebarNavItems,
 }: SheetMobileProps) {
   const [open, setOpen] = React.useState(false);
+  const { localizeUrl } = useLocation()
 
   const mergedMainNavItems = mainNavItems?.filter(
     (item, index, self) =>
@@ -55,7 +58,7 @@ export function SheetMobileNav({
                     item.href && (
                       <a
                         key={item.href}
-                        href={item.href}
+                        href={localizeUrl(item.href)}
                         className="text-muted-foreground"
                         onClick={() =>
                           item.href.startsWith("/#")
@@ -86,11 +89,11 @@ export function SheetMobileNav({
                         <React.Fragment key={subItem.href + idx}>
                           {subItem.href ? (
                             <a
-                              href={subItem.href}
+                              href={localizeUrl(subItem.href)}
                               target={subItem?.external ? "_blank" : undefined}
                               className="text-muted-foreground"
                             >
-                              {subItem.title}
+                              {t(subItem.title)}
                             </a>
                           ) : (
                             subItem.title

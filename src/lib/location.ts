@@ -8,7 +8,7 @@ export interface LocationData {
 
 export function useLocation(pathname: string): LocationData {
   const isFrench = pathname.startsWith('/fr');
-  const localizeUrl = (url: string) => (isFrench ? `/fr${url}` : url);
+  const localizeUrl = (url: string) => (isFrench ? `/fr${url}` : "/" + url);
 
   return {
     isFrench,
