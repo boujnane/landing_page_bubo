@@ -12,7 +12,7 @@ const post = Astro.props as Props;
 
 <article class="group space-y-4">
   <a
-    href={`${Astro.url.pathname}/${post.slug}/`}
+    href={localizeUrl(`/data&AIconsulting/${post.slug}/`)}
     class="flex h-52 group-hover:-translate-y-2 group-hover:shadow-xl transition duration-300"
   >
     <Image
@@ -44,7 +44,7 @@ const post = Astro.props as Props;
   </div>
 
   <div>
-    <a href={`${Astro.url.pathname}/${post.slug}/`} class="group-hover:underline">
+    <a href={localizeUrl(`/data&AIconsulting/${post.slug}/`)} class="group-hover:underline">
       <h2
         class="font-heading text-xl md:text-2xl leading-snug line-clamp-3"
         transition:name={"title-" + post.slug}
