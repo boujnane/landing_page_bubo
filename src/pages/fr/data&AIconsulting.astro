@@ -71,8 +71,8 @@ const posts = await getPosts(lang);
                   </p>
                 </div>
                 <!-- Face arrière -->
-                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
-                  <p class="mt-4 text-center text-white">
+                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64">
+                  <p class="mt-4 text-center text-white overflow-y-auto">
                     {t("common.data_cleaning_verso")}
                   </p>
                 </div>
@@ -98,8 +98,8 @@ const posts = await getPosts(lang);
                   </p>
                 </div>
                 <!-- Face arrière -->
-                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
-                  <p class="mt-4 text-center text-white">
+                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64">
+                  <p class="mt-4 text-center text-white overflow-y-auto">
                     {t("common.modeling_verso")}
                   </p>
                 </div>
@@ -109,7 +109,7 @@ const posts = await getPosts(lang);
 
           <!-- Étape 4 : Entraînement -->
           <div 
-            class="flip-card relative col-span-full lg:col-span-3 flex flex-col items-center justify-center"
+            class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center justify-center"
             data-flipped="false"
             onclick="toggleFlip(event)"
           >
@@ -125,8 +125,8 @@ const posts = await getPosts(lang);
                 </p>
               </div>
               <!-- Face arrière -->
-              <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
-                <p class="mt-4 text-center text-white">
+              <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64">
+                <p class="mt-4 text-center text-white overflow-y-auto">
                   {t("common.training_verso")}
                 </p>
               </div>
@@ -135,7 +135,7 @@ const posts = await getPosts(lang);
 
           <!-- Étape 5 : Déploiement -->
           <div 
-            class="flip-card relative col-span-full lg:col-span-3 flex flex-col items-center justify-center"
+            class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center justify-center"
             data-flipped="false"
             onclick="toggleFlip(event)"
           >
@@ -151,13 +151,40 @@ const posts = await getPosts(lang);
                 </p>
               </div>
               <!-- Face arrière -->
-              <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
-                <p class="mt-4 text-center text-white">
+              <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64">
+                <p class="mt-4 text-center text-white overflow-y-auto">
                   {t("common.deployment_verso")}
                 </p>
               </div>
             </div>
           </div>
+
+          <!-- Étape 6 : Formation -->
+          <div 
+          class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center justify-center"
+          data-flipped="false"
+          onclick="toggleFlip(event)"
+        >
+          <div class="flip-card-inner relative w-full h-full">
+            <!-- Face avant -->
+            <div class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8">
+              <Icon name="lucide:activity" class="size-10 text-[#fe8301]" />
+              <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                {t("common.empowering_teams")}
+              </h2>
+              <p class="mt-4 text-center text-muted-foreground max-w-md">
+                {t("explore.empowering_teams")}
+              </p>
+            </div>
+            <!-- Face arrière -->
+            <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64">
+              <p class="mt-4 text-center text-white overflow-y-auto">
+                {t("common.empowering_teams_verso")}
+              </p>
+            </div>
+          </div>
+        </div>
+
         </div>
       </div>
     </section>
