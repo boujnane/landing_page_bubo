@@ -3,8 +3,7 @@ import { t, changeLanguage } from "i18next";
 import MainLayout from "@/layouts/main-layout.astro";
 import { Image } from "astro:assets";
 import { hobbies } from "@/config/about.ts";
-import { Star, Heart, Bolt } from "lucide-react"; // Importation des icônes de lucide-react
-import { values } from "@/config/values.ts"; // Importation des valeurs depuis votre fichier values.ts
+import { values } from "@/config/values.ts";
 
 changeLanguage("en");
 ---
@@ -13,33 +12,15 @@ changeLanguage("en");
     <section class="space-y-12 py-16">
         <div class="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-8 text-primary">{t("common.our_values")}</h2>
-            <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+            <div class="container mx-auto flex flex-wrap justify-around gap-6">
               {values.map((value, index) => (
-                <div
-                  class="flex flex-col items-center p-10 rounded-2xl shadow-xl transition-all duration-300 bg-gradient-to-b hover:scale-105 hover:opacity-95 transform"
-                  style={{
-                    background:
-                      value.icon === "Star"
-                        ? "linear-gradient(135deg, #F5F7FA, #E1E8EE)"
-                        : value.icon === "Heart"
-                        ? "linear-gradient(135deg, #F5F7FA, #E1E8EE)"
-                        : "linear-gradient(135deg, #F5F7FA, #E1E8EE)",
-                    boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.12)",
-                  }}
-                >
-                  {/* Dynamic Icons with Enhanced Styles */}
-                  {value.icon === "Star" && (
-                    <Star className="w-14 h-14 text-gray-600 mb-8 opacity-90 hover:scale-110 hover:text-gray-400 transition-all duration-200" />
-                  )}
-                  {value.icon === "Heart" && (
-                    <Heart className="w-14 h-14 text-gray-600 mb-8 opacity-90 hover:scale-110 hover:text-gray-400 transition-all duration-200" />
-                  )}
-                  {value.icon === "Bolt" && (
-                    <Bolt className="w-14 h-14 text-gray-600 mb-8 opacity-90 hover:scale-110 hover:text-gray-400 transition-all duration-200" />
-                  )}
-            
-                  <h3 class="text-2xl font-semibold text-gray-800 mb-6">{t(value.title)}</h3>
-                  <p class="text-gray-600 text-center text-justify">{t(value.description)}</p>
+                <div class="btn" key={index}>
+                  <a href="#">
+                    <div class="flex flex-col items-center ">
+                      <span class="text-black dark:text-white">{t(value.title)}</span>
+                      <small class="text-xs mt-1 opacity-70 text-black dark:text-white">{t(value.description)}</small>
+                    </div>
+                  </a>
                 </div>
               ))}
             </div>
@@ -163,3 +144,129 @@ changeLanguage("en");
     </section>
   </MainLayout>
   
+
+  <style>
+    .container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1.5rem;
+    }
+
+    .container .btn {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem;
+    }
+
+    .container .btn a {
+      max-width: 440px;
+      word-wrap: break-word;
+      height: auto; /* pas de hauteur fixe */
+      white-space: normal; /* autorise le texte à aller à la ligne */
+      word-wrap: break-word; /* coupe proprement les longs mots */
+      text-align: center;
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      padding: 12px 24px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 1px;
+      overflow: hidden;
+      z-index: 1;
+      transition: 0.5s;
+      backdrop-filter: blur(15px);
+    }
+
+    .container .btn a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+      transform: skewX(45deg) translate(0);
+      transition: 0.5s;
+      filter: blur(0px);
+    }
+
+    .container .btn:hover a::before {
+      transform: skewX(45deg) translate(200px);
+    }
+
+    /* Light-up border */
+    .container .btn::before,
+    .container .btn::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 10px;
+      border-radius: 10px;
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+    .container .btn::before {
+      bottom: -5px;
+    }
+
+    .container .btn:hover::before {
+      bottom: 0;
+      height: 50%;
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    .container .btn::after {
+      top: -5px;
+    }
+
+    .container .btn:hover::after {
+      top: 0;
+      height: 50%;
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    /* Button glow colors */
+    .container .btn:nth-child(1)::before,
+    .container .btn:nth-child(1)::after {
+      background: #ff4d4d;
+      box-shadow:
+        0 0 10px 4px #ff4d4d,
+        0 0 30px 10px #ff4d4d,
+        0 0 60px 20px #ff4d4d;
+    }
+
+    .container .btn:nth-child(2)::before,
+    .container .btn:nth-child(2)::after {
+      background: #005577;
+      box-shadow:
+        0 0 10px 4px #005577,
+        0 0 30px 10px #005577,
+        0 0 60px 20px #005577;
+    }
+
+    .container .btn:nth-child(3)::before,
+    .container .btn:nth-child(3)::after {
+      background: #fc8300;
+      box-shadow:
+        0 0 10px 4px #fc8300,
+        0 0 30px 10px #fc8300,
+        0 0 60px 20px #fc8300;
+    }
+  </style>
