@@ -2,7 +2,7 @@
 title: "Airtechs"
 description: ""
 pubDate: "Sep 10 2023"
-cover: "/images/blog/airtechs_logo.jpeg"
+cover: "/images/blog/airtechs_logo.png"
 category: "Others"
 lang: "fr"
 sidebarInfo:

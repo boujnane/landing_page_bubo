@@ -28,40 +28,94 @@ const posts = await getPosts(lang);
           <div class="relative">
             <div class="relative z-10 grid grid-cols-6 gap-6">
               {/* Étape 1 : Collecte des données */}
-              <div class="highlight-card relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                <Icon name="lucide:database" class="size-10 text-[#fe8301]" />
-                <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                  {t("common.data_collection")}
-                </h2>
-                <p class="mt-4 text-center text-muted-foreground">
-                  {t("explore.gathering_data_from_various")}
-                </p>
+              <div 
+              class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+              data-flipped="false"
+              onclick="toggleFlip(event)"
+            >
+              <div class="flip-card-inner relative w-full h-full">
+                <!-- Face avant -->
+                <div class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8">
+                  <Icon name="lucide:database" class="size-10 text-[#fe8301]" />
+                  <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                    {t("common.data_collection")}
+                  </h2>
+                  <p class="mt-4 text-center text-muted-foreground">
+                    {t("explore.gathering_data_from_various")}
+                  </p>
+                </div>
+                <!-- Face arrière -->
+                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
+                  <p class="mt-4 text-center text-white">
+                    {t("common.data_collection_verso")}
+                  </p>
+                </div>
               </div>
-
-              {/* Étape 2 : Nettoyage des données */}
-              <div class="highlight-card relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                <Icon name="lucide:brush" class="size-10 text-[#fe8301]" />
-                <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                  {t("common.data_cleaning")}
-                </h2>
-                <p class="mt-4 text-center text-muted-foreground">
-                  {t("explore.preparing_and_structuring")}
-                </p>
+            </div>
+            
+            <!-- Étape 2 : Nettoyage des données -->
+            <div 
+              class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+              data-flipped="false"
+              onclick="toggleFlip(event)"
+            >
+              <div class="flip-card-inner relative w-full h-full">
+                <!-- Face avant -->
+                <div class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8">
+                  <Icon name="lucide:brush" class="size-10 text-[#fe8301]" />
+                  <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                    {t("common.data_cleaning")}
+                  </h2>
+                  <p class="mt-4 text-center text-muted-foreground">
+                    {t("explore.preparing_and_structuring")}
+                  </p>
+                </div>
+                <!-- Face arrière -->
+                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
+                  <p class="mt-4 text-center text-white">
+                    {t("common.data_cleaning_verso")}
+                  </p>
+                </div>
               </div>
+            </div>
 
-              {/* Étape 3 : Modélisation */}
-              <div class="highlight-card relative col-span-full lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                <Icon name="lucide:trending-up" class="size-10 text-[#fe8301]" />
-                <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                  {t("common.modeling")}
-                </h2>
-                <p class="mt-4 text-center text-muted-foreground">
-                  {t("explore.building_analytical_or")}
-                </p>
+
+            <!-- Étape 3 : Modélisation -->
+            <div 
+            class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+            data-flipped="false"
+            onclick="toggleFlip(event)"
+            >
+              <div class="flip-card-inner relative w-full h-full">
+                <!-- Face avant -->
+                <div class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8">
+                  <Icon name="lucide:trending-up" class="size-10 text-[#fe8301]" />
+                  <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
+                    {t("common.modeling")}
+                  </h2>
+                  <p class="mt-4 text-center text-muted-foreground">
+                    {t("explore.building_analytical_or")}
+                  </p>
+                </div>
+                <!-- Face arrière -->
+                <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
+                  <p class="mt-4 text-center text-white">
+                    {t("common.modeling_verso")}
+                  </p>
+                </div>
               </div>
+            </div>
 
-              {/* Étape 4 : Entraînement */}
-              <div class="highlight-card relative col-span-full lg:col-span-3 flex flex-col items-center justify-center overflow-hidden rounded-2xl border bg-background p-8">
+
+          <!-- Étape 4 : Entraînement -->
+          <div 
+            class="flip-card relative col-span-full lg:col-span-3 flex flex-col items-center justify-center"
+            data-flipped="false"
+            onclick="toggleFlip(event)"
+          >
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Face avant -->
+              <div class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8">
                 <Icon name="lucide:activity" class="size-10 text-[#fe8301]" />
                 <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
                   {t("common.training")}
@@ -70,15 +124,36 @@ const posts = await getPosts(lang);
                   {t("explore.training_models_on_data")}
                 </p>
               </div>
+              <!-- Face arrière -->
+              <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
+                <p class="mt-4 text-center text-white">
+                  {t("common.training_verso")}
+                </p>
+              </div>
+            </div>
+          </div>
 
-              {/* Étape 5 : Déploiement */}
-              <div class="highlight-card relative col-span-full lg:col-span-3 flex flex-col items-center justify-center overflow-hidden rounded-2xl border bg-background p-8">
+          <!-- Étape 5 : Déploiement -->
+          <div 
+            class="flip-card relative col-span-full lg:col-span-3 flex flex-col items-center justify-center"
+            data-flipped="false"
+            onclick="toggleFlip(event)"
+          >
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Face avant -->
+              <div class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8">
                 <Icon name="lucide:rocket" class="size-10 text-[#fe8301]" />
                 <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
                   {t("common.deployment")}
                 </h2>
                 <p class="mt-4 text-center text-muted-foreground max-w-md">
                   {t("explore.deploying_the_model")}
+                </p>
+              </div>
+              <!-- Face arrière -->
+              <div class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-8 flex flex-col items-center justify-center">
+                <p class="mt-4 text-center text-white">
+                  {t("common.deployment_verso")}
                 </p>
               </div>
             </div>
@@ -100,11 +175,65 @@ const posts = await getPosts(lang);
 <style>
   .highlight-card {
     transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  }
+}
 
-  .highlight-card:hover {
-    border-color: #fe8301; /* la même couleur que vos icônes */
-    box-shadow: 0 0 20px rgba(254, 131, 1, 0.6); /* halo orangé */
-    transform: translateY(-3px); /* léger effet de “remontée” */
-  }
+.highlight-card:hover {
+    border-color: #fe8301;
+    box-shadow: 0 0 20px rgba(254, 131, 1, 0.6);
+}
+
+/* Configuration du flip */
+.flip-card {
+    perspective: 1000px;
+    height: 100%;
+    min-height: 300px; /* Définit une hauteur minimum */
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    position: relative;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* On applique la rotation 3D lorsque data-flipped="true" */
+.flip-card[data-flipped="true"] .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    top: 0; 
+    left: 0;
+    backface-visibility: hidden; /* Évite le texte inversé */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Face arrière */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
 </style>
+
+<!-- Script inline pour la gestion du flip -->
+<script is:inline>
+  function toggleFlip(event) {
+    const card = event.currentTarget;
+    card.dataset.flipped = card.dataset.flipped === "true" ? "false" : "true";
+  }
+  window.toggleFlip = toggleFlip;
+</script>
