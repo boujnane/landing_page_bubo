@@ -19,21 +19,33 @@ const { title, description, bodyClass } = Astro.props;
 <html class="scroll-smooth" lang={i18next.language}>
   <head>
     <BaseHead title={title} description={description} />
+    
     <!-- Add Analytics Component -->
     <Analytics mode="production" />
-    <!-- Google tag (gtag.js) -->
+    
+    <!-- Google tag (gtag.js) script pour charger avant le consentement -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11500393110"></script>
-    <script>
-      if (typeof window !== 'undefined') {
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function() {
-          window.dataLayer.push(arguments);
-        };
-        window.gtag('js', new Date());
-        window.gtag('config', 'AW-11500393110');
-      }
+    
+    <!-- Script Usercentrics pour le consentement des cookies -->
+    <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
+    <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="ny_0SHLxF6AWPx" async></script>
+  
+    <!-- Script Google Analytics uniquement après consentement pour la catégorie "statistiques" -->
+    <script type="text/plain" data-cookieconsent="statistics">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11500393110');
+    </script>
+  
+    <!-- Script Google Ads uniquement après consentement pour la catégorie "marketing" -->
+    <script type="text/plain" data-cookieconsent="marketing">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('config', 'AW-11500393110');
     </script>
   </head>
+  
   <body class={cn("flex flex-col min-h-screen", bodyClass)}>
     <slot />
     <TailwindIndicator />
