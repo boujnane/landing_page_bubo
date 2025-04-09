@@ -4,6 +4,7 @@
     "description": "Here is the description of my awesome website!"
   },
   "home": {
+    "kumbu_edm": "Kumbu EDM",
     "title": "Discover all products.",
     "discover_all_cases": "Discover all cases.",
     "data_ai_consulting": "Data & AI consulting",
@@ -48,7 +49,7 @@
     "part16": "every innovation is rooted in the values of simplicity, progress and responsibility"
   },
   "research": {
-    "title": "Our R&D Projects",
+    "title": "Our R&D projects",
     "subtitle": "Explore our research and development initiatives aimed at innovating and improving the future."
   },
   "timeline": {
@@ -88,10 +89,10 @@
     "state_of_the_art": "State-of-the-art",
     "data_ai_consulting": "Data & AI consulting",
     "data_and_ia": "Data & AI consulting",
-    "tailor_made": "Tailor-made",
+    "tailor_made": "Tailor-made software",
     "software_development": "software development",
     "to_perfectly_match_your_needs": "to perfectly match your needs",
-    "innovative_useful": "Innovative and useful",
+    "innovative_useful": "Innovative and useful products",
     "products": "products",
     "take_flight": "to help your project take flight"
   },
@@ -222,6 +223,8 @@
   "nav": {
     "accelerate": "Accelerate",
     "research": "Research",
+    "explore": "Explore",
+    "about_us": "About us",
     "a_reproduction_of_Starlog": "A reproduction of Starlog template with Tailwind CSS.",
     "we_help_you_on_your_data": "We help you on your data & AI projects",
     "we_build_useful_products": "We build useful products",
@@ -256,8 +259,8 @@
     "bubo_food_presents_fine": "Bubo food presents Fine Biscuits",
     "delicious_cookies_with": "Delicious cookies with an inimitable taste, since 1952",
     "cocoa_flavor": "Cocoa flavor",
-    "garlic_Chilli_flavour": "Garlic & Chilli Flavor",
-    "sugar_free_flavor": "Sugar Free Flavor",
+    "garlic_Chilli_flavour": "Garlic & Chilli flavor",
+    "sugar_free_flavor": "Sugar Free flavor",
     "coconut_flavor": "Coconut flavor"
   }
 }

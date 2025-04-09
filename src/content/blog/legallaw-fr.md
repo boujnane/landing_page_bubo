@@ -30,7 +30,7 @@ Les limitations techniques nuisaient également à l'efficacité ; les outils tr
 
 ---
 
-### **3. Solution proposée par Bubo **
+### **3. Solution proposée par Bubo**
 
 Pour relever ces défis, Bubo a conçu une solution d'IA sur mesure, avec un LLM finetuné, spécialement conçu pour un usage juridique. Notre approche comprend plusieurs étapes clés :
 
@@ -49,6 +49,6 @@ Grâce à cette approche structurée, Bubo a fourni une solution adaptée aux be
 - Les résumés pilotés par l'IA et les dossiers structurés ont amélioré l'organisation, permettant aux avocats d'accéder rapidement aux informations essentielles sur les clients.
 - Les données clients sont désormais maitrisées et ne sortent pas du cabinet pour les état-unis ou ailleurs.
 
-« Bubo a joué un rôle déterminant dans la transformation de notre pratique grâce à des solutions d'IA innovantes. Depuis l'avènement de ChatGPT, tout le monde veut comprendre comment travailler avec la GenAI, comment l'utiliser au quotidien, mais faire des expériences concrètes et utiles est vraiment une autre difficulté. L'expertise de Bubo dans l'adaptation du modèle aux applications juridiques nous a donné une longueur d'avance en termes d'efficacité, permettant à notre équipe de consacrer plus de temps à la stratégie client. L'intégration transparente a dépassé nos attentes, et nous sommes impatients de poursuivre ce partenariat au fur et à mesure de notre croissance. »
+> Bubo a joué un rôle déterminant dans la transformation de notre pratique grâce à des solutions d'IA innovantes. Depuis l'avènement de ChatGPT, tout le monde veut comprendre comment travailler avec la GenAI, comment l'utiliser au quotidien, mais faire des expériences concrètes et utiles est vraiment une autre difficulté. L'expertise de Bubo dans l'adaptation du modèle aux applications juridiques nous a donné une longueur d'avance en termes d'efficacité, permettant à notre équipe de consacrer plus de temps à la stratégie client. L'intégration transparente a dépassé nos attentes, et nous sommes impatients de poursuivre ce partenariat au fur et à mesure de notre croissance.
 
-Associé gérant, cabinet d'avocats basé à Paris
+- Associé gérant, cabinet d'avocats basé à Paris

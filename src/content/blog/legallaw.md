@@ -53,8 +53,8 @@ Following the AI implementation by Bubo, the client achieved operational improve
 - Reduced time spent on document drafting and summarizing by over ~30%, allowing lawyers to reallocate time toward strategic legal tasks.
 - Automated case file creation, fee agreement drafting, and email preparation improved turnaround times, positively impacting client satisfaction.
 - AI-driven summaries and structured case files enhanced organization, providing attorneys with quick access to essential client information.
+- Customer data is now under control and does not leave the firm for the USA or elsewhere.
 
 > Bubo has been instrumental in transforming our practice through innovative AI solutions. Since ChatGPT, everyone wants to understand how to work with GenAI, how to use it on a day-to-day basis, but to do concrete and useful experiments really is another level. Bubo expertise in tailoring the model for legal applications has given us an edge in efficiency, allowing our team to dedicate more time to client strategy. The seamless integration has exceeded our expectations, and we look forward to furthering this partnership as we continue to grow.
 
 - Managing Partner, Lawyers firm based in Paris
-- Customer data is now under control and does not leave the firm for the USA or elsewhere.

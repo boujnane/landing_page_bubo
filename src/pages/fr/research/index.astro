@@ -10,9 +10,8 @@ import { getCollection } from "astro:content";
 changeLanguage("fr");
 
 const projects = await getCollection("research");
-const { lang, localizeUrl, isFrench } = useLocation(Astro.url.pathname);
+const { lang, localizeUrl } = useLocation(Astro.url.pathname);
 projects.sort((a, b) => +b.data.date - +a.data.date);
-const getSlug = (slug: string) => isFrench ? `${slug}-${lang}` : slug;
 ---
 
 <MainLayout title="Recherche et Développement">
@@ -28,7 +27,7 @@ const getSlug = (slug: string) => isFrench ? `${slug}-${lang}` : slug;
             <div class="md:basis-32 lg:basis-56 shrink-0 grow-0">
               <div class="md:sticky md:top-24 w-auto mr-6">
                 <a
-                  href={localizeUrl(`/research/${getSlug(project.slug)}`)}
+                  href={localizeUrl(`/research/${project.slug}`)}
                   class="flex flex-col gap-y-2 pb-4"
                 >
                   <Badge
