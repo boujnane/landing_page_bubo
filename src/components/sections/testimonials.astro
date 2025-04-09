@@ -17,7 +17,7 @@ import "./testimonials.css"
     />
 
     <!-- Wrapper global -->
-    <div id="testimonial-wrapper">
+    <div id="testimonial-wrapper" class="testimonial-wrapper">
       {
         testimonials.reduce((cols, item, index) => {
           const colIndex = index % 4;
@@ -101,8 +101,6 @@ document.addEventListener("astro:page-load", () => {
   })
 });
 </script>
-<<<<<<< Updated upstream
-=======
 
 <style>
   .testimonial-column {
@@ -149,8 +147,8 @@ document.addEventListener("astro:page-load", () => {
     top: 0;
     background: linear-gradient(
       to bottom,
-      #0a0a0a 0%,
-      hwb(0 0% 100% / 0) 100%
+      transparent 0%,
+      transparent 0%
     );
   }
 
@@ -158,8 +156,8 @@ document.addEventListener("astro:page-load", () => {
     bottom: 0;
     background: linear-gradient(
       to top,
-      #0a0a0a 0%,
-      rgba(0, 0, 0, 0) 100%
+      transparent 0%,
+      transparent 0%
     );
   }
 
@@ -187,10 +185,11 @@ document.addEventListener("astro:page-load", () => {
 
   .testimonial-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
   }
 
   .testimonial-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   @media (max-width: 640px) {
   .testimonial-wrapper,
@@ -221,4 +220,3 @@ document.addEventListener("astro:page-load", () => {
   }
 }
 </style>
->>>>>>> Stashed changes
