@@ -49,6 +49,6 @@ La mise en œuvre de la solution NILM pilotée par l'IA de Bubo SAS a entraîné
 - La désagrégation de la consommation d'énergie au niveau des appareils a permis aux clients d'identifier les gaspillages d'énergie et les inefficacités, conduisant à une réduction moyenne des coûts énergétiques allant jusqu'à 20 %.
 - **Amélioration de l'efficacité énergétique** : Grâce à des informations en temps réel sur la consommation d'énergie au niveau des appareils, les clients ont pu optimiser leur consommation d'énergie en programmant les appareils plus efficacement, en réduisant la consommation d'énergie inutile et en diminuant les coûts d'exploitation.
 
-« L'expertise de Bubo dans les projets pilotés par l'IA, même si elle n'était pas directement liée à la désagrégation énergétique, nous a permis d'offrir une solution efficace. Le système NILM piloté par l'IA est un élément clé de différenciation pour nous, et nous sommes enthousiastes à l'idée de continuer à étendre son utilisation à notre base de clients pour les aider à optimiser leur consommation d'énergie. »
+> L'expertise de Bubo dans les projets pilotés par l'IA, même si elle n'était pas directement liée à la désagrégation énergétique, nous a permis d'offrir une solution efficace. Le système NILM piloté par l'IA est un élément clé de différenciation pour nous, et nous sommes enthousiastes à l'idée de continuer à étendre son utilisation à notre base de clients pour les aider à optimiser leur consommation d'énergie.
 
 - CEO, Gioza

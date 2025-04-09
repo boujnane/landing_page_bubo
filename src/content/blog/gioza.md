@@ -49,6 +49,6 @@ The implementation of Bubo SAS’s AI-driven NILM solution resulted in the follo
 - The disaggregation of energy consumption at the appliance level enabled clients to identify energy wastage and inefficiencies, leading to an average energy cost reduction of up to 20%.
 - **Improved energy efficiency**: With real-time insights into appliance-level energy usage, clients could optimize their energy consumption by scheduling devices more efficiently, reducing unnecessary energy consumption and lowering operational costs.
 
-"Their expertise in AI-driven project, even if it was not related directly with energy disaggregation has allowed us to offer a value oriented solution. AI-powered NILM system is a key differentiator for us, and we are excited to continue expanding its use across our customer base to help them optimize their energy consumption."
+> Their expertise in AI-driven project, even if it was not related directly with energy disaggregation has allowed us to offer a value oriented solution. AI-powered NILM system is a key differentiator for us, and we are excited to continue expanding its use across our customer base to help them optimize their energy consumption.
 
 – CEO, Gioza

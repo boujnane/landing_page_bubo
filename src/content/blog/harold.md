@@ -1,5 +1,5 @@
 ---
-title: "Harold"
+title: "Harold waste"
 description: ""
 pubDate: "Sep 10 2023"
 cover: "/images/blog/haroldwaste_logo.png"

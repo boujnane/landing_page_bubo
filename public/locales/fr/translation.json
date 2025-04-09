@@ -4,6 +4,7 @@
     "description": "Voici la description de mon super site web !"
   },
   "home": {
+    "kumbu_edm": "Kumbu GED",
     "title": "Découvrez tous les produits.",
     "discover_all_cases": "Découvrez tous les cas d’usage.",
     "data_ai_consulting": "Conseil data et IA",
@@ -82,15 +83,15 @@
   },
   "services": {
     "soar_to_new_heights": "Atteignez de nouveaux sommets avec",
-    "bubo_team": "L'équipe Bubo",
-    "we_offer": "Nous offrons :",
+    "bubo_team": "l'équipe Bubo",
+    "we_offer": "Nous proposons :",
     "state_of_the_art": "Des prestations de conseil à la pointe de la technologie en",
     "data_ai_consulting": "Consultation en Data & IA",
     "data_and_ia": "Data & IA",
     "tailor_made": "Développement logiciel sur mesure",
     "to_perfectly_match_your_needs": "pour correspondre parfaitement à vos besoins",
     "software_development": "Développement logiciel",
-    "innovative_useful": "Innovant et utile",
+    "innovative_useful": "Des produits",
     "products": "Produits",
     "take_flight": "innovants et utiles pour faire décoller votre business"
   },
@@ -162,7 +163,7 @@
     "explore": "Explorer",
     "tailor_made": "Logiciel sur mesure",
     "about_us": "À propos",
-    "people": "Les personnes",
+    "people": "L'équipe",
     "values": "Valeurs",
     "partners": "Partenaires",
     "discover": "Découvrir",
