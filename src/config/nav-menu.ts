@@ -57,7 +57,7 @@ export const navMenuConfig: NavMenuConfig = {
   ],
   examplesNav: [
     {
-      title: "nav.about_us",
+      title: "About us",
       items: [
         {
           title: "common.people",
