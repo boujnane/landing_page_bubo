@@ -101,3 +101,124 @@ document.addEventListener("astro:page-load", () => {
   })
 });
 </script>
+<<<<<<< Updated upstream
+=======
+
+<style>
+  .testimonial-column {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    animation: scrollInfinite 30s linear infinite;
+  }
+
+  @keyframes scrollInfinite {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
+
+  .testimonial-wrapper, .testimonial-wrapper-light {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .testimonial-wrapper::before,
+  .testimonial-wrapper::after,
+  .testimonial-wrapper-light::before,
+  .testimonial-wrapper-light::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .testimonial-wrapper::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      #0a0a0a 0%,
+      hwb(0 0% 100% / 0) 100%
+    );
+  }
+
+  .testimonial-wrapper::after {
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      #0a0a0a 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .testimonial-wrapper-light::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      hwb(0 0% 100% / 0) 100%
+    );
+  }
+
+  .testimonial-wrapper-light::after {
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      #fafafa 0%,
+      hwb(0 0% 100% / 0) 100%
+    );
+  }
+
+  .testimonial-column:hover .testimonial-list {
+    animation-play-state: paused;
+  }
+
+  .testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 640px) {
+  .testimonial-wrapper,
+  .testimonial-wrapper-light {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-column {
+    display: none;
+  }
+
+  .testimonial-column:first-child {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .testimonial-column:first-child .testimonial-list {
+    animation: scrollInfinite 30s linear infinite;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+  }
+}
+</style>
+>>>>>>> Stashed changes
