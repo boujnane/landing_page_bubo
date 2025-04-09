@@ -222,6 +222,8 @@
   "nav": {
     "accelerate": "Accélérer",
     "research": "Recherche",
+    "explore": "Explorer",
+    "about_us": "À propos",
     "a_reproduction_of_Starlog": "Une reproduction du modèle Starlog avec Tailwind CSS.",
     "we_help_you_on_your_data": "Confiez-nous vos projets data et intelligence artificielle.",
     "we_build_useful_products": "Des produits pour vous simplifier la vie",

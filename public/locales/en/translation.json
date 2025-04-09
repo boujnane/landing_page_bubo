@@ -223,6 +223,8 @@
   "nav": {
     "accelerate": "Accelerate",
     "research": "Research",
+    "explore": "Explore",
+    "about_us": "About us",
     "a_reproduction_of_Starlog": "A reproduction of Starlog template with Tailwind CSS.",
     "we_help_you_on_your_data": "We help you on your data & AI projects",
     "we_build_useful_products": "We build useful products",
