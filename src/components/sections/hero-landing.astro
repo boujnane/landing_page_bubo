@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
 import { siteConfig } from "@/config/site";
 import { t } from "i18next";
+import BulletEffects from "../BulletEffects";
 
 ---
 <section class="space-y-6 py-12 sm:py-20 lg:py-20">
@@ -54,6 +55,8 @@ import { t } from "i18next";
     </div>
   </div>
 </section>
+
+<BulletEffects client:load />
 
 <style>
   .bullet-item {
@@ -108,51 +111,3 @@ import { t } from "i18next";
   }
 }
 </style>
-
-<script>
-  // Sélectionne tous les éléments de la liste
-  const bulletItems = document.querySelectorAll('.bullet-item');
-
-  bulletItems.forEach((item) => {
-    item.addEventListener('mouseenter', () => {
-      // Appliquer le flou aux éléments précédents et suivants
-      let index = Array.from(bulletItems).indexOf(item); // Obtenez l'indice de l'élément survolé
-
-      // Appliquez un flou à tous les éléments avant
-      for (let i = 0; i < index; i++) {
-        bulletItems[i].querySelectorAll('.be_blur').forEach((el) => {
-          // Assertion du type HTMLElement
-          (el as HTMLElement).style.filter = 'blur(4px)';
-          (el as HTMLElement).style.opacity = '0.5';
-        });
-      }
-
-      // Appliquez un flou à tous les éléments après
-      for (let i = index + 1; i < bulletItems.length; i++) {
-        bulletItems[i].querySelectorAll('.be_blur').forEach((el) => {
-          // Assertion du type HTMLElement
-          (el as HTMLElement).style.filter = 'blur(4px)';
-          (el as HTMLElement).style.opacity = '0.5';
-        });
-      }
-
-      // Appliquez un flou à l'élément survolé lui-même
-      item.querySelectorAll('.be_blur').forEach((el) => {
-        // Assertion du type HTMLElement
-        (el as HTMLElement).style.filter = 'blur(4px)';
-        (el as HTMLElement).style.opacity = '0.5';
-      });
-    });
-
-    item.addEventListener('mouseleave', () => {
-      // Réinitialiser le flou quand la souris quitte l'élément
-      bulletItems.forEach((el) => {
-        el.querySelectorAll('.be_blur').forEach((subEl) => {
-          // Assertion du type HTMLElement
-          (subEl as HTMLElement).style.filter = 'none';
-          (subEl as HTMLElement).style.opacity = '1';
-        });
-      });
-    });
-  });
-</script>
