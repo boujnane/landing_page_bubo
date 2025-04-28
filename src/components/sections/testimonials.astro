@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import HeaderSection from "./header-section.astro";
 import { t } from "i18next";
 import "./testimonials.css"
+import TestimonialThemeWrapper from "../TestimonialThemeWrapper";
 // const theme = localStorage.getItem("theme");
 // console.log("theme: ", theme);
 ---
@@ -63,40 +64,5 @@ import "./testimonials.css"
       }
     </div>    
   </div>
+  <TestimonialThemeWrapper client:only="react"/>
 </section>
-<script>
-// document.addEventListener("astro:page-load", () => {
-  const getTheme = () => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  }
-
-  const testimonialsWrapper = document.getElementById("testimonial-wrapper");
-  const theme = getTheme();
-  if (theme === "light") {
-    testimonialsWrapper?.classList.remove("testimonial-wrapper")
-    testimonialsWrapper?.classList.add("testimonial-wrapper-light")
-    } else {
-      testimonialsWrapper?.classList.remove("testimonial-wrapper-light")
-      testimonialsWrapper?.classList.add("testimonial-wrapper")
-    }
-
-  const toggleButton = document.getElementById("theme-toggle");
-
-  toggleButton?.addEventListener("click", () => {
-    const newTheme = getTheme();
-    if (newTheme === "light") {
-      testimonialsWrapper?.classList.remove("testimonial-wrapper")
-      testimonialsWrapper?.classList.add("testimonial-wrapper-light")
-    } else {
-      testimonialsWrapper?.classList.remove("testimonial-wrapper-light")
-      testimonialsWrapper?.classList.add("testimonial-wrapper")
-    }
-  })
-// });
-</script>
