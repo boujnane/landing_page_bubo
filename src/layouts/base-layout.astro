@@ -19,45 +19,104 @@ const { title, description, bodyClass } = Astro.props;
 <html class="scroll-smooth" lang={i18next.language}>
   <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T4CJMBHJ');</script>
+    <script>
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l!='dataLayer' ? '&l='+l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T4CJMBHJ');
+    </script>
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11500393110"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'AW-11500393110');
+      </script>
     <!-- End Google Tag Manager -->
 
     <BaseHead title={title} description={description} />
-    
+
     <!-- Add Analytics Component -->
     <Analytics mode="production" />
-    
-    <!-- Google tag (gtag.js) script pour charger avant le consentement -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11500393110"></script>
-    
+
     <!-- Script Usercentrics pour le consentement des cookies -->
     <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="ny_0SHLxF6AWPx" async></script>
-  
-    <!-- Script Google Analytics uniquement après consentement pour la catégorie "statistiques" -->
-    <script type="text/plain" data-cookieconsent="statistics">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YCT8XN59ZR');
-    </script>
-  
-    <!-- Script Google Ads uniquement après consentement pour la catégorie "marketing" -->
-    <script type="text/plain" data-cookieconsent="marketing">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('config', 'G-YCT8XN59ZR');
+
+    <script>
+      // Définir les états par défaut pour le consentement avant le choix de l'utilisateur
+      window.gtag = window.gtag || function() { (window.dataLayer = window.dataLayer || []).push(arguments); };
+
+      // Configurer le mode de consentement par défaut pour les cookies analytics et publicité
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',  // Par défaut, refuse le stockage des publicités
+        'analytics_storage': 'denied',  // Par défaut, refuse le stockage d'analytique
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+      });
+
+      // Attendre le consentement avant de charger Google Analytics et Google Ads
+      window.addEventListener('UsercentricsConsentGiven', function(event) {
+        // Consentement pour Analytics (statistiques)
+        if (event.detail.consents['statistics']) {
+          var scriptGA = document.createElement('script');
+          scriptGA.async = true;
+          scriptGA.src = "https://www.googletagmanager.com/gtag/js?id=G-YCT8XN59ZR";
+          document.head.appendChild(scriptGA);
+
+          scriptGA.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ window.dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-YCT8XN59ZR');
+          };
+        }
+
+        // Consentement pour Ads (marketing)
+        if (event.detail.consents['marketing']) {
+          // Charger le script Google Ads seulement si le consentement est donné
+          var scriptAds = document.createElement('script');
+          scriptAds.async = true;
+          scriptAds.src = "https://www.googletagmanager.com/gtag/js?id=AW-11500393110";
+          document.head.appendChild(scriptAds);
+
+          scriptAds.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ window.dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'AW-11500393110');
+          };
+        }
+      });
+
+        window.addEventListener('UsercentricsConsentNotGiven', function(event) {
+        var scriptGA = document.createElement('script');
+        scriptGA.async = true;
+        scriptGA.src = "https://www.googletagmanager.com/gtag/js?id=G-YCT8XN59ZR";
+        document.head.appendChild(scriptGA);
+
+        scriptGA.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ window.dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          // Si le consentement n'est pas donné pour les analytics, on anonymise l'IP
+          gtag('config', 'G-YCT8XN59ZR', { 'anonymize_ip': true });
+        };
+      });
     </script>
   </head>
-  
+
   <body class={cn("flex flex-col min-h-screen", bodyClass)}>
     <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4CJMBHJ"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4CJMBHJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <slot />
     <TailwindIndicator />
