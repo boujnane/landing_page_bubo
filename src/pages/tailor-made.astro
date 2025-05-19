@@ -15,92 +15,266 @@ const { lang } = useLocation(Astro.url.pathname);
 const posts = await getTailorMadePosts(lang);
 ---
 
-<MainLayout title="Data & AI Consulting" description="Data & AI consulting section">
-    <section class="container py-16">
-        <!-- Blog Section -->
-        <HeaderSection
-        label={t("services.tailor_made") || ""}
-        title={t("common.our_process")}
-        subtitle={t("explore.bringing_our_customers") || ""}
-        />
-        <section>
-            <div class="py-32">
-              <div class="container max-w-7xl">
-                <div class="relative">
-                  <div class="relative z-10 grid grid-cols-6 gap-6 mb-[100px]">
-                    {/* Step 1: Needs Analysis */}
-                    <div class="relative col-span-full highlight-card lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                      <Icon name="lucide:file-text" class="size-10 text-[#fe8301]" />
-                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        {t("common.needs_analysis")}
-                      </h2>
-                      <p class="mt-4 text-center text-muted-foreground">
-                        {t("explore.understand_the_client_requirements")}
-                      </p>
-                    </div>
-                    {/* Step 2: Solution Design */}
-                    <div class="relative col-span-full highlight-card lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                      <Icon name="lucide:layers" class="size-10 text-[#fe8301]" />
-                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        {t("common.solution_design")}
-                      </h2>
-                      <p class="mt-4 text-center text-muted-foreground">
-                        {t("explore.develop_detailed_specifications")}
-                      </p>
-                    </div>
-                    {/* Step 3: Development */}
-                    <div class="relative col-span-full highlight-card lg:col-span-2 flex flex-col items-center overflow-hidden rounded-2xl border bg-background p-8">
-                      <Icon name="lucide:code" class="size-10 text-[#fe8301]" />
-                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        {t("common.development")}
-                      </h2>
-                      <p class="mt-4 text-center text-muted-foreground">
-                        {t("explore.build_the_custom_solution")}
-                      </p>
-                    </div>
-                    {/* Step 4: Testing and Validation (with internal grid) */}
-                    <div class="relative col-span-full highlight-card overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
-                      <Icon name="lucide:check-circle" class="size-10 text-[#fe8301]" />
-                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        {t("common.testing_and_validation")}
-                      </h2>
-                      <p class="mt-4 text-center text-muted-foreground max-w-md">
-                        {t("explore.test_the_solution_to_ensure")}
-                      </p>
-                    </div>
-                    {/* Step 5: Deployment and Support (with internal grid) */}
-                    <div class="relative col-span-full highlight-card overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3 flex flex-col items-center justify-center">
-                      <Icon name="lucide:cloud" class="size-10 text-[#fe8301]" />
-                      <h2 class="mt-6 font-heading text-3xl md:text-4xl text-center">
-                        {t("common.deployment_and_support")}
-                      </h2>
-                      <p class="mt-4 text-center text-muted-foreground max-w-md">
-                        {t("explore.deploy_the_solution_to_production")}
-                      </p>
-                    </div>
+<MainLayout
+  title="Data & AI Consulting"
+  description="Data & AI consulting section"
+>
+  <section class="container py-16">
+    <!-- Blog Section -->
+    <HeaderSection
+      label={t("services.tailor_made") || ""}
+      title={t("common.our_process")}
+      subtitle={t("explore.bringing_our_customers") || ""}
+    />
+    <section>
+      <div class="py-32">
+        <div class="container max-w-7xl">
+          <div class="relative">
+            <div class="relative z-10 grid grid-cols-6 gap-6 mb-[100px]">
+              {/* Step 1: Needs Analysis */}
+              <div
+                class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+                data-flipped="false"
+                onclick="toggleFlip(event)"
+              >
+                <div class="flip-card-inner relative w-full h-full">
+                  <!-- Face avant -->
+                  <div
+                    class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8"
+                  >
+                    <Icon
+                      name="lucide:file-text"
+                      class="size-10 text-[#fe8301]"
+                    />
+                    <h2
+                      class="mt-6 font-heading text-3xl md:text-4xl text-center"
+                    >
+                      {t("common.needs_analysis")}
+                    </h2>
+                    <p class="mt-4 text-center text-muted-foreground">
+                      {t("explore.understand_the_client_requirements")}
+                    </p>
                   </div>
-                  <BlogHeader title={t("services.tailor_made")} />
+                  <!-- Face arrière -->
+                  <div
+                    class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64"
+                  >
+                    <p class="mt-4 text-center text-white overflow-y-auto">
+                      {t("common.data_collection_verso")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Step 2: Solution Design */}
+              <div
+                class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+                data-flipped="false"
+                onclick="toggleFlip(event)"
+              >
+                <div class="flip-card-inner relative w-full h-full">
+                  <!-- Face avant -->
+                  <div
+                    class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8"
+                  >
+                    <Icon name="lucide:layers" class="size-10 text-[#fe8301]" />
+                    <h2
+                      class="mt-6 font-heading text-3xl md:text-4xl text-center"
+                    >
+                      {t("common.solution_design")}
+                    </h2>
+                    <p class="mt-4 text-center text-muted-foreground">
+                      {t("explore.develop_detailed_specifications")}
+                    </p>
+                  </div>
 
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16">
-                    {posts
-                      // .filter((post) => post.data.category !== "Others")
-                      .map((post) => <BlogCard {...post} />)}
+                  <!-- Face arrière -->
+                  <div
+                    class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64"
+                  >
+                    <p class="mt-4 text-center text-white overflow-y-auto">
+                      {t("common.data_collection_verso")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Step 3: Development */}
+              <div
+                onclick="toggleFlip(event)"
+                data-flipped="false"
+                class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+              >
+                <div class="flip-card-inner relative w-full h-full">
+                  <!-- Face avant -->
+                  <div
+                    class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8"
+                  >
+                    <Icon name="lucide:code" class="size-10 text-[#fe8301]" />
+                    <h2
+                      class="mt-6 font-heading text-3xl md:text-4xl text-center"
+                    >
+                      {t("common.development")}
+                    </h2>
+                    <p class="mt-4 text-center text-muted-foreground">
+                      {t("explore.build_the_custom_solution")}
+                    </p>
+                  </div>
+                  <!-- Face arrière -->
+                  <div
+                    class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64"
+                  >
+                    <p class="mt-4 text-center text-white overflow-y-auto">
+                      {t("common.data_collection_verso")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Step 4: Testing and Validation (with internal grid) */}
+              <div
+                onclick="toggleFlip(event)"
+                data-flipped="false"
+                class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+              >
+                <div class="flip-card-inner relative w-full h-full">
+                  <!-- Face avant -->
+                  <div
+                    class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8"
+                  >
+                    <Icon
+                      name="lucide:check-circle"
+                      class="size-10 text-[#fe8301]"
+                    />
+                    <h2
+                      class="mt-6 font-heading text-3xl md:text-4xl text-center"
+                    >
+                      {t("common.testing_and_validation")}
+                    </h2>
+                    <p class="mt-4 text-center text-muted-foreground max-w-md">
+                      {t("explore.test_the_solution_to_ensure")}
+                    </p>
+                  </div>
+                  <!-- Face arrière -->
+                  <div
+                    class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64"
+                  >
+                    <p class="mt-4 text-center text-white overflow-y-auto">
+                      {t("common.data_collection_verso")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Step 5: Deployment and Support (with internal grid) */}
+              <div
+                onclick="toggleFlip(event)"
+                data-flipped="false"
+                class="flip-card relative col-span-full lg:col-span-2 flex flex-col items-center"
+              >
+                <div class="flip-card-inner relative w-full h-full">
+                  <!-- Face avant -->
+                  <div
+                    class="flip-card-front highlight-card overflow-hidden rounded-2xl border bg-background p-8"
+                  >
+                    <Icon name="lucide:cloud" class="size-10 text-[#fe8301]" />
+                    <h2
+                      class="mt-6 font-heading text-3xl md:text-4xl text-center"
+                    >
+                      {t("common.deployment_and_support")}
+                    </h2>
+                    <p class="mt-4 text-center text-muted-foreground max-w-md">
+                      {t("explore.deploy_the_solution_to_production")}
+                    </p>
+                  </div>
+
+                  <!-- Face arrière -->
+                  <div
+                    class="flip-card-back highlight-card overflow-hidden rounded-2xl border bg-background p-4 flex flex-col items-center justify-center max-h-64"
+                  >
+                    <p class="mt-4 text-center text-white overflow-y-auto">
+                      {t("common.data_collection_verso")}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-      </section>
+            <BlogHeader title={t("services.tailor_made")} />
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-y-14 lg:gap-y-16 lg:gap-x-10 mt-16"
+            >
+              {
+                posts
+                  // .filter((post) => post.data.category !== "Others")
+                  .map((post) => <BlogCard {...post} />)
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 </MainLayout>
 
 <style>
-.highlight-card {
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
+  .highlight-card {
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+  }
 
-.highlight-card:hover {
-  border-color: #fe8301;
-  box-shadow: 0 0 20px rgba(254, 131, 1, 0.6);
-}
+  .highlight-card:hover {
+    border-color: #fe8301;
+    box-shadow: 0 0 20px rgba(254, 131, 1, 0.6);
+  }
 
+  .flip-card {
+    perspective: 1000px;
+    height: 100%;
+    min-height: 300px; /* Définit une hauteur minimum */
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  /* On applique la rotation 3D lorsque data-flipped="true" */
+  .flip-card[data-flipped="true"] .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Évite le texte inversé */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Face arrière */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
 </style>
+<!-- Script inline pour la gestion du flip -->
+<script is:inline>
+  function toggleFlip(event) {
+    const card = event.currentTarget;
+    card.dataset.flipped = card.dataset.flipped === "true" ? "false" : "true";
+  }
+  window.toggleFlip = toggleFlip;
+</script>

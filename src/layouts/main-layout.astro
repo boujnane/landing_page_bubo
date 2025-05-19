@@ -49,7 +49,14 @@ const { title, description, mainClass } = Astro.props;
       >
         <span class="hidden sm:block">{t("common.request_quote")}</span> <!-- Show this on larger screens -->
         <span class="sm:hidden">Quote</span> <!-- Show this on smaller screens -->
-        <Icon name="lucide:rocket" class="size-4 text-orange-500" />
+        <Icon name="lucide:rocket" class="hidden md:block size-4 text-orange-500" />
+        <img
+            width={18}
+            height={18}
+            src={"../../../public/logo_bubo.png"}
+            alt="logo"
+            class="ml-1 md:hidden"
+          />
       </a>
       <div id="theme-toggle">
         <ThemeToggle client:load />
