@@ -6,11 +6,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build-local": "astro build",
-    "prebuild": "yarn run translate",
     "build": "astro build --remote",
     "preview": "astro preview",
-    "astro": "astro",
-    "translate": "pwd && ls -la && npx astro-i18next generate"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",
