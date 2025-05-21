@@ -49,7 +49,7 @@ export function SheetMobileNav({
           <img
             width={30}
             height={30}
-            src={"../../../public/logo_bubo.png"}
+            src={"../../../logo_bubo.png"}
             alt="logo"
             className="mr-3"
           />
