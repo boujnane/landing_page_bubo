@@ -11,7 +11,7 @@ type Props = {
 };
 
 const { className } = Astro.props;
-const { isFrench } = useLocation(Astro.url.pathname);
+const { isFrench, localizeUrl } = useLocation(Astro.url.pathname);
 ---
 
 <footer class={cn("border-t", className)}>
@@ -50,6 +50,11 @@ const { isFrench } = useLocation(Astro.url.pathname);
       <div id="theme-toggle" class="flex items-center gap-3">
         <ThemeToggle client:load />
       </div>
+      <div class="flex">
+        <a href={localizeUrl("/cgu")} class="mr-2 hover:underline">CGU</a>
+        <a href="https://www.linkedin.com/company/bubo-bubo" class="hover:underline" target="_blank">LinkedIn</a>
+      </div>
+      <div></div>
     </div>
   </div>
 </footer>
