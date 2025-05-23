@@ -261,5 +261,18 @@
     "garlic_Chilli_flavour": "Saveur Ail & Piment",
     "sugar_free_flavor": "Saveur Sans Sucre",
     "coconut_flavor": "Saveur Noix de coco"
+  },
+  "cgu": {
+    "title": "CGU",
+    "hero": "CONDITIONS GÉNÉRALES D’UTILISATION (CGU) Les présentes Conditions Générales d’Utilisation (ci-après \"CGU\") ont pour objet de définir les modalités et conditions d’utilisation du site \"bubobubo\". En naviguant sur le Site, l’utilisateur accepte pleinement et sans réserve les présentes CGU.",
+    "point_1": "ÉDITEUR DU SITE Nom ou Raison sociale : BUBO Forme juridique : Société par actions simplifiée (SAS) Adresse du siège social : 16 rue Antoine-Julien Hénard, 75012 Paris, France Téléphone : Non communiqué publiquement Email : Non communiqué publiquement Numéro RCS : 832 848 857 R.C.S. Paris Numéro SIRET : 832 848 857 00013 Numéro de TVA intracommunautaire : FR19832848857 Capital social : 30 000 € Date de création : 11 octobre 2017 Activité principale : Édition de logiciels système et de réseau (code NAF 58.29A) Président : Paul-Alexis Dray",
+    "point_2": "ACCÈS AU SITE Le Site est accessible gratuitement à tout utilisateur disposant d’un accès à Internet. Tous les frais liés à l’accès au Site (matériel, logiciels, connexion Internet, etc.) sont à la charge de l’utilisateur.",
+    "point_3": "CONTENU DU SITE Le Site a pour objet de présenter les activités, services ou produits de [Nom de l’entreprise]. Toutes les informations présentes sur le Site sont données à titre indicatif et sont susceptibles d’évoluer. L’éditeur du Site ne saurait être tenu pour responsable des omissions, inexactitudes ou carences.",
+    "point_4": "DONNÉES PERSONNELLES Les données personnelles éventuellement collectées sur le Site (via un formulaire de contact par exemple) sont traitées conformément au Règlement Général sur la Protection des Données (RGPD). L’utilisateur dispose d’un droit d’accès, de rectification, d’opposition et de suppression de ses données personnelles en contactant : [email RGPD].",
+    "point_5": "COOKIES Le Site peut utiliser des cookies à des fins statistiques et d’amélioration de l’expérience utilisateur. L’utilisateur peut refuser l’installation de cookies via son navigateur ou via le bandeau de gestion du consentement présent sur le Site.",
+    "point_6": "RESPONSABILITÉ L’éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l’utilisation du Site ou de l’impossibilité d’y accéder.",
+    "point_7": "LIENS HYPERTEXTES Le Site peut contenir des liens vers des sites tiers. L’éditeur décline toute responsabilité quant aux contenus de ces sites externes.",
+    "point_8": "MODIFICATION DES CGU L’éditeur se réserve le droit de modifier les présentes CGU à tout moment. Les modifications entrent en vigueur dès leur mise en ligne.",
+    "point_9": "DROIT APPLICABLE Les présentes CGU sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents."
   }
 }
