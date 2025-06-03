@@ -1,0 +1,58 @@
+---
+import { t, changeLanguage } from "i18next";
+import MainLayout from "@/layouts/main-layout.astro";
+
+changeLanguage("en");
+---
+
+<MainLayout title="cgu" description="Conditions Générales d’Utilisation">
+  <section class="space-y-5">
+    <section class="space-y-10">
+      <h1 class="text-4xl font-heading text-foreground text-center mt-16">
+        {t("cgu.title")}
+      </h1>
+      <div class="gap-8 mx-auto max-w-screen-lg">
+        <p class="mb-4">
+          {t("cgu.hero")}
+        </p>
+        <ol class="list-decimal py-5">
+          <li class="mb-2">
+            {t("cgu.point_1")}
+          </li>
+          <!-- <li>
+            HÉBERGEMENT Hébergeur : [Nom de l’hébergeur] Adresse : [Adresse de
+            l’hébergeur] Téléphone : [Numéro]
+          </li> -->
+          <li class="mb-2">
+            {t("cgu.point_2")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_3")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_4")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_5")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_6")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_7")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_8")}
+          </li>
+          <li class="mb-2">
+            {t("cgu.point_9")}
+          </li>
+        </ol>
+      </div>
+    </section>
+    <div
+      class="relative z-10 flex flex-col justify-center overflow-hidden lg:overflow-visible pb-16"
+    >
+    </div>
+  </section>
+</MainLayout>
