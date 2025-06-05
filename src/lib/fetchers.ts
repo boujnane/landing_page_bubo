@@ -17,6 +17,14 @@ export async function getPosts(lang?: string) {
   return posts;
 }
 
+export async function getBlogPosts(lang?: string) {
+  const posts = (await getCollection("blogPosts")).filter(item => item.data.lang === lang).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  return posts;
+}
+
 export async function getTailorMadePosts(lang?: string) {
   const posts = (await getCollection("tailor-made")).filter(item => item.data.lang === lang).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()

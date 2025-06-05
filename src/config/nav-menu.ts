@@ -88,5 +88,12 @@ export const navMenuConfig: NavMenuConfig = {
         }
       ],
     },
-  ]
+  ],
+  blog:
+    {
+      title: "Blog",
+      href: "blog",
+      description: "Example description",
+      image: "/images/examples/image.jpg",
+    },
 };

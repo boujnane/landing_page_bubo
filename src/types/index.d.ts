@@ -52,6 +52,7 @@ export type NavMenuConfig = {
   links: MenuItem[];
   pagesNav: SidebarNavItem[];
   examplesNav: SidebarNavItem[];
+  blog: MenuItem
 };
 
 export type DashboardConfig = {

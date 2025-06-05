@@ -11,6 +11,7 @@ import astroI18next from "astro-i18next";
 // https://astro.build/config
 export default defineConfig({
   site: "https://wwww.bubobu.bo",
+  outDir: "dist",
   integrations: [
     mdx({
       syntaxHighlight: "shiki",

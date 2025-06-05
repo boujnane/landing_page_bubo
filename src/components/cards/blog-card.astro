@@ -5,7 +5,7 @@ import { formatDate } from "@/lib/utils";
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
-type Props = CollectionEntry<"blog" | "tailor-made">;
+type Props = CollectionEntry<"blog" | "tailor-made" | "blogPosts">;
 const { lang, localizeUrl } = useLocation(Astro.url.pathname);
 const post = Astro.props as Props;
 const pathname = Astro.url.pathname;
@@ -13,7 +13,7 @@ const getPathName = () => pathname.startsWith("/fr") ? pathname.split("/")[2]: p
 ---
 
 <article class="group space-y-4">
-  <a
+  {post.data.cover && <a
     href={localizeUrl(`/${getPathName()}/${post.slug}/`)}
     class="flex h-52 group-hover:-translate-y-2 group-hover:shadow-xl transition duration-300"
   >
@@ -26,7 +26,7 @@ const getPathName = () => pathname.startsWith("/fr") ? pathname.split("/")[2]: p
       alt="descriptive text"
       transition:name={`img-${post.slug}`}
     />
-  </a>
+  </a>}
 
   <div class="flex items-center justify-between">
     <a
