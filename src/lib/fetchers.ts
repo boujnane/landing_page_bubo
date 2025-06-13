@@ -1,7 +1,12 @@
 import { getCollection } from "astro:content";
 
-export async function getCategories() {
-  const posts = await getCollection("blog");
+export async function getCategories(page = "blog") {
+  let posts;
+  if (page === "blogPosts") {
+    posts = await getCollection("blogPosts");
+  } else {
+    posts = await getCollection("blog");
+  }
   const categories = [
     ...new Set(posts.map((post) => post.data.category).flat()),
   ];

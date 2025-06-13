@@ -3,7 +3,7 @@ title: "Embeddings Explained: How Vectors Fuel LLM Intelligence"
 description: "Discover how embeddings (representation vectors) transform text into mathematical data and enable LLMs to understand human language. A complete and accessible guide."
 pubDate: "Jun 03 2025"
 # cover: "/images/blogposts/tokens_infographie_finale_divisee.webp"
-category: "Missions: Data & AI"
+category: "Large Language Model(LLM)"
 lang: "en"
 sidebarInfo:
   industry: ""

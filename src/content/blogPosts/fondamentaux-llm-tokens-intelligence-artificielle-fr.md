@@ -3,7 +3,7 @@ title: "Tokens dans les LLM : guide complet pour comprendre l'IA moderne"
 description: "Découvrez ce que sont les tokens dans les modèles de langage (LLM), pourquoi ils sont essentiels et comment ils influencent les performances de l'IA. Guide accessible pour tous"
 pubDate: "Jun 03 2025"
 # cover: "/images/blogposts/tokens_infographie_finale_divisee.webp"
-category: "Missions: Data & AI"
+category: "Large Language Model(LLM)"
 lang: "fr"
 sidebarInfo:
   industry: ""

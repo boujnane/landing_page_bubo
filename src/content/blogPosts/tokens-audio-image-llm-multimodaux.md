@@ -3,7 +3,7 @@ title: "Tokens audio et image : comment les LLM multimodaux voient et entendent"
 description: "Découvrez comment les modèles d'IA transforment images et sons en tokens pour les comprendre, et comment cette révolution multimodale change notre interaction avec l'intelligence artificielle."
 pubDate: "Jun 03 2025"
 # cover: "/images/blogposts/tokens_infographie_finale_divisee.webp"
-category: "Missions: Data & AI"
+category: "Large Language Model(LLM)"
 lang: "en"
 sidebarInfo:
   industry: ""

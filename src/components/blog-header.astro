@@ -5,15 +5,17 @@ import { cn } from "@/lib/utils";
 import { Icon } from "astro-icon/components";
 import { useLocation } from "@/lib/location";
 
-const categories = await getCategories();
 
 type Props = {
   title: string;
+  page?: string;
 };
 
-const { title } = Astro.props;
+const { title, page } = Astro.props;
 const { category } = Astro.params;
 const pathname = Astro.url.pathname;
+
+const categories = await getCategories(page);
 const getPathName = () => pathname.startsWith("/fr") ? pathname.split("/")[2]: pathname.split("/")[1]
 const { localizeUrl } = useLocation(Astro.url.pathname);
 ---
