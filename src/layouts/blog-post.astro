@@ -39,14 +39,14 @@ const { title, description, pubDate, updatedDate, cover, category, sidebarInfo }
         </Badge>
       </a>
 
-      <Image
+      {cover && <Image
         class="rounded-xl overflow-hidden my-6"
         width={720}
         height={360}
         src={cover}
         alt={title}
         transition:name={`img-${slug}`}
-      />
+      />}
       <div class="flex items-center justify-between">
         <span
           class="font-medium text-muted-foreground"
@@ -68,28 +68,30 @@ const { title, description, pubDate, updatedDate, cover, category, sidebarInfo }
     </div>
     <!-- Sidebar Section -->
     <div>
-      <aside class="bg-gray-100 dark:bg-[#181c22] p-6 rounded-xl border border-gray-300 dark:border-gray-600 shadow-md">
-        <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Informations</h2>
-        <ul class="space-y-4">
-          <li class="flex justify-between items-center">
-            <strong class="text-gray-700 dark:text-gray-300">Industrie :</strong>
-            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.industry}</span>
-          </li>
-          <li class="flex justify-between items-center">
-            <strong class="text-gray-700 dark:text-gray-300">Siège social :</strong>
-            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.headquarters}</span>
-          </li>
-          <li class="flex justify-between items-center">
-            <strong class="text-gray-700 dark:text-gray-300">Fondée :</strong>
-            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.founded}</span>
-          </li>
-          <li class="flex justify-between items-center">
-            <strong class="text-gray-700 dark:text-gray-300">Employés :</strong>
-            <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.employees}</span>
-          </li>
-        </ul>
-      </aside>
-    </div>  
+      {sidebarInfo?.visibility && <div>
+        <aside class="bg-gray-100 dark:bg-[#181c22] p-6 rounded-xl border border-gray-300 dark:border-gray-600 shadow-md">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Informations</h2>
+          <ul class="space-y-4">
+            <li class="flex justify-between items-center">
+              <strong class="text-gray-700 dark:text-gray-300">Industrie :</strong>
+              <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.industry}</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <strong class="text-gray-700 dark:text-gray-300">Siège social :</strong>
+              <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.headquarters}</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <strong class="text-gray-700 dark:text-gray-300">Fondée :</strong>
+              <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.founded}</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <strong class="text-gray-700 dark:text-gray-300">Employés :</strong>
+              <span class="text-gray-900 dark:text-gray-200">{sidebarInfo?.employees}</span>
+            </li>
+          </ul>
+        </aside>
+      </div>}
+    </div>
 
     <div>
       <Button>

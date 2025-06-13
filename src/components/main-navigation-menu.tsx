@@ -18,6 +18,7 @@ import { t } from "i18next";
 const links = navMenuConfig.links;
 const pages = navMenuConfig.pagesNav[0];
 const examples = navMenuConfig.examplesNav[0];
+const blog = navMenuConfig.blog
 
 export function MainNavigationMenu() {
   const { localizeUrl } = useLocation();
@@ -63,6 +64,16 @@ export function MainNavigationMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <a
+            key={blog.href}
+            href={localizeUrl(blog.href)}
+            className={navigationMenuTriggerStyle()}
+            {...(blog.forceReload ? { "data-astro-reload": true } : {})}
+          >
+            {t(blog.title)}
+          </a>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
