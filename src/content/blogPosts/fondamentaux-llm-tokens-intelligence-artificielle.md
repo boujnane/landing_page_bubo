@@ -2,7 +2,7 @@
 title: "Tokens in LLMs: a complete guide to modern AI"
 description: "Find out what tokens are in language models (LLMs), why they're essential and how they influence AI performance. Accessible guide for all"
 pubDate: "Jun 03 2025"
-# cover: "/images/blogposts/tokens_infographie_finale_divisee.webp"
+cover: "/images/blogposts/llm_tokens.jpg"
 category: "Large Language Model(LLM)"
 lang: "en"
 sidebarInfo:
