@@ -1,5 +1,5 @@
 ---
-title: "Les Embeddings Expliqués : Comment les Vecteurs Alimentent l'Intelligence des LLM"
+title: "Les Embeddings expliqués : Comment les vecteurs alimentent l'intelligence des LLM ?"
 description: "Découvrez comment les embeddings (vecteurs de représentation) transforment le texte en données mathématiques et permettent aux LLM de comprendre le langage humain. Guide complet et accessible."
 pubDate: "Jun 03 2025"
 cover: "/images/blogposts/embeddings.jpg"

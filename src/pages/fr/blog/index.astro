@@ -1,5 +1,4 @@
 ---
-import { changeLanguage } from "i18next";
 import BlogHeader from "@/components/blog-header.astro";
 import BlogCard from "@/components/cards/blog-card.astro";
 import MainLayout from "@/layouts/main-layout.astro";
@@ -7,6 +6,7 @@ import { getBlogPosts } from "@/lib/fetchers";
 import Timeline from "@/components/Timeline.astro";
 import HeaderSection from "@/components/sections/header-section.astro";
 import { useLocation } from "@/lib/location";
+import { t, changeLanguage } from "i18next";
 
 changeLanguage("fr");
 
@@ -18,9 +18,9 @@ const posts = await getBlogPosts(lang);
   <section class="container py-16">
     <!-- Timeline Section -->
     <HeaderSection
-      label="Timeline"
-      title="Discover our history."
-      subtitle="Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur."
+      label={t("home.blog_posts") || ""}
+      title={t("home.blog_posts_title") || ""}
+      subtitle={t("home.blog_posts_subtitle") || ""}
     />
     <!-- <Timeline events={events} /> -->
 
