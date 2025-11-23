@@ -2,53 +2,55 @@
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Icon } from "astro-icon/components";
-import { siteConfig } from "@/config/site";
 import { t } from "i18next";
 import BulletEffects from "../BulletEffects";
-
 ---
+
 <section class="space-y-6 py-12 sm:py-20 lg:py-20">
-  <div class="container flex max-w-5xl flex-col items-center gap-5 text-center">
-    <h1 class="text-balance font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[66px]">
+  <div class="container flex max-w-5xl flex-col items-center gap-5 text-center px-4">
+    <!-- Heading -->
+    <h1 class="text-balance font-heading text-3xl sm:text-5xl md:text-6xl lg:text-[66px] leading-tight">
       <span>{t('services.soar_to_new_heights')}</span> 
       <span class="bg-gradient-to-r from-orange-600 to-yellow-300 bg-clip-text text-transparent font-extrabold">
         {t('services.bubo_team')}
       </span>
     </h1>
     
+    <!-- Subtitle -->
     <p class="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8">
       {t('services.we_offer')}
     </p>
     
-
-    <div class="max-w-2xl space-y-3 text-muted-foreground sm:text-xl sm:leading-8">
-      <div class="bullet-container">
-        <ul class="bullet-list">
-          <li class="bullet-item">
-            <p class="text-justify text-left text-xs sm:text-base">
-              <span class="be_blur first_word">{t('services.state_of_the_art')}</span>
-              <span class="zoom-effect">{t('services.data_and_ia')}</span>
-            </p>
-            <li class="bullet-item">
-              <p class="text-justify text-left text-xs sm:text-base">
-                <span class="zoom-effect">{t('services.tailor_made')}</span>
-                <span class="be_blur">{t('services.to_perfectly_match_your_needs')}</span>
-              </p>
-            </li>
-            <li class="bullet-item">
-              <p class="text-justify text-left text-xs sm:text-base">
-                <!-- <span class="be_blur">{t('common.some')}</span> -->
-                <span class="zoom-effect">{t('services.innovative_useful')}</span>
-                <span class="be_blur">{t('services.take_flight')}</span>
-              </p>
-            </li>
-        </ul>
-      </div>
+    <!-- Bullet Points -->
+    <div class="max-w-2xl space-y-4 text-muted-foreground sm:text-xl sm:leading-8">
+      <ul class="space-y-3">
+        <li class="bullet-item">
+          <p class="flex flex-col text-left text-sm sm:text-base">
+            <span class="be_blur">{t('services.state_of_the_art')}</span>
+            <span class="zoom-effect">{t('services.data_and_ia')}</span>
+          </p>
+        </li>
+        <li class="bullet-item">
+          <p class="flex flex-col text-left text-sm sm:text-base">
+            <span class="zoom-effect">{t('services.tailor_made')}</span>
+            <span class="be_blur">{t('services.to_perfectly_match_your_needs')}</span>
+          </p>
+        </li>
+        <li class="bullet-item">
+          <p class="flex flex-col text-left text-sm sm:text-base">
+            <span class="zoom-effect">{t('services.innovative_useful')}</span>
+            <span class="be_blur">{t('services.take_flight')}</span>
+          </p>
+        </li>
+      </ul>
     </div>
     
-
-    <div class="flex justify-center space-x-2 md:space-x-4">
-      <a href="https://calendly.com/bubobubo/intro?month=2024-12" class={cn(buttonVariants({ size: "lg", rounded: "full" }), "gap-2")}>
+    <!-- Button -->
+    <div class="flex justify-center w-full">
+      <a 
+        href="https://calendly.com/bubobubo/intro?month=2024-12"
+        class={cn(buttonVariants({ size: "lg", rounded: "full" }), "gap-2 w-full max-w-xs btn-mobile")}
+      >
         <span>{t("common.request_quote")}</span>
         <Icon name="lucide:rocket" class="size-5 text-orange-500" />
       </a>
@@ -59,55 +61,87 @@ import BulletEffects from "../BulletEffects";
 <BulletEffects client:load />
 
 <style>
-  .bullet-item {
-    position: relative;
-    margin-bottom: 1rem; 
-    transition: opacity 0.4s ease, filter 0.4s ease;
-  }
+/* --- Global --- */
+.bullet-item {
+  position: relative;
+  transition: opacity 0.4s ease, filter 0.4s ease;
+  padding-left: 1.5rem;
+}
 
-  .bullet-item::before {
-    content: "•"; 
-    color: #ff6700; 
-    font-size: 1.5rem; 
-    font-weight: bold;
-    position: absolute;
-    left: -1.5rem; 
-    top: 0.1rem; 
-  }
+.bullet-item::before {
+  content: "•";
+  color: #ff6700;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+}
 
-  .bullet-item .be_blur {
-    filter: none;
-    transition: filter 0.4s ease, opacity 0.4s ease;
-  }
+.be_blur {
+  filter: none;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
 
-  .zoom-effect {
-    display: inline-block;
-    font-weight: bolder;
-    font-size: x-large;
-    transition: transform 0.4s ease, color 0.4s ease;
-    cursor: pointer;
-    z-index: 1;
-  }
+.zoom-effect {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  z-index: 1;
+}
 
+/* Hover effect only for desktop */
+@media (hover: hover) {
   .zoom-effect:hover {
     transform: scale(1.3);
     color: #ff6700;
     z-index: 10;
   }
+}
 
-  /* Taille de la police pour les petits écrans (mobile) */
-@media (max-width: 640px) {
-  .zoom-effect {
-    font-size: 1rem; /* Taille réduite pour mobile */
+/* Tap effect for mobile */
+@media (hover: none) {
+  .zoom-effect:active {
+    transform: scale(1.2);
+    color: #ff6700;
   }
+}
+
+/* Mobile-specific */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .bullet-item {
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+  }
+
   .bullet-item::before {
-    content: "•"; 
-    color: #ff6700; 
-    font-size: 1.5rem; 
-    font-weight: bold;
-    position: absolute;
-    left: -0.8rem; 
-    top: -0.6rem; 
+    left: 0.15rem;
+    top: 0.15rem;
+    font-size: 1.25rem;
+  }
+
+  /* Button */
+  .btn-mobile {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Container padding */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 </style>

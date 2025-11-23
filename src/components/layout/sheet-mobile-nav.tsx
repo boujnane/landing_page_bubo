@@ -46,7 +46,7 @@ export function SheetMobileNav({
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="pr-0">
-        <a href={localizeUrl("/")} className="flex items-center">
+        <a href={localizeUrl("")} className="flex items-center">
           <img
             width={30}
             height={30}

@@ -97,7 +97,7 @@ export const features = [
   },
   {
     title: "Gioza",
-    description: "features.reconciling_disparate_data_models",
+    description: "features.implementing_non_intrusive_load",
     link: "/data&AIconsulting/gioza/",
     icon: "gioza_logo",
   },
@@ -117,15 +117,9 @@ export const testimonials = [
     review: "home.bubo_has_helped_me_successfully"
   },
   {
-    name: "Moussa Traoré",
-    job: "common.technical_director",
-    image: "https://randomuser.me/api/portraits/men/59.jpg",
-    review: "home.bubo_has_helped_me_successfully"
-  },
-  {
     name: "Clémence Dubois",
     job: "common.product_manager",
-    image: "https://randomuser.me/api/portraits/women/34.jpg",
+    image: "https://randomuser.me/api/portraits/women/49.jpg",
     review: "home.what_i_really_appreciate_about"
   },
   {
@@ -135,11 +129,11 @@ export const testimonials = [
     review: "home.bubo_provided_me_with_the"
   },
   {
-    name: "Olivier Koffi",
+    name: "Maître Koffi",
     job: "common.criminal_defense_lawyer",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
-    review: "home.working_on_kumbu_one_of_bubo"
-  },  
+    review: "home.bubo_made_legal_research_easier"
+  },
   {
     name: "Julie Martinelli",
     job: "common.lead_data_scientist",
@@ -147,34 +141,42 @@ export const testimonials = [
     review: "home.as_the_lead_data_scientist"
   },
   {
-    name: "Clémence Dubois",
+    name: "Diego Morales",
+    job: "common.full_stack_developer",
+    image: "https://randomuser.me/api/portraits/men/34.jpg",
+    review: "home.bubo_helped_automate_tasks"
+  },
+  {
+    name: "Sofia Schneider",
     job: "common.product_manager",
-    image: "https://randomuser.me/api/portraits/women/34.jpg",
-    review: "home.what_i_really_appreciate_about"
+    image: "https://randomuser.me/api/portraits/women/45.jpg",
+    review: "home.bubo_is_the_ai_partner_you_need"
   },
   {
-    name: "Aminata Koulibaly",
-    job: "common.business_owner",
-    image: "https://randomuser.me/api/portraits/women/35.jpg",
-    review: "home.bubo_provided_me_with_the"
+    name: "Nabil Essalhi",
+    job: "common.technical_director",
+    image: "https://randomuser.me/api/portraits/men/23.jpg",
+    review: "home.bubo_transformed_our_company"
   },
   {
-    name: "Aminata Koulibaly",
+    name: "Fatou Ndiaye",
     job: "common.business_owner",
-    image: "https://randomuser.me/api/portraits/women/35.jpg",
-    review: "home.bubo_provided_me_with_the"
+    image: "https://randomuser.me/api/portraits/women/62.jpg",
+    review: "home.bubo_helped_with_hr_digitization"
   },
   {
-    name: "Aminata Koulibaly",
-    job: "common.business_owner",
-    image: "https://randomuser.me/api/portraits/women/35.jpg",
-    review: "home.bubo_provided_me_with_the"
+    name: "Louis Perret",
+    job: "common.product_manager",
+    image: "https://randomuser.me/api/portraits/men/28.jpg",
+    review: "home.bubo_simplified_document_compliance"
   },
   {
-    name: "Aminata Koulibaly",
-    job: "common.business_owner",
-    image: "https://randomuser.me/api/portraits/women/35.jpg",
-    review: "home.bubo_provided_me_with_the"
-  },
+    name: "Maria Jiménez",
+    job: "common.lead_data_scientist",
+    image: "https://randomuser.me/api/portraits/women/95.jpg",
+    review: "home.bubo_is_the_ai_partner_you_need"
+  }
 ];
+
+
 

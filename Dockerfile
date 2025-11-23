@@ -1,32 +1,24 @@
 # Stage 1: Build
-FROM node:20-alpine AS builder
-
-# Set working directory
+FROM node:18-alpine AS builder
 WORKDIR /app
 
-# Install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the app
 COPY . .
-
-# Build the Astro project
 RUN npm run build
 
-# Stage 2: Serve
-FROM node:20-alpine
-
-# Install a simple static server (or use astro preview if preferred)
-RUN npm install -g serve
-
-# Set working directory
+# Stage 2: Run
+FROM node:18-alpine
 WORKDIR /app
 
-# Copy built files from previous stage
+COPY package*.json ./
+RUN npm install --omit=dev
+
+# Copier le build complet
 COPY --from=builder /app/dist ./dist
-# Expose port
+
 EXPOSE 3000
 
-# Start the server
-CMD ["serve", "dist", "-l", "3000"]
+# Lancer le serveur Astro SSR
+CMD ["node", "dist/server/entry.mjs"]
